@@ -83,7 +83,7 @@ const Footer = () => {
         <hr className="border-primary-foreground/20 my-8" />
         
         <div className="text-center text-primary-foreground/80">
-          <p>&copy; 2024 Nikola Miloradovic Reinigung. Alle Rechte vorbehalten.</p>
+          <p>&copy; 2025 Nikola Miloradovic Reinigung. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>
