@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import officeImage from "@/assets/s-bueroreinigung-wien.webp";
-import housekeepingImage from "@/assets/s-hausbetreuung.jpg";
+import officeImage from "@/assets/trust-office-clean-wien.webp";
+import housekeepingImage from "@/assets/s-hausbetreuung-wien.webp";
 import industrialImage from "@/assets/s-industriekletterer.jpg";
-import windowImage from "@/assets/s-fensterreinigung.jpg";
+import windowImage from "@/assets/s-fensterreinigung-wien.webp";
 
 const handleContactScroll = () => {
   const contactSection = document.getElementById('contact');
