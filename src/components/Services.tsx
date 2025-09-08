@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import officeImage from "@/assets/trust-office-clean-wien.webp";
-import housekeepingImage from "@/assets/s-hausbetreuung.jpg";
-import industrialImage from "@/assets/s-industriekletterer.jpg";
-import windowImage from "@/assets/s-fensterreinigung.jpg";
+import housekeepingImage from "/lovable-uploads/d9151b04-4c28-4547-a790-3a4f8ea9b0f4.png";
+import industrialImage from "/lovable-uploads/2968d653-8df3-4f3a-9f08-31f4fe09bbff.png";
+import windowImage from "/lovable-uploads/818022c4-db32-49ef-b0ab-3aba1ac3598c.png";
 
 const handleContactScroll = () => {
   const contactSection = document.getElementById('contact');
