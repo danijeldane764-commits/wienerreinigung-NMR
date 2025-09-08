@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4" />
-                <span className="text-primary-foreground/90">1100 Wien, Karmarschgasse 51/1/26</span>
+                <span className="text-primary-foreground/90">1100 Wien, Karmarschgasse 51</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4" />

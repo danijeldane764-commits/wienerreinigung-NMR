@@ -9,7 +9,7 @@ const Impressum = () => {
             <h2 className="text-2xl font-semibold mb-4">Nikola Miloradovic Reinigung</h2>
             <p>
               <strong>Inhaber:</strong> Nikola Miloradovic<br />
-              <strong>Adresse:</strong> Karmarschgasse 51/1/26<br />
+              <strong>Adresse:</strong> Karmarschgasse 51<br />
               1100 Wien, Österreich
             </p>
           </section>

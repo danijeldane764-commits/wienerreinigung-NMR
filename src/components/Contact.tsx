@@ -219,7 +219,7 @@ const Contact = () => {
                   </div>
                   <div className="flex items-center space-x-3">
                     <MapPin className="w-5 h-5 text-primary" />
-                    <span className="text-foreground">1100 Wien, Karmarschgasse 51/1/26</span>
+                    <span className="text-foreground">1100 Wien, Karmarschgasse 51</span>
                   </div>
                 </div>
                 
