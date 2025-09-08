@@ -1,6 +1,6 @@
 import { CheckCircle, Users, Clock } from "lucide-react";
-import chefImage from "@/assets/d-chef.jpg";
-import equipmentImage from "@/assets/d-equipment.jpg";
+const chefImage = "/lovable-uploads/7b4921c3-5283-4c13-b3e7-ab873a8c1607.png";
+const equipmentImage = "/lovable-uploads/3ab17510-5dff-40b7-a479-958a764828e4.png";
 
 const Trust = () => {
   const trustPoints = [

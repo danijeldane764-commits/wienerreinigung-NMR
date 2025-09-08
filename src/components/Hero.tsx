@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
-import heroImage from "@/assets/hero-industriekletterer.jpg";
+const heroImage = "/lovable-uploads/46942b1d-df09-4e89-a38e-bb301a305dc2.png";
 
 const Hero = () => {
   const handleCall = () => {

@@ -1,7 +1,7 @@
-import hausbetreeuungImage from "@/assets/s-hausbetreuung.jpg";
-import fensterreinigungImage from "@/assets/s-fensterreinigung.jpg";
-import industrieklettererImage from "@/assets/s-industriekletterer.jpg";
-import gartenpflegeImage from "@/assets/s-gartenpflege.jpg";
+const hausbetreeuungImage = "/lovable-uploads/35657511-66b3-49f5-a319-2f31fd19c37c.png";
+const fensterreinigungImage = "/lovable-uploads/9ffb4a1b-dbe9-436e-b374-bb79b577ea8a.png";
+const industrieklettererImage = "/lovable-uploads/46942b1d-df09-4e89-a38e-bb301a305dc2.png";
+const gartenpflegeImage = "/lovable-uploads/38e0b7b2-9927-46f4-92a3-41d739dd14ef.png";
 
 const Services = () => {
   const services = [
