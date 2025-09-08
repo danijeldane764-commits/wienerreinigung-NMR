@@ -6,28 +6,27 @@ const Impressum = () => {
         
         <div className="prose prose-lg max-w-none text-foreground">
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Angaben gemäß § 5 TMG</h2>
+            <h2 className="text-2xl font-semibold mb-4">Nikola Miloradovic Reinigung</h2>
             <p>
-              <strong>Nikola Miloradovic Reinigung</strong><br />
-              Nikola Miloradovic<br />
-              [Adresse]<br />
-              Wien, Österreich
+              <strong>Inhaber:</strong> Nikola Miloradovic<br />
+              <strong>Adresse:</strong> Karmarschgasse 51/1/26<br />
+              1100 Wien, Österreich
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Kontakt</h2>
             <p>
-              Telefon: +43 1 234 567 890<br />
-              E-Mail: info@miloradovic-reinigung.at
+              Telefon: +43 667 7680897<br />
+              E-Mail: nikac998@gmail.com
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Umsatzsteuer-ID</h2>
+            <h2 className="text-2xl font-semibold mb-4">Unternehmensform</h2>
             <p>
-              Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br />
-              [ATU Nummer]
+              Einzelunternehmen<br />
+              UID-Nummer: [falls vorhanden eintragen]
             </p>
           </section>
 

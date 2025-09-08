@@ -8,20 +8,33 @@ const About = () => {
           </h2>
           <div className="text-lg text-muted-foreground leading-relaxed space-y-6">
             <p>
-              <strong className="text-foreground">Nikola Miloradovic Reinigung</strong> ist ein 
-              Familienunternehmen aus Wien, das sich auf professionelle Reinigungsdienstleistungen 
-              für Hausverwaltungen, Firmen und private Haushalte spezialisiert hat.
+              Wir sind ein Familienunternehmen aus Wien. Bei uns sprechen Sie direkt mit dem Chef. 
+              Nach einer kurzen Besichtigung erhalten Sie einen Fixpreis. Wir arbeiten pünktlich, 
+              sauber und zuverlässig.
             </p>
-            <p>
-              Bei uns haben Sie immer direkten Kontakt mit dem Chef – keine anonymen Hotlines 
-              oder unpersönliche Betreuung. Wir legen großen Wert auf persönliche Beratung und 
-              erstellen nach einer persönlichen Besichtigung ein transparentes Angebot zum Fixpreis.
-            </p>
-            <p>
-              Unser erfahrenes Team steht für Qualität, Zuverlässigkeit und Flexibilität. 
-              Ob Hausbetreuung, Fensterreinigung, Industriekletterer-Arbeiten oder Gartenpflege – 
-              wir sind Ihr vertrauensvoller Partner in Wien und Umgebung.
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+              <div className="text-center">
+                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">💬</span>
+                </div>
+                <h4 className="font-semibold text-foreground mb-2">Kostenlose Erstberatung</h4>
+                <p className="text-sm">Persönliche Beratung vor Ort</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">💰</span>
+                </div>
+                <h4 className="font-semibold text-foreground mb-2">Transparente Fixpreise</h4>
+                <p className="text-sm">Klare Preise ohne versteckte Kosten</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">📍</span>
+                </div>
+                <h4 className="font-semibold text-foreground mb-2">Einsatzgebiet Wien</h4>
+                <p className="text-sm">Wien und Wien Umgebung</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

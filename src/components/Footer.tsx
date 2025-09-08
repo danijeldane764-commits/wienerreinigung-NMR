@@ -22,30 +22,30 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4" />
-                <span className="text-primary-foreground/90">Wien, Österreich</span>
+                <span className="text-primary-foreground/90">1100 Wien, Karmarschgasse 51/1/26</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4" />
                 <a 
-                  href="tel:+431234567890" 
+                  href="tel:+436677680897" 
                   className="text-primary-foreground/90 hover:text-white transition-colors"
                 >
-                  +43 1 234 567 890
+                  +43 667 7680897
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4" />
                 <a 
-                  href="mailto:info@miloradovic-reinigung.at" 
+                  href="mailto:nikac998@gmail.com" 
                   className="text-primary-foreground/90 hover:text-white transition-colors"
                 >
-                  info@miloradovic-reinigung.at
+                  nikac998@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <MessageCircle className="w-4 h-4" />
                 <a 
-                  href="https://wa.me/431234567890" 
+                  href="https://wa.me/436677680897?text=Hallo%20Nikola,%20ich%20brauche%20Unterstützung%20bei%20einer%20Reinigung%20in%20Wien" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary-foreground/90 hover:text-white transition-colors"

@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const hausbetreeuungImage = "/lovable-uploads/35657511-66b3-49f5-a319-2f31fd19c37c.png";
 const fensterreinigungImage = "/lovable-uploads/9ffb4a1b-dbe9-436e-b374-bb79b577ea8a.png";
 const industrieklettererImage = "/lovable-uploads/46942b1d-df09-4e89-a38e-bb301a305dc2.png";
@@ -25,7 +27,7 @@ const Services = () => {
     },
     {
       title: "Gartenpflege Wien",
-      description: "Saubere Grünflächen, Wege und Terrassen",
+      description: "Pflege für Grünflächen, Wege und Terrassen",
       image: gartenpflegeImage,
       alt: "Gartenpflege Wien - professionelle Gartenpflege und Grünflächenbetreuung"
     }
@@ -46,7 +48,7 @@ const Services = () => {
             Unsere Leistungen
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Professionelle Reinigungsdienstleistungen für alle Anforderungen in Wien und Umgebung
+            Saubere Ergebnisse, klare Abläufe, transparente Kommunikation
           </p>
         </div>
 
@@ -79,7 +81,7 @@ const Services = () => {
           <h3 className="text-2xl font-semibold text-foreground mb-6">
             Weitere Leistungen
           </h3>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
             {additionalServices.map((service, index) => (
               <span 
                 key={index}
@@ -89,6 +91,14 @@ const Services = () => {
               </span>
             ))}
           </div>
+          <Button 
+            variant="cta" 
+            size="lg"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            className="text-lg px-8 py-4"
+          >
+            Kostenloses Angebot anfordern
+          </Button>
         </div>
       </div>
     </section>

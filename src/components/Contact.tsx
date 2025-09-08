@@ -17,11 +17,11 @@ const Contact = () => {
   const { toast } = useToast();
 
   const handleCall = () => {
-    window.location.href = "tel:+431234567890";
+    window.location.href = "tel:+436677680897";
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/431234567890", "_blank");
+    window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20ich%20brauche%20Unterstützung%20bei%20einer%20Reinigung%20in%20Wien", "_blank");
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -149,6 +149,24 @@ const Contact = () => {
                     className="mt-2"
                   />
                 </div>
+
+                <div className="space-y-2">
+                  <div className="flex items-start space-x-2">
+                    <input 
+                      type="checkbox" 
+                      id="privacy" 
+                      required 
+                      className="mt-1"
+                    />
+                    <label htmlFor="privacy" className="text-sm text-muted-foreground">
+                      Ich stimme der Verarbeitung meiner Daten zur Bearbeitung der Anfrage zu
+                    </label>
+                  </div>
+                  <p className="text-xs text-muted-foreground">
+                    Mit Absenden stimmen Sie der Verarbeitung Ihrer Daten zur Bearbeitung der Anfrage zu. 
+                    Weitere Informationen in der <a href="/datenschutz" className="text-primary hover:underline">Datenschutzerklärung</a>.
+                  </p>
+                </div>
                 
                 <Button 
                   type="submit" 
@@ -156,12 +174,8 @@ const Contact = () => {
                   size="lg" 
                   className="w-full"
                 >
-                  Anfrage senden
+                  Nachricht senden
                 </Button>
-                
-                <p className="text-sm text-muted-foreground mt-4">
-                  Mit Absenden stimmen Sie der Verarbeitung Ihrer Daten zur Bearbeitung der Anfrage zu.
-                </p>
               </form>
             </CardContent>
           </Card>
@@ -176,20 +190,56 @@ const Contact = () => {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Phone className="w-5 h-5 text-primary" />
-                    <span className="text-foreground">+43 1 234 567 890</span>
+                    <a 
+                      href="tel:+436677680897" 
+                      className="text-foreground hover:text-primary transition-colors"
+                    >
+                      +43 667 7680897
+                    </a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <MessageCircle className="w-5 h-5 text-primary" />
-                    <span className="text-foreground">WhatsApp verfügbar</span>
+                    <a 
+                      href="https://wa.me/436677680897?text=Hallo%20Nikola,%20ich%20brauche%20Unterstützung%20bei%20einer%20Reinigung%20in%20Wien"
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-foreground hover:text-primary transition-colors"
+                    >
+                      WhatsApp
+                    </a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-primary" />
-                    <span className="text-foreground">info@miloradovic-reinigung.at</span>
+                    <a 
+                      href="mailto:nikac998@gmail.com"
+                      className="text-foreground hover:text-primary transition-colors"
+                    >
+                      nikac998@gmail.com
+                    </a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <MapPin className="w-5 h-5 text-primary" />
-                    <span className="text-foreground">Wien und Umgebung</span>
+                    <span className="text-foreground">1100 Wien, Karmarschgasse 51/1/26</span>
                   </div>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4 mt-6">
+                  <Button 
+                    variant="cta" 
+                    onClick={handleCall}
+                    className="text-lg px-6 py-3"
+                  >
+                    <Phone className="w-5 h-5 mr-2" />
+                    Anrufen
+                  </Button>
+                  <Button 
+                    variant="whatsapp" 
+                    onClick={handleWhatsApp}
+                    className="text-lg px-6 py-3"
+                  >
+                    <MessageCircle className="w-5 h-5 mr-2" />
+                    Per WhatsApp schreiben
+                  </Button>
                 </div>
               </CardContent>
             </Card>
