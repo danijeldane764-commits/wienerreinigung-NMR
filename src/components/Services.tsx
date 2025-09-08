@@ -15,28 +15,28 @@ const handleContactScroll = () => {
 const Services = () => {
   const featuredServices = [
     {
-      title: "Büroreinigung Wien",
+      title: "Büroreinigung Wien und Umgebung",
       description: "Gründliche Büros, pünktlich vor Ort, keine Störung im Arbeitsalltag",
       image: officeImage,
-      alt: "Büroreinigung in Wien"
+      alt: "Büroreinigung in Wien und Umgebung"
     },
     {
-      title: "Hausbetreuung Wien", 
-      description: "Rundum-Service für Wohnanlagen und Objekte, zuverlässig in Wien",
+      title: "Hausbetreuung Wien und Umgebung", 
+      description: "Rundum-Service für Wohnanlagen und Objekte, zuverlässig in Wien und Umgebung",
       image: housekeepingImage,
-      alt: "Hausbetreuung in Wien"
+      alt: "Hausbetreuung in Wien und Umgebung"
     },
     {
-      title: "Industriekletterer Wien",
+      title: "Industriekletterer Wien und Umgebung",
       description: "Sichere Seiltechnik für schwer zugängliche Fassaden",
       image: industrialImage,
-      alt: "Industriekletterer in Wien"
+      alt: "Industriekletterer in Wien und Umgebung"
     },
     {
-      title: "Fensterreinigung Wien",
+      title: "Fensterreinigung Wien und Umgebung",
       description: "Streifenfrei bis zur Kante, innen und außen",
       image: windowImage,
-      alt: "Fensterreinigung in Wien"
+      alt: "Fensterreinigung in Wien und Umgebung"
     }
   ];
 

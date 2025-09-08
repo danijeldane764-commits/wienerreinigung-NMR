@@ -12,7 +12,7 @@ const Trust = () => {
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Familienunternehmen aus Wien",
+      title: "Familienunternehmen aus Wien und Umgebung",
       description: "seit Jahren vertrauensvoll"
     },
     {
@@ -37,7 +37,7 @@ const Trust = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Warum wir die richtige Reinigungsfirma in Wien sind
+            Warum wir die richtige Reinigungsfirma in Wien und Umgebung sind
           </h2>
         </div>
 
@@ -70,7 +70,7 @@ const Trust = () => {
               >
                 <img 
                   src={teamImage} 
-                  alt="Team von Nikola Miloradovic Reinigung bei Kundentermin in Wien"
+                  alt="Team von Nikola Miloradovic Reinigung bei Kundentermin in Wien und Umgebung"
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   decoding="async"
@@ -89,7 +89,7 @@ const Trust = () => {
               >
                 <img 
                   src={inspectionImage} 
-                  alt="Objektbesichtigung in Wien für Fixpreis"
+                  alt="Objektbesichtigung in Wien und Umgebung für Fixpreis"
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   decoding="async"

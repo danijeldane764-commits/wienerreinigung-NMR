@@ -10,12 +10,12 @@ import Footer from "@/components/Footer";
 const Index = () => {
   useEffect(() => {
     // Update page title and meta description for SEO
-    document.title = "Wiener Reinigungsfirma – Büroreinigung, Hausbetreuung, Industriekletterer, Fensterreinigung Wien";
+    document.title = "Wiener Reinigungsfirma – Büroreinigung, Hausbetreuung, Industriekletterer, Fensterreinigung Wien und Umgebung";
     
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professionelle Reinigungsfirma in Wien – Büroreinigung, Hausbetreuung, Industriekletterer, Fensterreinigung. Direkter Kontakt mit dem Chef. Angebot in 24 Stunden.');
+      metaDescription.setAttribute('content', 'Professionelle Reinigungsfirma in Wien und Umgebung – Büroreinigung, Hausbetreuung, Industriekletterer, Fensterreinigung. Direkter Kontakt mit dem Chef. Angebot in 24 Stunden.');
     }
   }, []);
 
