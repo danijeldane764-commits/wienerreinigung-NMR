@@ -15,11 +15,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 218 100% 15%;
 
-    /* Professional Blue Theme */
-    --primary: 218 70% 32%;
-    --primary-foreground: 0 0% 98%;
+    /* Brand Colors - Nikola Miloradovic Reinigung */
+    --primary: 218 70% 32%; /* #1d3b8b */
+    --primary-foreground: 0 0% 100%; /* #ffffff */
     --primary-light: 218 70% 45%;
-    --primary-dark: 218 80% 25%;
+    --primary-dark: 218 80% 25%; /* #15306e hover */
 
     --secondary: 210 20% 96%;
     --secondary-foreground: 218 100% 15%;
@@ -50,6 +50,12 @@
     /* WhatsApp Green */
     --whatsapp: 142 84% 28%;
     --whatsapp-hover: 142 84% 24%;
+    
+    /* CTA Variants */
+    --cta-primary: 218 70% 32%;
+    --cta-primary-hover: 218 80% 25%;
+    --cta-whatsapp: 142 84% 28%;
+    --cta-whatsapp-hover: 142 84% 24%;
 
     --sidebar-background: 0 0% 98%;
 

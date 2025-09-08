@@ -1,43 +1,50 @@
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import officeImage from "@/assets/s-bueroreinigung-wien.webp";
+import housekeepingImage from "@/assets/s-hausbetreuung-wien.webp";
+import industrialImage from "@/assets/s-industriekletterer.jpg";
+import windowImage from "@/assets/s-fensterreinigung-wien.webp";
 
-const hausbetreeuungImage = "/lovable-uploads/35657511-66b3-49f5-a319-2f31fd19c37c.png";
-const fensterreinigungImage = "/lovable-uploads/9ffb4a1b-dbe9-436e-b374-bb79b577ea8a.png";
-const industrieklettererImage = "/lovable-uploads/46942b1d-df09-4e89-a38e-bb301a305dc2.png";
-const gartenpflegeImage = "/lovable-uploads/38e0b7b2-9927-46f4-92a3-41d739dd14ef.png";
+const handleContactScroll = () => {
+  const contactSection = document.getElementById('contact');
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
 const Services = () => {
-  const services = [
+  const featuredServices = [
     {
-      title: "Hausbetreuung Wien",
-      description: "Rundum-Betreuung für Wohnanlagen und Objekte",
-      image: hausbetreeuungImage,
-      alt: "Professionelle Hausbetreuung Wien - Gebäudereinigung und Objektbetreuung"
+      title: "Büroreinigung Wien",
+      description: "Gründliche Büros, pünktlich vor Ort, keine Störung im Arbeitsalltag",
+      image: officeImage,
+      alt: "Büroreinigung in Wien"
     },
     {
-      title: "Fensterreinigung Wien",
-      description: "Glasklare Ergebnisse innen und außen",
-      image: fensterreinigungImage,
-      alt: "Fensterreinigung Wien - professionelle Glasreinigung für Büros und Privathaushalte"
+      title: "Hausbetreuung Wien", 
+      description: "Rundum-Service für Wohnanlagen und Objekte, zuverlässig in Wien",
+      image: housekeepingImage,
+      alt: "Hausbetreuung in Wien"
     },
     {
       title: "Industriekletterer Wien",
       description: "Sichere Seiltechnik für schwer zugängliche Fassaden",
-      image: industrieklettererImage,
-      alt: "Industriekletterer Wien - Fassadenreinigung mit Seiltechnik für Hochhäuser"
+      image: industrialImage,
+      alt: "Industriekletterer in Wien"
     },
     {
-      title: "Gartenpflege Wien",
-      description: "Pflege für Grünflächen, Wege und Terrassen",
-      image: gartenpflegeImage,
-      alt: "Gartenpflege Wien - professionelle Gartenpflege und Grünflächenbetreuung"
+      title: "Fensterreinigung Wien",
+      description: "Streifenfrei bis zur Kante, innen und außen",
+      image: windowImage,
+      alt: "Fensterreinigung in Wien"
     }
   ];
 
   const additionalServices = [
-    "Büroreinigung",
-    "Bauendreinigung", 
-    "Winterdienst",
-    "Entrümpelung"
+    "Bauendreinigung",
+    "Winterdienst", 
+    "Entrümpelung",
+    "Gartenpflege"
   ];
 
   return (
@@ -47,22 +54,24 @@ const Services = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Unsere Leistungen
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Saubere Ergebnisse, klare Abläufe, transparente Kommunikation
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {services.map((service, index) => (
-            <div 
-              key={index} 
-              className="bg-card rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300 transform hover:scale-105"
-            >
-              <div className="aspect-video relative overflow-hidden">
+        {/* Featured Services Grid - 2x2 Desktop, 1x4 Mobile */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          {featuredServices.map((service, index) => (
+            <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg bg-card">
+              <div className="aspect-video overflow-hidden">
                 <img 
                   src={service.image} 
                   alt={service.alt}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
+                  srcSet={`${service.image} 480w, ${service.image} 768w, ${service.image} 1280w`}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="p-6">
@@ -77,27 +86,29 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="text-center">
-          <h3 className="text-2xl font-semibold text-foreground mb-6">
-            Weitere Leistungen
+        {/* Additional Services */}
+        <div className="text-center mb-8">
+          <h3 className="text-xl font-semibold text-foreground mb-4">
+            Zusatzleistungen
           </h3>
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
+          <div className="flex flex-wrap justify-center gap-3">
             {additionalServices.map((service, index) => (
-              <span 
-                key={index}
-                className="bg-accent text-accent-foreground px-6 py-3 rounded-full font-medium"
-              >
+              <Badge key={index} variant="secondary" className="text-sm px-4 py-2">
                 {service}
-              </span>
+              </Badge>
             ))}
           </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center">
           <Button 
-            variant="cta" 
+            variant="default"
             size="lg"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            className="text-lg px-8 py-4"
+            onClick={handleContactScroll}
+            className="font-semibold px-8 py-4 text-lg"
           >
-            Kostenloses Angebot anfordern
+            Angebot in 24 Stunden
           </Button>
         </div>
       </div>
