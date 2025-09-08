@@ -67,7 +67,7 @@ const Trust = () => {
                 className="w-full h-64 object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                <p className="text-white text-sm font-medium">Hydranten-Kontrolle & Hausmeisterservice</p>
+                <p className="text-white text-sm font-medium">Wir achten auf jedes Detail</p>
               </div>
             </div>
           </div>
