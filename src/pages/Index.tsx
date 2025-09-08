@@ -1,13 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect } from "react";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Trust from "@/components/Trust";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  useEffect(() => {
+    // Update page title and meta description for SEO
+    document.title = "Wiener Reinigungsfirma | Hausbetreuung, Fensterreinigung, Industriekletterer, Gartenpflege Wien";
+    
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Professionelle Reinigungsfirma in Wien – Hausbetreuung, Fensterreinigung, Industriekletterer, Gartenpflege. Direkter Kontakt mit dem Chef. Angebot in 24h.');
+    }
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <Hero />
+      <Services />
+      <Trust />
+      <About />
+      <Contact />
+      <Footer />
+    </main>
   );
 };
 
