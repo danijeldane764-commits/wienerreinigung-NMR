@@ -2,18 +2,24 @@ import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const handleCall = () => {
-  window.gtag?.('event', 'anrufen_click', {
-    event_category: 'engagement',
-    event_label: 'header'
-  });
+  // Track call event if gtag is available
+  if (typeof window !== 'undefined' && (window as any).gtag) {
+    (window as any).gtag('event', 'anrufen_click', {
+      event_category: 'engagement',
+      event_label: 'header'
+    });
+  }
   window.location.href = "tel:+436677680897";
 };
 
 const handleWhatsApp = () => {
-  window.gtag?.('event', 'whatsapp_click', {
-    event_category: 'engagement', 
-    event_label: 'header'
-  });
+  // Track WhatsApp event if gtag is available
+  if (typeof window !== 'undefined' && (window as any).gtag) {
+    (window as any).gtag('event', 'whatsapp_click', {
+      event_category: 'engagement', 
+      event_label: 'header'
+    });
+  }
   window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20ich%20brauche%20Unterstützung%20bei%20einer%20Reinigung%20in%20Wien", "_blank", "noopener");
 };
 
