@@ -1,6 +1,7 @@
-import { CheckCircle, Users, Clock } from "lucide-react";
-const chefImage = "/lovable-uploads/7b4921c3-5283-4c13-b3e7-ab873a8c1607.png";
-const equipmentImage = "/lovable-uploads/3ab17510-5dff-40b7-a479-958a764828e4.png";
+import { CheckCircle, Users, Clock, Euro, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
+import teamImage from "@/assets/trust-team-wien.webp";
+import officeImage from "@/assets/trust-office-clean-wien.webp";
 
 const Trust = () => {
   const trustPoints = [
@@ -12,12 +13,22 @@ const Trust = () => {
     {
       icon: <Users className="w-8 h-8 text-primary" />,
       title: "Familienunternehmen aus Wien",
-      description: "seit vielen Jahren vertrauensvoll"
+      description: "seit Jahren vertrauensvoll"
     },
     {
       icon: <Clock className="w-8 h-8 text-primary" />,
-      title: "Flexible Termine & schnelle Kommunikation",
-      description: "wir passen uns Ihren Bedürfnissen an"
+      title: "Flexible Termine und schnelle Kommunikation",
+      description: "wir passen uns an"
+    },
+    {
+      icon: <Euro className="w-8 h-8 text-primary" />,
+      title: "Fixpreise nach Besichtigung",
+      description: "transparent und verbindlich"
+    },
+    {
+      icon: <Zap className="w-8 h-8 text-primary" />,
+      title: "Angebot in 24 Stunden",
+      description: "schnell und unkompliziert"
     }
   ];
 
@@ -50,26 +61,40 @@ const Trust = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="relative overflow-hidden rounded-lg shadow-medium">
+            <Link 
+              to="/kontakt?utm_source=lp&utm_medium=tile&utm_campaign=trust&utm_content=team"
+              className="relative overflow-hidden rounded-2xl shadow-medium group cursor-pointer"
+            >
               <img 
-                src={chefImage} 
-                alt="Nikola Miloradovic - Chef der Reinigungsfirma Wien - direkter Ansprechpartner"
-                className="w-full h-64 object-cover"
+                src={teamImage} 
+                alt="Team bei Reinigungstermin in Wien mit Ausweis"
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+                srcSet={`${teamImage} 480w, ${teamImage} 768w, ${teamImage} 1280w`}
+                sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1280px"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                <p className="text-white text-sm font-medium">Direkter Kontakt mit dem Chef</p>
+              <div className="absolute bottom-0 left-0 right-0 bg-primary/30 backdrop-blur-sm p-4 rounded-2xl">
+                <p className="text-white text-sm font-semibold">Rückruf in 24h</p>
+                <p className="text-white text-xs">Direkter Kontakt mit dem Chef</p>
               </div>
-            </div>
-            <div className="relative overflow-hidden rounded-lg shadow-medium">
+            </Link>
+            <Link 
+              to="/kontakt?utm_source=lp&utm_medium=tile&utm_campaign=trust&utm_content=office"
+              className="relative overflow-hidden rounded-2xl shadow-medium group cursor-pointer"
+            >
               <img 
-                src={equipmentImage} 
-                alt="Hydranten Kontrolle und Reinigung Wien - professioneller Hausmeisterservice"
-                className="w-full h-64 object-cover"
+                src={officeImage} 
+                alt="Sauberes Büro nach Reinigung in Wien"
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+                srcSet={`${officeImage} 480w, ${officeImage} 768w, ${officeImage} 1280w`}
+                sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1280px"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                <p className="text-white text-sm font-medium">Wir achten auf jedes Detail</p>
+              <div className="absolute bottom-0 left-0 right-0 bg-primary/30 backdrop-blur-sm p-4 rounded-2xl">
+                <p className="text-white text-sm font-semibold">Fixpreis nach Besichtigung</p>
+                <p className="text-white text-xs">Transparent und verbindlich</p>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
