@@ -56,13 +56,19 @@ const Trust = () => {
                 alt="Nikola Miloradovic - Chef der Reinigungsfirma Wien - direkter Ansprechpartner"
                 className="w-full h-64 object-cover"
               />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <p className="text-white text-sm font-medium">Direkter Kontakt mit dem Chef</p>
+              </div>
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-medium">
               <img 
                 src={equipmentImage} 
-                alt="Professionelle Reinigungsausrüstung Wien - hochwertige Geräte und Materialien"
+                alt="Hydranten Kontrolle und Reinigung Wien - professioneller Hausmeisterservice"
                 className="w-full h-64 object-cover"
               />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <p className="text-white text-sm font-medium">Hydranten-Kontrolle & Hausmeisterservice</p>
+              </div>
             </div>
           </div>
         </div>
