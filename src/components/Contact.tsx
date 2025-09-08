@@ -251,7 +251,7 @@ const Contact = () => {
                   Öffnungszeiten
                 </h3>
                 <div className="text-foreground">
-                  <p className="font-medium">Mo–Fr: 05:00–19:00 Uhr</p>
+                  <p className="font-medium">Mo-Fr: 05:00-19:00 Uhr</p>
                   <p className="text-muted-foreground mt-2">
                     Termine nach Vereinbarung auch außerhalb der Öffnungszeiten möglich
                   </p>

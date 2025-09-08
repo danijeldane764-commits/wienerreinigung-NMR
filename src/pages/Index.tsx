@@ -15,7 +15,7 @@ const Index = () => {
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professionelle Reinigungsfirma in Wien – Hausbetreuung, Fensterreinigung, Industriekletterer, Gartenpflege. Direkter Kontakt mit dem Chef. Angebot in 24h.');
+      metaDescription.setAttribute('content', 'Professionelle Reinigungsfirma in Wien - Hausbetreuung, Fensterreinigung, Industriekletterer, Gartenpflege. Direkter Kontakt mit dem Chef. Angebot in 24h.');
     }
   }, []);
 

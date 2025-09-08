@@ -12,7 +12,7 @@ const Footer = () => {
             </h3>
             <p className="text-primary-foreground/80 mb-4">
               Professionelle Reinigungsdienstleistungen in Wien und Umgebung. 
-              Direkter Kontakt mit dem Chef – keine Hotline.
+              Direkter Kontakt mit dem Chef - keine Hotline.
             </p>
           </div>
 
@@ -60,7 +60,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Öffnungszeiten</h4>
             <p className="text-primary-foreground/90 mb-4">
-              Mo–Fr: 05:00–19:00 Uhr
+              Mo-Fr: 05:00-19:00 Uhr
             </p>
             
             <div className="space-y-2">
