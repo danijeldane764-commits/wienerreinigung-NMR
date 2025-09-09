@@ -59,8 +59,17 @@ const Trust = () => {
             ))}
           </div>
 
-          {/* Company Logo */}
-          <div className="flex justify-center">
+          {/* Company Logo with Persuasive Text */}
+          <div className="flex flex-col items-center space-y-6">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-foreground mb-2">
+                Direkter Kontakt mit dem Chef
+              </h3>
+              <p className="text-muted-foreground text-lg">
+                Kein Callcenter – sprechen Sie direkt mit Nikola Miloradovic
+              </p>
+            </div>
+            
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-medium">
               <img 
                 src={logoImage} 
@@ -69,6 +78,15 @@ const Trust = () => {
                 loading="lazy"
                 decoding="async"
               />
+            </div>
+            
+            <div className="text-center">
+              <p className="text-foreground font-semibold text-lg mb-1">
+                ✓ Persönliche Beratung garantiert
+              </p>
+              <p className="text-muted-foreground">
+                Ihr Vertrauen ist unsere Priorität
+              </p>
             </div>
           </div>
         </div>
