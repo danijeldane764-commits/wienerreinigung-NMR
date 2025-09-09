@@ -1,7 +1,6 @@
 import { CheckCircle, Users, Clock, Euro, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
-import teamImage from "@/assets/trust-team-wien.webp";
-import inspectionImage from "@/assets/trust-besichtigung-wien.webp";
+import logoImage from "/lovable-uploads/1749d45b-8d40-4eac-a729-4c7021371753.png";
 
 const Trust = () => {
   const trustPoints = [
@@ -60,47 +59,16 @@ const Trust = () => {
             ))}
           </div>
 
-          {/* Proof Gallery */}
-          <div className="space-y-4 md:space-y-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
-              <a 
-                href="tel:+436677680897?utm_source=lp&utm_medium=tile&utm_campaign=trust&utm_content=rueckruf"
-                className="relative overflow-hidden rounded-2xl shadow-medium group cursor-pointer block"
-                aria-label="Rückruf in 24 Stunden per Telefon starten"
-              >
-                <img 
-                  src={teamImage} 
-                  alt="Team von Nikola Miloradovic Reinigung bei Kundentermin in Wien und Umgebung"
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                  decoding="async"
-                  srcSet={`${teamImage} 480w, ${teamImage} 768w, ${teamImage} 1280w`}
-                  sizes="(max-width: 480px) 480px, (max-width: 768px) 384px, 640px"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-primary/30 backdrop-blur-sm p-4 rounded-2xl">
-                  <p className="text-white text-sm font-semibold">Rückruf in 24 Stunden</p>
-                  <p className="text-white text-xs">Direkter Kontakt mit dem Chef</p>
-                </div>
-              </a>
-              <Link 
-                to="/kontakt#formular?utm_source=lp&utm_medium=tile&utm_campaign=trust&utm_content=fixpreis"
-                className="relative overflow-hidden rounded-2xl shadow-medium group cursor-pointer"
-                aria-label="Fixpreis nach Besichtigung anfragen"
-              >
-                <img 
-                  src={inspectionImage} 
-                  alt="Objektbesichtigung in Wien und Umgebung für Fixpreis"
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                  decoding="async"
-                  srcSet={`${inspectionImage} 480w, ${inspectionImage} 768w, ${inspectionImage} 1280w`}
-                  sizes="(max-width: 480px) 480px, (max-width: 768px) 384px, 640px"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-primary/30 backdrop-blur-sm p-4 rounded-2xl">
-                  <p className="text-white text-sm font-semibold">Fixpreis nach Besichtigung</p>
-                  <p className="text-white text-xs">Transparent und verbindlich</p>
-                </div>
-              </Link>
+          {/* Company Logo */}
+          <div className="flex justify-center">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-medium">
+              <img 
+                src={logoImage} 
+                alt="Nikola Miloradovic Reinigung Logo - Professionelle Reinigungsfirma in Wien und Umgebung"
+                className="w-full max-w-sm mx-auto object-contain"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </div>
         </div>
