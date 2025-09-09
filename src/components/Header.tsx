@@ -1,27 +1,4 @@
 import { Phone, MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
-
-const handleCall = () => {
-  // Track call event if gtag is available
-  if (typeof window !== 'undefined' && (window as any).gtag) {
-    (window as any).gtag('event', 'anrufen_click', {
-      event_category: 'engagement',
-      event_label: 'header'
-    });
-  }
-  window.location.href = "tel:+436677680897";
-};
-
-const handleWhatsApp = () => {
-  // Track WhatsApp event if gtag is available
-  if (typeof window !== 'undefined' && (window as any).gtag) {
-    (window as any).gtag('event', 'whatsapp_click', {
-      event_category: 'engagement', 
-      event_label: 'header'
-    });
-  }
-  window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20ich%20brauche%20Unterstützung%20bei%20einer%20Reinigung%20in%20Wien", "_blank", "noopener");
-};
 
 const Header = () => {
   return (
@@ -41,24 +18,40 @@ const Header = () => {
             </div>
           </div>
           <div className="flex space-x-4">
-            <Button 
-              variant="outline" 
-              size="sm"
-              onClick={handleCall}
-              className="flex items-center space-x-2"
+            <a 
+              href="tel:+436677680897"
+              className="inline-flex items-center space-x-2 px-3 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground text-sm font-medium rounded-md transition-colors"
+              aria-label="Anruf mit Nikola Miloradovic starten"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'anrufen_click', {
+                    event_category: 'engagement',
+                    event_label: 'header'
+                  });
+                }
+              }}
             >
               <Phone className="w-4 h-4" />
               <span>Anrufen</span>
-            </Button>
-            <Button 
-              variant="whatsapp" 
-              size="sm"
-              onClick={handleWhatsApp}
-              className="flex items-center space-x-2"
+            </a>
+            <a 
+              href="https://wa.me/436677680897?text=Hallo%20Nikola,%20ich%20brauche%20Unterst%C3%BCtzung%20bei%20einer%20Reinigung%20in%20Wien"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 px-3 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium rounded-md transition-colors"
+              aria-label="WhatsApp Chat mit Nikola Miloradovic starten"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'whatsapp_click', {
+                    event_category: 'engagement', 
+                    event_label: 'header'
+                  });
+                }
+              }}
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp</span>
-            </Button>
+            </a>
           </div>
         </div>
       </header>
@@ -78,24 +71,38 @@ const Header = () => {
             </div>
           </div>
           <div className="flex space-x-3">
-            <Button 
-              variant="outline" 
-              size="icon"
-              onClick={handleCall}
-              className="h-11 w-11"
-              aria-label="Anrufen"
+            <a 
+              href="tel:+436677680897"
+              className="inline-flex items-center justify-center h-11 w-11 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md transition-colors"
+              aria-label="Anruf mit Nikola Miloradovic starten"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'anrufen_click', {
+                    event_category: 'engagement',
+                    event_label: 'header'
+                  });
+                }
+              }}
             >
               <Phone className="w-5 h-5" />
-            </Button>
-            <Button 
-              variant="whatsapp" 
-              size="icon"
-              onClick={handleWhatsApp}
-              className="h-11 w-11"
-              aria-label="WhatsApp"
+            </a>
+            <a 
+              href="https://wa.me/436677680897?text=Hallo%20Nikola,%20ich%20brauche%20Unterst%C3%BCtzung%20bei%20einer%20Reinigung%20in%20Wien"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center h-11 w-11 bg-green-600 hover:bg-green-700 text-white rounded-md transition-colors"
+              aria-label="WhatsApp Chat mit Nikola Miloradovic starten"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'whatsapp_click', {
+                    event_category: 'engagement', 
+                    event_label: 'header'
+                  });
+                }
+              }}
             >
               <MessageCircle className="w-5 h-5" />
-            </Button>
+            </a>
           </div>
         </div>
       </header>

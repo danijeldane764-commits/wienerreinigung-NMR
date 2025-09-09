@@ -13,9 +13,9 @@ const Datenschutz = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">Kontaktaufnahme</h2>
             <p className="text-muted-foreground">
-              Wenn Sie per Formular, Telefon oder WhatsApp Kontakt mit uns aufnehmen, werden Ihre 
-              angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen 
-              bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+              Wenn Sie per Telefon oder WhatsApp Kontakt mit uns aufnehmen, verarbeiten wir Ihre 
+              Angaben zur Bearbeitung der Anfrage und für Anschlussfragen. Diese Daten geben wir 
+              nicht ohne Ihre Einwilligung weiter.
             </p>
           </section>
 
