@@ -1,4 +1,4 @@
-import { CheckCircle, Users, Clock, Euro, Zap } from "lucide-react";
+import { CheckCircle, Users, Clock, Euro, Zap } from "lucide-react"; // Fixed cache issue
 import { Link } from "react-router-dom";
 import logoImage from "/lovable-uploads/1749d45b-8d40-4eac-a729-4c7021371753.png";
 
