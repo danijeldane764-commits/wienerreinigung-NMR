@@ -31,7 +31,7 @@ const Header = () => {
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/d9151b04-4c28-4547-a790-3a4f8ea9b0f4.png" 
+              src="/lovable-uploads/77c39513-a24a-4fbe-b702-c83164cdf492.png" 
               alt="Nikola Miloradovic Reinigung Logo"
               className="h-10 w-auto object-contain"
               loading="eager"
@@ -68,7 +68,7 @@ const Header = () => {
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/d9151b04-4c28-4547-a790-3a4f8ea9b0f4.png" 
+              src="/lovable-uploads/77c39513-a24a-4fbe-b702-c83164cdf492.png" 
               alt="Nikola Miloradovic Reinigung Logo"
               className="h-8 w-auto object-contain"
               loading="eager"

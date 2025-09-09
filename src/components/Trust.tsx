@@ -1,6 +1,5 @@
 import { CheckCircle, Users, Clock, Euro, Zap } from "lucide-react"; // Fixed cache issue
 import { Link } from "react-router-dom";
-import logoImage from "/lovable-uploads/1749d45b-8d40-4eac-a729-4c7021371753.png";
 
 const Trust = () => {
   const trustPoints = [
@@ -72,7 +71,7 @@ const Trust = () => {
             
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-medium">
               <img 
-                src="/lovable-uploads/d9151b04-4c28-4547-a790-3a4f8ea9b0f4.png" 
+                src="/lovable-uploads/77c39513-a24a-4fbe-b702-c83164cdf492.png" 
                 alt="Nikola Miloradovic Reinigung Logo - Professionelle Reinigungsfirma in Wien und Umgebung"
                 className="w-full max-w-sm mx-auto object-contain"
                 loading="lazy"
