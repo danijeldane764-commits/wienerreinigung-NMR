@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/lovable-uploads/d198cf79-0e72-42d0-af25-b51626d33f7b.png" 
+                src="/lovable-uploads/d9151b04-4c28-4547-a790-3a4f8ea9b0f4.png" 
                 alt="Nikola Miloradovic Reinigung Logo"
                 className="h-12 w-auto object-contain brightness-0 invert"
                 loading="lazy"

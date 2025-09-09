@@ -72,7 +72,7 @@ const Trust = () => {
             
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-medium">
               <img 
-                src="/lovable-uploads/d198cf79-0e72-42d0-af25-b51626d33f7b.png" 
+                src="/lovable-uploads/d9151b04-4c28-4547-a790-3a4f8ea9b0f4.png" 
                 alt="Nikola Miloradovic Reinigung Logo - Professionelle Reinigungsfirma in Wien und Umgebung"
                 className="w-full max-w-sm mx-auto object-contain"
                 loading="lazy"
