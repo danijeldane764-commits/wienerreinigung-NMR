@@ -65,7 +65,7 @@ const Trust = () => {
                 Direkter Kontakt mit dem Chef
               </h3>
               <p className="text-muted-foreground text-lg">
-                Kein Callcenter – sprechen Sie direkt mit Nikola Miloradovic
+                Kein Callcenter - sprechen Sie direkt mit Nikola Miloradovic
               </p>
             </div>
             
