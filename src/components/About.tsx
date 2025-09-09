@@ -8,7 +8,7 @@ const About = () => {
           </h2>
           <div className="text-lg text-muted-foreground leading-relaxed space-y-6">
             <p>
-              Wir sind ein Familienunternehmen aus Wien und Umgebung. Bei uns sprechen Sie direkt mit dem Chef. 
+              Wir sind ein Familienunternehmen aus Wien. Bei uns sprechen Sie direkt mit dem Chef. 
               Nach einer kurzen Besichtigung erhalten Sie einen Fixpreis. Wir arbeiten pünktlich, 
               sauber und zuverlässig.
             </p>
