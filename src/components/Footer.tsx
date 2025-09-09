@@ -7,9 +7,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">
-              Nikola Miloradovic Reinigung
-            </h3>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="/lovable-uploads/d198cf79-0e72-42d0-af25-b51626d33f7b.png" 
+                alt="Nikola Miloradovic Reinigung Logo"
+                className="h-12 w-auto object-contain brightness-0 invert"
+                loading="lazy"
+              />
+              <h3 className="text-2xl font-bold">
+                Nikola Miloradovic Reinigung
+              </h3>
+            </div>
             <p className="text-primary-foreground/80 mb-4">
               Professionelle Reinigungsdienstleistungen in Wien und Umgebung. 
               Direkter Kontakt mit dem Chef - keine Hotline.

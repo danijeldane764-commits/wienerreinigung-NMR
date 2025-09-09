@@ -29,8 +29,16 @@ const Header = () => {
       {/* Desktop Header */}
       <header className="hidden md:block bg-white shadow-sm border-b border-border py-4">
         <div className="container mx-auto px-6 flex justify-between items-center">
-          <div className="text-xl font-bold text-foreground">
-            Nikola Miloradovic Reinigung
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/d198cf79-0e72-42d0-af25-b51626d33f7b.png" 
+              alt="Nikola Miloradovic Reinigung Logo"
+              className="h-10 w-auto object-contain"
+              loading="eager"
+            />
+            <div className="text-xl font-bold text-foreground">
+              Nikola Miloradovic Reinigung
+            </div>
           </div>
           <div className="flex space-x-4">
             <Button 
@@ -58,8 +66,16 @@ const Header = () => {
       {/* Mobile Sticky Header */}
       <header className="md:hidden fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b border-border py-3">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <div className="text-sm font-bold text-foreground">
-            Nikola Miloradovic
+          <div className="flex items-center space-x-2">
+            <img 
+              src="/lovable-uploads/d198cf79-0e72-42d0-af25-b51626d33f7b.png" 
+              alt="Nikola Miloradovic Reinigung Logo"
+              className="h-8 w-auto object-contain"
+              loading="eager"
+            />
+            <div className="text-sm font-bold text-foreground">
+              Nikola Miloradovic
+            </div>
           </div>
           <div className="flex space-x-3">
             <Button 
