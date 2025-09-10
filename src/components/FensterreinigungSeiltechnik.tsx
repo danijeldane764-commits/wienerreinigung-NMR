@@ -60,7 +60,7 @@ const FensterreinigungSeiltechnik = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
-              variant="default"
+              variant="whatsapp"
               size="lg"
               onClick={handleWhatsApp}
               className="w-full sm:w-auto text-lg px-8 py-4"
@@ -69,7 +69,7 @@ const FensterreinigungSeiltechnik = () => {
               Per WhatsApp anfragen
             </Button>
             <Button 
-              variant="outline"
+              variant="default"
               size="lg"
               onClick={handleCall}
               className="w-full sm:w-auto text-lg px-8 py-4"
