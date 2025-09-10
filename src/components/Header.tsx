@@ -17,6 +17,26 @@ const Header = () => {
               Nikola Miloradovic Reinigung
             </div>
           </div>
+          
+          {/* Navigation */}
+          <nav className="hidden lg:flex items-center space-x-6">
+            <a href="#hausbetreuung" className="text-foreground hover:text-primary transition-colors">
+              Hausbetreuung
+            </a>
+            <a href="#fensterreinigung" className="text-foreground hover:text-primary transition-colors">
+              Fensterreinigung
+            </a>
+            <a href="#fensterreinigung-seiltechnik" className="text-foreground hover:text-primary transition-colors">
+              Fensterreinigung mit Seiltechnik
+            </a>
+            <a href="#about" className="text-foreground hover:text-primary transition-colors">
+              Über uns
+            </a>
+            <a href="#contact" className="text-foreground hover:text-primary transition-colors">
+              Kontakt
+            </a>
+          </nav>
+          
           <div className="flex space-x-4">
             <a 
               href="tel:+436677680897"

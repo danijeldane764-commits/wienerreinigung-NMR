@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import officeImage from "@/assets/trust-office-clean-wien.webp";
-import housekeepingImage from "/lovable-uploads/d9151b04-4c28-4547-a790-3a4f8ea9b0f4.png";
-import industrialImage from "/lovable-uploads/2968d653-8df3-4f3a-9f08-31f4fe09bbff.png";
-import windowImage from "/lovable-uploads/818022c4-db32-49ef-b0ab-3aba1ac3598c.png";
+import housekeepingImage from "@/assets/s-hausbetreuung-wien.webp";
+import windowImage from "@/assets/s-fensterreinigung-wien.webp";
+import ropeTechImage from "@/assets/s-seiltechnik-fensterreinigung-wien.webp";
 
 const handleContactScroll = () => {
   const contactSection = document.getElementById('contact');
@@ -15,32 +14,30 @@ const handleContactScroll = () => {
 const Services = () => {
   const featuredServices = [
     {
-      title: "Büroreinigung Wien und Umgebung",
-      description: "Gründliche Büros, pünktlich vor Ort, keine Störung im Arbeitsalltag",
-      image: officeImage,
-      alt: "Büroreinigung in Wien und Umgebung"
-    },
-    {
-      title: "Hausbetreuung Wien und Umgebung", 
-      description: "Rundum-Service für Wohnanlagen und Objekte, zuverlässig in Wien und Umgebung",
+      title: "Hausbetreuung Wien",
+      description: "Rundum Service für Wohnanlagen und Objekte",
       image: housekeepingImage,
-      alt: "Hausbetreuung in Wien und Umgebung"
+      alt: "Hausbetreuung in Wien",
+      link: "#hausbetreuung"
     },
     {
-      title: "Industriekletterer Wien und Umgebung",
-      description: "Sichere Seiltechnik für schwer zugängliche Fassaden",
-      image: industrialImage,
-      alt: "Industriekletterer in Wien und Umgebung"
-    },
-    {
-      title: "Fensterreinigung Wien und Umgebung",
-      description: "Streifenfrei bis zur Kante, innen und außen",
+      title: "Fensterreinigung Wien",
+      description: "Streifenfrei innen und außen",
       image: windowImage,
-      alt: "Fensterreinigung in Wien und Umgebung"
+      alt: "Fensterreinigung in Wien", 
+      link: "#fensterreinigung"
+    },
+    {
+      title: "Fensterreinigung mit Seiltechnik",
+      description: "Sicher für schwer zugängliche Fenster in oberen Etagen",
+      image: ropeTechImage,
+      alt: "Seiltechnik für schwer zugängliche Fenster in Wien",
+      link: "#fensterreinigung-seiltechnik"
     }
   ];
 
   const additionalServices = [
+    "Büroreinigung",
     "Bauendreinigung",
     "Winterdienst", 
     "Entrümpelung",
@@ -52,17 +49,21 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Unsere Leistungen
+            Unsere Schwerpunkte in Wien
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Saubere Ergebnisse, klare Abläufe, transparente Kommunikation
           </p>
         </div>
 
-        {/* Featured Services Grid - 2x2 Desktop, 1x4 Mobile */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        {/* Featured Services Grid - 3 Services */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {featuredServices.map((service, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg bg-card">
+            <a 
+              key={index} 
+              href={service.link}
+              className="group relative overflow-hidden rounded-2xl shadow-lg bg-card hover:shadow-xl transition-all duration-300"
+            >
               <div className="aspect-video overflow-hidden">
                 <img 
                   src={service.image} 
@@ -71,7 +72,7 @@ const Services = () => {
                   loading="lazy"
                   decoding="async"
                   srcSet={`${service.image} 480w, ${service.image} 768w, ${service.image} 1280w`}
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <div className="p-6">
@@ -82,14 +83,14 @@ const Services = () => {
                   {service.description}
                 </p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
         {/* Additional Services */}
         <div className="text-center mb-8">
           <h3 className="text-xl font-semibold text-foreground mb-4">
-            Zusatzleistungen
+            Weitere Leistungen
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {additionalServices.map((service, index) => (

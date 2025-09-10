@@ -5,28 +5,28 @@ const Trust = () => {
   const trustPoints = [
     {
       icon: <CheckCircle className="w-8 h-8 text-primary" />,
-      title: "Direkter Kontakt mit dem Chef",
-      description: "keine Hotline"
-    },
-    {
-      icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Familienunternehmen aus Wien und Umgebung",
-      description: "seit Jahren vertrauensvoll"
-    },
-    {
-      icon: <Clock className="w-8 h-8 text-primary" />,
-      title: "Flexible Termine und schnelle Kommunikation",
-      description: "wir passen uns an"
+      title: "Direkter Kontakt mit dem Chef - keine Hotline",
+      description: ""
     },
     {
       icon: <Euro className="w-8 h-8 text-primary" />,
-      title: "Fixpreise nach Besichtigung",
-      description: "transparent und verbindlich"
+      title: "Fixpreis nach persönlicher Besichtigung durch den Chef - transparent und verbindlich",
+      description: ""
     },
     {
       icon: <Zap className="w-8 h-8 text-primary" />,
-      title: "Angebot in 24 Stunden",
-      description: "schnell und unkompliziert"
+      title: "Angebot in 24 Stunden - schnell und unkompliziert",
+      description: ""
+    },
+    {
+      icon: <Clock className="w-8 h-8 text-primary" />,
+      title: "Flexible Termine und leise im Betrieb",
+      description: ""
+    },
+    {
+      icon: <Users className="w-8 h-8 text-primary" />,
+      title: "Familienunternehmen aus Wien",
+      description: ""
     }
   ];
 
@@ -35,7 +35,7 @@ const Trust = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Warum wir die richtige Reinigungsfirma in Wien und Umgebung sind
+            Warum wir
           </h2>
         </div>
 
@@ -50,9 +50,11 @@ const Trust = () => {
                   <h3 className="text-xl font-semibold text-foreground mb-2">
                     {point.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {point.description}
-                  </p>
+                  {point.description && (
+                    <p className="text-muted-foreground">
+                      {point.description}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
