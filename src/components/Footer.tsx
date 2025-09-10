@@ -9,9 +9,9 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/lovable-uploads/77c39513-a24a-4fbe-b702-c83164cdf492.png" 
+                src="/lovable-uploads/136a23ba-c861-4ddc-bfa0-27d99a618697.png" 
                 alt="Nikola Miloradovic Reinigung Logo"
-                className="h-12 w-auto object-contain brightness-0 invert"
+                className="h-12 w-auto object-contain"
                 loading="lazy"
               />
               <h3 className="text-2xl font-bold">
