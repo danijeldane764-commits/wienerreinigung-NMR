@@ -92,10 +92,6 @@ const Hero = () => {
               <p className="text-body opacity-90">❌ <strong>Haushalt:</strong> Putzfirma unpünktlich, schlampig, plötzlich Sonderkosten</p>
             </div>
           </div>
-          
-          <div className="text-center mb-8">
-            <p className="text-body-large mb-4">Kunden sagen nach dem Wechsel:</p>
-          </div>
         </div>
         
         {/* CTA Buttons - Second Set */}
