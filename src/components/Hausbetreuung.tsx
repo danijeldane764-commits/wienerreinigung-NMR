@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Phone, MessageCircle } from "lucide-react";
+import hausbetreungImage from "@/assets/s-hausbetreuung-wien.webp";
 
 const Hausbetreuung = () => {
   const benefits = [
@@ -15,7 +16,7 @@ const Hausbetreuung = () => {
         event_label: 'cashcow_section'
       });
     }
-    window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20ich%20brauche%20Hausbetreuung%20in%20Wien%20und%20m%C3%B6chte%20einen%20Fixpreis", "_blank");
+    window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20Chef-Besichtigung%20f%C3%BCr%20Hausbetreuung%20in%20Wien.%20Wunschtermin:%20[Datum/Uhrzeit].", "_blank");
   };
 
   const handleCall = () => {
@@ -29,46 +30,59 @@ const Hausbetreuung = () => {
   };
 
   return (
-    <section id="hausbetreuung" className="py-16 bg-background">
+    <section id="hausbetreuung" className="py-16 md:py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Hausbetreuung Wien - zuverlässig, planbar, Fixpreis
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Chef Besichtigung vor Ort, danach Fixpreis. Stiegenhaus, Außenflächen, Müll, kleine Wartungen.
-          </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          {/* Content */}
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Hausbetreuung Wien - zuverlässig, planbar, Fixpreis
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              Chef kommt kurz zur Besichtigung, danach steht der Fixpreis. Stiegenhaus, Außenflächen, Müll, kleine Wartungen.
+            </p>
 
-          {/* Benefits */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-center justify-center space-x-3">
-                <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-foreground font-medium">{benefit}</span>
-              </div>
-            ))}
+            {/* Benefits */}
+            <div className="space-y-4 mb-10">
+              {benefits.map((benefit, index) => (
+                <div key={index} className="flex items-center space-x-3">
+                  <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
+                  <span className="text-foreground font-medium text-lg">{benefit}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button 
+                variant="whatsapp"
+                size="lg"
+                onClick={handleWhatsApp}
+                className="w-full sm:w-auto text-lg px-8 py-4"
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                Per WhatsApp anfragen
+              </Button>
+              <Button 
+                variant="default"
+                size="lg"
+                onClick={handleCall}
+                className="w-full sm:w-auto text-lg px-8 py-4"
+              >
+                <Phone className="w-5 h-5 mr-2" />
+                Jetzt anrufen
+              </Button>
+            </div>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              variant="whatsapp"
-              size="lg"
-              onClick={handleWhatsApp}
-              className="w-full sm:w-auto text-lg px-8 py-4"
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              Per WhatsApp anfragen
-            </Button>
-            <Button 
-              variant="default"
-              size="lg"
-              onClick={handleCall}
-              className="w-full sm:w-auto text-lg px-8 py-4"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              Jetzt anrufen
-            </Button>
+          {/* Image */}
+          <div className="lg:order-last">
+            <img 
+              src={hausbetreungImage}
+              alt="Hausbetreuung in Wien"
+              className="w-full h-auto rounded-lg shadow-lg"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
