@@ -39,32 +39,48 @@ const Hero = () => {
           Sauberkeit ohne Ausreden : für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen und Haushalte in Wien
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
-          Direkt beim Chef anrufen. Kein Callcenter. Fairer Fixpreis. Versichert.
+          Wenn du bei mir anrufst, geh ich selbst ran. Kein Callcenter, keine Ausreden. Ich komm vorbei, schau mir dein Objekt an und sag dir gleich, was Sache ist : ein fairer Fixpreis, versichert und ehrlich.
         </p>
         
-        {/* Pain Points */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-4xl mx-auto text-left">
-          <div className="flex items-center space-x-3">
-            <X className="w-5 h-5 text-red-400 flex-shrink-0" />
-            <span className="text-lg opacity-90">Stiegenhaus stinkt trotz Reinigung</span>
+        {/* Pain Block */}
+        <div className="mb-8 max-w-4xl mx-auto text-left">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
+            Weißt du, was ich jede Woche höre?
+          </h2>
+          
+          <div className="space-y-6 mb-8">
+            <div className="bg-white/10 rounded-lg p-6">
+              <p className="text-lg mb-2 font-medium">Eine Hausverwaltung :</p>
+              <p className="text-lg opacity-90">"Die Mieter zerreißen mich, weil das Stiegenhaus nach der Reinigung immer noch stinkt – und die Putzfirma behauptet, sie war schon da."</p>
+            </div>
+            
+            <div className="bg-white/10 rounded-lg p-6">
+              <p className="text-lg mb-2 font-medium">Ein Anwalt :</p>
+              <p className="text-lg opacity-90">"Ich lad Klienten ein, und das Erste, was die sehen, sind Schlieren am Glas. Einfach nur peinlich."</p>
+            </div>
+            
+            <div className="bg-white/10 rounded-lg p-6">
+              <p className="text-lg mb-2 font-medium">Ein Bauleiter :</p>
+              <p className="text-lg opacity-90">"Endreinigung fertig hieß es – und bei der Abnahme war Staub und Zementschlieren überall. Ich stand da wie ein Trottel."</p>
+            </div>
+            
+            <div className="bg-white/10 rounded-lg p-6">
+              <p className="text-lg opacity-90">Und Haushalte? Immer dasselbe : unpünktlich, schlampig, plötzlich Sonderkosten.</p>
+            </div>
           </div>
-          <div className="flex items-center space-x-3">
-            <X className="w-5 h-5 text-red-400 flex-shrink-0" />
-            <span className="text-lg opacity-90">Schlieren in der Kanzlei - peinlich vor Mandanten</span>
-          </div>
-          <div className="flex items-center space-x-3">
-            <X className="w-5 h-5 text-red-400 flex-shrink-0" />
-            <span className="text-lg opacity-90">Bauabnahme scheitert an Staub & Schlieren</span>
-          </div>
-          <div className="flex items-center space-x-3">
-            <X className="w-5 h-5 text-red-400 flex-shrink-0" />
-            <span className="text-lg opacity-90">Putzfirma kommt zu spät oder verrechnet Sonderkosten</span>
+          
+          <div className="text-center mb-6">
+            <p className="text-xl md:text-2xl font-bold mb-4">Genau deswegen mach ich's anders.</p>
+            <p className="text-xl md:text-2xl mb-4">Und weißt du, was mir Kunden am häufigsten sagen?</p>
+            <p className="text-xl md:text-2xl font-medium italic">"Nikola, seit du da bist, ruft keiner mehr an zum Schimpfen."</p>
           </div>
         </div>
 
-        {/* Customer Testimonial */}
-        <div className="mb-8 text-xl md:text-2xl font-medium italic max-w-3xl mx-auto">
-          „Nikola, seit du da bist, ruft keiner mehr an zum Schimpfen."
+        {/* CTA Block */}
+        <div className="mb-8 max-w-4xl mx-auto text-center">
+          <p className="text-xl md:text-2xl mb-4">So läuft's : ruf mich direkt an oder schick mir eine WhatsApp. Dauert keine Minute.</p>
+          <p className="text-xl md:text-2xl mb-6">Du bekommst ein Angebot, kostenlos und glasklar. Wenn's passt, starten wir sofort.</p>
+          <p className="text-lg mb-8 opacity-90">Aber ehrlich : ich nehm nur so viele Kunden, wie ich selbst im Griff hab. Lieber weniger Objekte – dafür alle richtig sauber, und jeder zufrieden.</p>
         </div>
         
         {/* CTA Buttons */}
@@ -76,7 +92,7 @@ const Hero = () => {
             className="w-full sm:w-auto text-lg px-8 py-4"
           >
             <Phone className="w-5 h-5 mr-2" />
-            📞 Jetzt direkt mit dem Chef reden
+            📞 Genug geärgert – ruf mich jetzt an
           </Button>
           <Button 
             variant="whatsapp" 
@@ -85,7 +101,7 @@ const Hero = () => {
             className="w-full sm:w-auto text-lg px-8 py-4"
           >
             <MessageCircle className="w-5 h-5 mr-2" />
-            💬 WhatsApp in 1 Minute - Angebot sichern
+            💬 Schreib mir schnell – dauert keine Minute
           </Button>
         </div>
 
