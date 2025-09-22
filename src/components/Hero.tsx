@@ -112,7 +112,7 @@ const Hero = () => {
             className="w-full sm:w-auto text-lg px-8 py-4"
           >
             <MessageCircle className="w-5 h-5 mr-2" />
-            💬 Schreib mir schnell - dauert 1 Minute
+            💬 WhatsApp, dauert keine Minute
           </Button>
         </div>
 
