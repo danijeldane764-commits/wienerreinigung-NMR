@@ -93,10 +93,6 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="text-center mb-4">
-            <p className="text-h3 font-medium italic">"Seit du da bist, ruft keiner mehr an zum Schimpfen."</p>
-          </div>
-          
           <div className="text-center mb-8">
             <p className="text-body-large mb-4">Kunden sagen nach dem Wechsel:</p>
           </div>
