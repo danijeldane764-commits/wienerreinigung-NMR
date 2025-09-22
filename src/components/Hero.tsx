@@ -24,98 +24,52 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-[85vh] flex items-center justify-center pt-20 md:pt-16">
+    <section className="relative h-[80vh] flex items-center justify-center">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.3)' }}></div>
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center text-white py-16 md:py-20">
-        <h1 className="text-hero mb-6 max-w-5xl mx-auto">
-          Sauberkeit ohne Ausreden : für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen und Haushalte in Wien
-        </h1>
-        <p className="text-body-large mb-4 max-w-4xl mx-auto opacity-95">
-          Direkt beim Chef anrufen. Kein Callcenter. Fixpreis. Versichert.
-        </p>
-        
-        {/* Micro Proof */}
-        <div className="text-small opacity-90 mb-8">
-          Aus Wien • Familienunternehmen • Besichtigung meist innerhalb von 24 Stunden
-        </div>
-        
-        {/* CTA Buttons - First Set */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button 
-            variant="default" 
-            size="lg" 
-            onClick={handleCall}
-            className="w-full sm:w-auto text-button-large px-8 py-4"
-          >
-            <Phone className="w-5 h-5 mr-2" />
-            📞 Jetzt direkt mit dem Chef reden
-          </Button>
-          <Button 
-            variant="whatsapp" 
-            size="lg" 
-            onClick={handleWhatsApp}
-            className="w-full sm:w-auto text-button-large px-8 py-4"
-          >
-            <MessageCircle className="w-5 h-5 mr-2" />
-            💬 WhatsApp, dauert keine Minute
-          </Button>
-        </div>
-        
-        {/* Pain Block */}
-        <div className="mb-10 max-w-4xl mx-auto">
-          <h2 className="text-h2 mb-8 text-center">
-            Kennst du das?
-          </h2>
+      <div className="relative z-10 container mx-auto px-6 text-center text-white">
+        <div className="max-w-[800px] mx-auto">
+          <h1 className="text-hero mb-6">
+            Sauberkeit ohne Ausreden : für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen und Haushalte in Wien
+          </h1>
+          <p className="text-body-large mb-6 opacity-95">
+            Direkt beim Chef anrufen. Kein Callcenter. Fixpreis. Versichert.
+          </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <p className="text-body opacity-90">❌ <strong>Hausverwaltung:</strong> Mieter beschweren sich, Stiegenhaus stinkt trotz Reinigung</p>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <p className="text-body opacity-90">❌ <strong>Kanzlei:</strong> Mandanten sehen Schlieren am Glas - peinlich</p>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <p className="text-body opacity-90">❌ <strong>Baufirma:</strong> Endreinigung "fertig", aber Staub und Zementschlieren überall</p>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <p className="text-body opacity-90">❌ <strong>Haushalt:</strong> Putzfirma unpünktlich, schlampig, plötzlich Sonderkosten</p>
-            </div>
+          {/* Micro Proof */}
+          <div className="text-small opacity-90 mb-8">
+            Aus Wien • Familienunternehmen • Besichtigung meist innerhalb von 24 Stunden
+          </div>
+          
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button 
+              variant="default" 
+              size="lg" 
+              onClick={handleCall}
+              className="w-full sm:w-auto text-button-large px-8 py-4"
+            >
+              <Phone className="w-5 h-5 mr-2" />
+              📞 Jetzt direkt mit dem Chef reden
+            </Button>
+            <Button 
+              variant="whatsapp" 
+              size="lg" 
+              onClick={handleWhatsApp}
+              className="w-full sm:w-auto text-button-large px-8 py-4"
+            >
+              <MessageCircle className="w-5 h-5 mr-2" />
+              💬 WhatsApp, dauert keine Minute
+            </Button>
           </div>
         </div>
-        
-        {/* CTA Buttons - Second Set */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <Button 
-            variant="default" 
-            size="lg" 
-            onClick={handleCall}
-            className="w-full sm:w-auto text-button-large px-8 py-4"
-          >
-            <Phone className="w-5 h-5 mr-2" />
-            📞 Genug geärgert - ruf mich jetzt an
-          </Button>
-          <Button 
-            variant="whatsapp" 
-            size="lg" 
-            onClick={handleWhatsApp}
-            className="w-full sm:w-auto text-button-large px-8 py-4"
-          >
-            <MessageCircle className="w-5 h-5 mr-2" />
-            💬 WhatsApp, dauert keine Minute
-          </Button>
-        </div>
-
       </div>
     </section>
   );

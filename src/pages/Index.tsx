@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
+import PainPoints from "@/components/PainPoints";
 import Hero from "@/components/Hero";
 import ForWhom from "@/components/ForWhom";
 import HowItWorks from "@/components/HowItWorks";
@@ -28,6 +29,7 @@ const Index = () => {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <PainPoints />
       <ForWhom />
       <HowItWorks />
       <Hausbetreuung />
