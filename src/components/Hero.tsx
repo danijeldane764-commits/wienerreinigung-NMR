@@ -24,21 +24,21 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 md:pt-16">
+    <section className="relative h-[85vh] flex items-center justify-center pt-20 md:pt-16">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-primary/30"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center text-white py-16 md:py-32">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+      <div className="relative z-10 container mx-auto px-6 text-center text-white py-16 md:py-20">
+        <h1 className="text-hero mb-6 max-w-5xl mx-auto">
           Sauberkeit ohne Ausreden : für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen und Haushalte in Wien
         </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
+        <p className="text-body-large mb-8 max-w-4xl mx-auto opacity-95">
           Direkt beim Chef anrufen. Kein Callcenter. Fixpreis. Versichert.
         </p>
         
@@ -48,7 +48,7 @@ const Hero = () => {
             variant="default" 
             size="lg" 
             onClick={handleCall}
-            className="w-full sm:w-auto text-lg px-8 py-4"
+            className="w-full sm:w-auto text-button-large px-8 py-4"
           >
             <Phone className="w-5 h-5 mr-2" />
             📞 Jetzt direkt mit dem Chef reden
@@ -57,7 +57,7 @@ const Hero = () => {
             variant="whatsapp" 
             size="lg" 
             onClick={handleWhatsApp}
-            className="w-full sm:w-auto text-lg px-8 py-4"
+            className="w-full sm:w-auto text-button-large px-8 py-4"
           >
             <MessageCircle className="w-5 h-5 mr-2" />
             💬 WhatsApp, dauert keine Minute
@@ -65,32 +65,32 @@ const Hero = () => {
         </div>
         
         {/* Pain Block */}
-        <div className="mb-8 max-w-4xl mx-auto text-left">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
+        <div className="mb-10 max-w-4xl mx-auto">
+          <h2 className="text-h2 mb-8 text-center">
             Kennst du das?
           </h2>
           
-          <div className="space-y-4 mb-8">
-            <div className="bg-white/10 rounded-lg p-6">
-              <p className="text-lg opacity-90">❌ <strong>Hausverwaltung:</strong> Mieter beschweren sich, Stiegenhaus stinkt trotz Reinigung</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+              <p className="text-body opacity-90">❌ <strong>Hausverwaltung:</strong> Mieter beschweren sich, Stiegenhaus stinkt trotz Reinigung</p>
             </div>
             
-            <div className="bg-white/10 rounded-lg p-6">
-              <p className="text-lg opacity-90">❌ <strong>Kanzlei:</strong> Mandanten sehen Schlieren am Glas - peinlich</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+              <p className="text-body opacity-90">❌ <strong>Kanzlei:</strong> Mandanten sehen Schlieren am Glas - peinlich</p>
             </div>
             
-            <div className="bg-white/10 rounded-lg p-6">
-              <p className="text-lg opacity-90">❌ <strong>Baufirma:</strong> Endreinigung "fertig", aber Staub und Zementschlieren überall</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+              <p className="text-body opacity-90">❌ <strong>Baufirma:</strong> Endreinigung "fertig", aber Staub und Zementschlieren überall</p>
             </div>
             
-            <div className="bg-white/10 rounded-lg p-6">
-              <p className="text-lg opacity-90">❌ <strong>Haushalt:</strong> Putzfirma unpünktlich, schlampig, plötzlich Sonderkosten</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+              <p className="text-body opacity-90">❌ <strong>Haushalt:</strong> Putzfirma unpünktlich, schlampig, plötzlich Sonderkosten</p>
             </div>
           </div>
           
-          <div className="text-center mb-6">
-            <p className="text-xl md:text-2xl mb-4">Kunden sagen nach dem Wechsel:</p>
-            <p className="text-xl md:text-2xl font-medium italic">"Seit du da bist, ruft keiner mehr an zum Schimpfen."</p>
+          <div className="text-center mb-8">
+            <p className="text-body-large mb-4">Kunden sagen nach dem Wechsel:</p>
+            <p className="text-h3 font-medium italic">"Seit du da bist, ruft keiner mehr an zum Schimpfen."</p>
           </div>
         </div>
         
@@ -100,7 +100,7 @@ const Hero = () => {
             variant="default" 
             size="lg" 
             onClick={handleCall}
-            className="w-full sm:w-auto text-lg px-8 py-4"
+            className="w-full sm:w-auto text-button-large px-8 py-4"
           >
             <Phone className="w-5 h-5 mr-2" />
             📞 Genug geärgert - ruf mich jetzt an
@@ -109,7 +109,7 @@ const Hero = () => {
             variant="whatsapp" 
             size="lg" 
             onClick={handleWhatsApp}
-            className="w-full sm:w-auto text-lg px-8 py-4"
+            className="w-full sm:w-auto text-button-large px-8 py-4"
           >
             <MessageCircle className="w-5 h-5 mr-2" />
             💬 WhatsApp, dauert keine Minute
@@ -117,7 +117,7 @@ const Hero = () => {
         </div>
 
         {/* Micro Proof */}
-        <div className="text-sm opacity-90">
+        <div className="text-small opacity-90">
           Aus Wien • Familienunternehmen • Besichtigung meist innerhalb von 24 Stunden
         </div>
       </div>

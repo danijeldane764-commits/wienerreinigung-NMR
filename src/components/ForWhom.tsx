@@ -25,10 +25,10 @@ const ForWhom = () => {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-background">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+          <h2 className="text-h1 text-foreground mb-12">
             Für wen wir arbeiten
           </h2>
           
@@ -38,7 +38,7 @@ const ForWhom = () => {
               <button
                 key={index}
                 onClick={() => scrollToSection(chip.target)}
-                className="bg-primary/10 text-primary px-4 py-3 rounded-lg font-medium hover:bg-primary/20 transition-colors cursor-pointer border border-primary/20"
+                className="bg-primary/10 text-primary px-4 py-3 rounded-lg text-button hover:bg-primary/20 transition-colors cursor-pointer border border-primary/20"
               >
                 {chip.label}
               </button>
@@ -49,18 +49,18 @@ const ForWhom = () => {
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
             <Button 
               variant="whatsapp"
-              size="sm"
+              size="lg"
               onClick={handleWhatsApp}
-              className="text-sm px-6 py-2"
+              className="text-button px-6 py-3"
             >
               <MessageCircle className="w-4 h-4 mr-2" />
               Per WhatsApp schreiben
             </Button>
             <Button 
               variant="outline"
-              size="sm"
+              size="lg"
               onClick={handleCall}
-              className="text-sm px-6 py-2"
+              className="text-button px-6 py-3"
             >
               <Phone className="w-4 h-4 mr-2" />
               Jetzt anrufen

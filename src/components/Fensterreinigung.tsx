@@ -30,9 +30,9 @@ const Fensterreinigung = () => {
   };
 
   return (
-    <section id="fensterreinigung" className="py-16 md:py-20 bg-muted/30">
+    <section id="fensterreinigung" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
           {/* Image */}
           <div>
             <img 
@@ -45,16 +45,16 @@ const Fensterreinigung = () => {
 
           {/* Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            <h2 className="text-h1 text-foreground mb-8">
               Fensterreinigung - glasklar, ohne Schlieren
             </h2>
             
-            <div className="mb-6">
-              <p className="text-lg text-muted-foreground mb-4">❌ Schlieren, Streifen, peinlich vor Mandanten oder bei Abnahme</p>
-              <p className="text-lg text-foreground mb-4">👉 Wir machen's glasklar: vom Bürofenster bis zur Glasfront im Hochhaus</p>
+            <div className="mb-8">
+              <p className="text-body-large text-muted-foreground mb-4">❌ Schlieren, Streifen, peinlich vor Mandanten oder bei Abnahme</p>
+              <p className="text-body-large text-foreground mb-4">👉 Wir machen's glasklar: vom Bürofenster bis zur Glasfront im Hochhaus</p>
             </div>
             
-            <blockquote className="text-xl font-medium italic text-primary mb-8">
+            <blockquote className="text-h3 font-medium italic text-primary mb-8">
               "Seit ihr die Fenster macht, sieht's hier endlich so aus, wie es aussehen soll."
             </blockquote>
 
@@ -64,7 +64,7 @@ const Fensterreinigung = () => {
                 variant="whatsapp"
                 size="lg"
                 onClick={handleWhatsApp}
-                className="w-full sm:w-auto text-lg px-8 py-4"
+                className="w-full sm:w-auto text-button-large px-8 py-4"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 📞 Fensterreinigung anfragen

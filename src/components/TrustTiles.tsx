@@ -34,10 +34,10 @@ const TrustTiles = () => {
   };
 
   return (
-    <section className="py-16 md:py-20 bg-background">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Call Tile */}
             <div 
               className="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
@@ -54,8 +54,8 @@ const TrustTiles = () => {
                 />
                 <div className="absolute inset-0 bg-primary/70 group-hover:bg-primary/80 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-6">
-                  <h3 className="text-2xl font-bold mb-2">Rückruf in 24 Stunden</h3>
-                  <p className="text-lg opacity-90">Direkter Kontakt mit dem Chef</p>
+                  <h3 className="text-h2 mb-3">Rückruf in 24 Stunden</h3>
+                  <p className="text-body-large opacity-90">Direkter Kontakt mit dem Chef</p>
                 </div>
               </div>
             </div>
@@ -76,8 +76,8 @@ const TrustTiles = () => {
                 />
                 <div className="absolute inset-0 bg-primary/70 group-hover:bg-primary/80 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-6">
-                  <h3 className="text-2xl font-bold mb-2">Fixpreis nach Besichtigung</h3>
-                  <p className="text-lg opacity-90">Persönlich durch den Chef</p>
+                  <h3 className="text-h2 mb-3">Fixpreis nach Besichtigung</h3>
+                  <p className="text-body-large opacity-90">Persönlich durch den Chef</p>
                 </div>
               </div>
             </div>

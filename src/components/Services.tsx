@@ -45,13 +45,13 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-16 bg-background">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-16">
+          <h2 className="text-h1 text-foreground mb-6">
             Unsere Schwerpunkte in Wien
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-body-large text-muted-foreground max-w-2xl mx-auto">
             Saubere Ergebnisse, klare Abläufe, transparente Kommunikation
           </p>
         </div>
@@ -76,10 +76,10 @@ const Services = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
+                <h3 className="text-h3 text-foreground mb-3">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-body text-muted-foreground">
                   {service.description}
                 </p>
               </div>
@@ -88,13 +88,13 @@ const Services = () => {
         </div>
 
         {/* Additional Services */}
-        <div className="text-center mb-8">
-          <h3 className="text-xl font-semibold text-foreground mb-4">
+        <div className="text-center mb-12">
+          <h3 className="text-h3 text-foreground mb-6">
             Weitere Leistungen
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {additionalServices.map((service, index) => (
-              <Badge key={index} variant="secondary" className="text-sm px-4 py-2">
+              <Badge key={index} variant="secondary" className="text-body px-4 py-2">
                 {service}
               </Badge>
             ))}
@@ -107,7 +107,7 @@ const Services = () => {
             variant="default"
             size="lg"
             onClick={handleContactScroll}
-            className="font-semibold px-8 py-4 text-lg"
+            className="text-button-large px-8 py-4"
           >
             Angebot in 24 Stunden
           </Button>

@@ -29,10 +29,10 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-muted/30">
+    <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">
+          <h2 className="text-h1 text-foreground mb-16">
             So läuft es ab
           </h2>
           
@@ -44,8 +44,8 @@ const HowItWorks = () => {
                   <step.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <div className="text-center">
-                  <h3 className="text-xl font-bold text-foreground mb-2">{step.title}</h3>
-                  <p className="text-muted-foreground">{step.description}</p>
+                  <h3 className="text-h3 text-foreground mb-3">{step.title}</h3>
+                  <p className="text-body text-muted-foreground">{step.description}</p>
                 </div>
                 {index < steps.length - 1 && (
                   <div className="hidden md:block absolute top-8 right-0 w-8 h-0.5 bg-primary/30 transform translate-x-full"></div>
@@ -60,7 +60,7 @@ const HowItWorks = () => {
               variant="whatsapp"
               size="lg"
               onClick={handleWhatsApp}
-              className="w-full sm:w-auto text-lg px-8 py-4"
+              className="w-full sm:w-auto text-button-large px-8 py-4"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
               Per WhatsApp schreiben
@@ -69,7 +69,7 @@ const HowItWorks = () => {
               variant="default"
               size="lg"
               onClick={handleCall}
-              className="w-full sm:w-auto text-lg px-8 py-4"
+              className="w-full sm:w-auto text-button-large px-8 py-4"
             >
               <Phone className="w-5 h-5 mr-2" />
               Jetzt anrufen

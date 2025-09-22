@@ -30,21 +30,21 @@ const FensterreinigungSeiltechnik = () => {
   };
 
   return (
-    <section id="fensterreinigung-seiltechnik" className="py-16 md:py-20 bg-background">
+    <section id="fensterreinigung-seiltechnik" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
           {/* Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            <h2 className="text-h1 text-foreground mb-8">
               Industriekletterer - sicher, schnell, effizient
             </h2>
             
-            <div className="mb-6">
-              <p className="text-lg text-muted-foreground mb-4">❌ Teure Gerüste, Verzögerungen, Chaos bei schwer erreichbaren Flächen</p>
-              <p className="text-lg text-foreground mb-4">👉 Wir hängen uns raus: Seiltechnik, schnell, sicher, günstiger</p>
+            <div className="mb-8">
+              <p className="text-body-large text-muted-foreground mb-4">❌ Teure Gerüste, Verzögerungen, Chaos bei schwer erreichbaren Flächen</p>
+              <p className="text-body-large text-foreground mb-4">👉 Wir hängen uns raus: Seiltechnik, schnell, sicher, günstiger</p>
             </div>
             
-            <blockquote className="text-xl font-medium italic text-primary mb-8">
+            <blockquote className="text-h3 font-medium italic text-primary mb-8">
               "Ohne euch hätten wir die Abnahme nie geschafft."
             </blockquote>
 
@@ -54,7 +54,7 @@ const FensterreinigungSeiltechnik = () => {
                 variant="whatsapp"
                 size="lg"
                 onClick={handleWhatsApp}
-                className="w-full sm:w-auto text-lg px-8 py-4"
+                className="w-full sm:w-auto text-button-large px-8 py-4"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 📞 Industriekletterer anfragen
