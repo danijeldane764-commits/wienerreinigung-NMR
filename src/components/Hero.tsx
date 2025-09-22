@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, X, Check } from "lucide-react";
-import heroImage from "@/assets/hero-fensterreinigung.jpg";
+import heroImage from "@/assets/hero-fensterreinigung-new.jpg";
 
 const Hero = () => {
   const handleCall = () => {
