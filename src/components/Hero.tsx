@@ -38,9 +38,14 @@ const Hero = () => {
         <h1 className="text-hero mb-6 max-w-5xl mx-auto">
           Sauberkeit ohne Ausreden : für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen und Haushalte in Wien
         </h1>
-        <p className="text-body-large mb-8 max-w-4xl mx-auto opacity-95">
+        <p className="text-body-large mb-4 max-w-4xl mx-auto opacity-95">
           Direkt beim Chef anrufen. Kein Callcenter. Fixpreis. Versichert.
         </p>
+        
+        {/* Micro Proof */}
+        <div className="text-small opacity-90 mb-8">
+          Aus Wien • Familienunternehmen • Besichtigung meist innerhalb von 24 Stunden
+        </div>
         
         {/* CTA Buttons - First Set */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -116,10 +121,6 @@ const Hero = () => {
           </Button>
         </div>
 
-        {/* Micro Proof */}
-        <div className="text-small opacity-90">
-          Aus Wien • Familienunternehmen • Besichtigung meist innerhalb von 24 Stunden
-        </div>
       </div>
     </section>
   );
