@@ -36,11 +36,14 @@ const FensterreinigungSeiltechnik = () => {
           {/* Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Fensterreinigung mit Seiltechnik - sicher für schwer zugängliche Fenster
+              Industriekletterer
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Nur Fensterreinigung, keine Fassadenarbeiten. Chef-Besichtigung und Fixpreis vor Start.
+            <p className="text-xl text-muted-foreground mb-6">
+              Sauber bis ins 10. Stockwerk. Seiltechnik statt teurem Gerüst.
             </p>
+            <blockquote className="text-xl font-medium italic text-primary mb-8">
+              👉 „Ohne euch hätten wir die Abnahme nie geschafft."
+            </blockquote>
 
             {/* Benefits */}
             <div className="space-y-4 mb-8">
@@ -68,17 +71,8 @@ const FensterreinigungSeiltechnik = () => {
                 onClick={handleWhatsApp}
                 className="w-full sm:w-auto text-lg px-8 py-4"
               >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Per WhatsApp anfragen
-              </Button>
-              <Button 
-                variant="default"
-                size="lg"
-                onClick={handleCall}
-                className="w-full sm:w-auto text-lg px-8 py-4"
-              >
                 <Phone className="w-5 h-5 mr-2" />
-                Jetzt anrufen
+                📞 Industriekletterer anfragen
               </Button>
             </div>
           </div>

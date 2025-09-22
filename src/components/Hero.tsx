@@ -36,51 +36,39 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center text-white py-16 md:py-32">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Reinigungsfirma in Wien - Fixpreis nach Chef-Besichtigung
+          Sauberkeit ohne Ausreden : für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen und Haushalte in Wien
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
-          Für Hausverwaltungen, Büros, Baufirmen und Kanzleien. Besichtigung meist innerhalb von 24 Stunden.
+          Direkt beim Chef anrufen. Kein Callcenter. Fairer Fixpreis. Versichert.
         </p>
         
-        {/* Proof Points */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 max-w-4xl mx-auto">
-          <div className="flex flex-col items-center space-y-2">
-            <Check className="w-6 h-6 text-green-400" />
-            <span className="text-lg font-medium">Chef-Besichtigung vor Ort</span>
+        {/* Pain Points */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-4xl mx-auto text-left">
+          <div className="flex items-center space-x-3">
+            <X className="w-5 h-5 text-red-400 flex-shrink-0" />
+            <span className="text-lg opacity-90">Stiegenhaus stinkt trotz Reinigung</span>
           </div>
-          <div className="flex flex-col items-center space-y-2">
-            <Check className="w-6 h-6 text-green-400" />
-            <span className="text-lg font-medium">Fixpreis ohne versteckte Kosten</span>
+          <div className="flex items-center space-x-3">
+            <X className="w-5 h-5 text-red-400 flex-shrink-0" />
+            <span className="text-lg opacity-90">Schlieren in der Kanzlei - peinlich vor Mandanten</span>
           </div>
-          <div className="flex flex-col items-center space-y-2">
-            <Check className="w-6 h-6 text-green-400" />
-            <span className="text-lg font-medium">Pünktlich, leise, sauber</span>
+          <div className="flex items-center space-x-3">
+            <X className="w-5 h-5 text-red-400 flex-shrink-0" />
+            <span className="text-lg opacity-90">Bauabnahme scheitert an Staub & Schlieren</span>
+          </div>
+          <div className="flex items-center space-x-3">
+            <X className="w-5 h-5 text-red-400 flex-shrink-0" />
+            <span className="text-lg opacity-90">Putzfirma kommt zu spät oder verrechnet Sonderkosten</span>
           </div>
         </div>
 
-        {/* Contrast Line */}
-        <div className="mb-8 text-sm md:text-base">
-          <div className="flex items-center justify-center mb-2">
-            <X className="w-4 h-4 text-red-400 mr-2" />
-            <span className="opacity-80">Verspätet, schlampig, Sonderkosten</span>
-          </div>
-          <div className="flex items-center justify-center">
-            <Check className="w-4 h-4 text-green-400 mr-2" />
-            <span className="font-medium">Wir kommen, besichtigen, liefern</span>
-          </div>
+        {/* Customer Testimonial */}
+        <div className="mb-8 text-xl md:text-2xl font-medium italic max-w-3xl mx-auto">
+          „Nikola, seit du da bist, ruft keiner mehr an zum Schimpfen."
         </div>
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <Button 
-            variant="whatsapp" 
-            size="lg" 
-            onClick={handleWhatsApp}
-            className="w-full sm:w-auto text-lg px-8 py-4"
-          >
-            <MessageCircle className="w-5 h-5 mr-2" />
-            Per WhatsApp schreiben
-          </Button>
           <Button 
             variant="default" 
             size="lg" 
@@ -88,7 +76,16 @@ const Hero = () => {
             className="w-full sm:w-auto text-lg px-8 py-4"
           >
             <Phone className="w-5 h-5 mr-2" />
-            Jetzt anrufen
+            📞 Jetzt direkt mit dem Chef reden
+          </Button>
+          <Button 
+            variant="whatsapp" 
+            size="lg" 
+            onClick={handleWhatsApp}
+            className="w-full sm:w-auto text-lg px-8 py-4"
+          >
+            <MessageCircle className="w-5 h-5 mr-2" />
+            💬 WhatsApp in 1 Minute - Angebot sichern
           </Button>
         </div>
 

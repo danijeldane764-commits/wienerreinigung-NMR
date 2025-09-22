@@ -36,11 +36,14 @@ const Hausbetreuung = () => {
           {/* Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Hausbetreuung Wien - zuverlässig, planbar, Fixpreis
+              Hausbetreuung
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Chef kommt kurz zur Besichtigung, danach steht der Fixpreis. Stiegenhaus, Außenflächen, Müll, kleine Wartungen.
+            <p className="text-xl text-muted-foreground mb-6">
+              Stiegenhaus, Außenflächen, Winterdienst - pünktlich und sauber.
             </p>
+            <blockquote className="text-xl font-medium italic text-primary mb-8">
+              👉 „Seit du die Betreuung machst, hab ich endlich Ruhe."
+            </blockquote>
 
             {/* Benefits */}
             <div className="space-y-4 mb-10">
@@ -60,17 +63,8 @@ const Hausbetreuung = () => {
                 onClick={handleWhatsApp}
                 className="w-full sm:w-auto text-lg px-8 py-4"
               >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Per WhatsApp anfragen
-              </Button>
-              <Button 
-                variant="default"
-                size="lg"
-                onClick={handleCall}
-                className="w-full sm:w-auto text-lg px-8 py-4"
-              >
                 <Phone className="w-5 h-5 mr-2" />
-                Jetzt anrufen
+                📞 Hausbetreuung anfragen
               </Button>
             </div>
           </div>

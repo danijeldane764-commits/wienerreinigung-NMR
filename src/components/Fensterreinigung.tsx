@@ -46,11 +46,14 @@ const Fensterreinigung = () => {
           {/* Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Fensterreinigung Wien - glasklar mit Fixpreis
+              Fensterreinigung
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Innen und außen. Chef schaut kurz vorbei und nennt danach den Fixpreis.
+            <p className="text-xl text-muted-foreground mb-6">
+              Glasklar, streifenfrei, vom Büro bis zur Glasfront.
             </p>
+            <blockquote className="text-xl font-medium italic text-primary mb-8">
+              👉 „Seit ihr die Fenster macht, sieht's hier endlich so aus, wie es aussehen soll."
+            </blockquote>
 
             {/* Benefits */}
             <div className="space-y-4 mb-10">
@@ -70,17 +73,8 @@ const Fensterreinigung = () => {
                 onClick={handleWhatsApp}
                 className="w-full sm:w-auto text-lg px-8 py-4"
               >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Per WhatsApp anfragen
-              </Button>
-              <Button 
-                variant="default"
-                size="lg"
-                onClick={handleCall}
-                className="w-full sm:w-auto text-lg px-8 py-4"
-              >
                 <Phone className="w-5 h-5 mr-2" />
-                Jetzt anrufen
+                📞 Fensterreinigung anfragen
               </Button>
             </div>
           </div>
