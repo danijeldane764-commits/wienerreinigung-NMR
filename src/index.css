@@ -16,19 +16,23 @@
     --popover-foreground: 218 100% 15%;
 
     /* Brand Colors - Nikola Miloradovic Reinigung */
-    --primary: 213 64% 32%; /* #1d3b8b */
+    /* Professional Blue - Primary CTAs & Header Accents */
+    --primary: 222 84% 40%; /* #1E40AF */
     --primary-foreground: 0 0% 100%; /* #ffffff */
-    --primary-light: 213 64% 45%;
-    --primary-dark: 213 69% 26%; /* #15306e hover */
+    --primary-light: 222 74% 50%; /* Lighter variant for hover states */
+    --primary-dark: 222 90% 32%; /* Darker variant for active states */
 
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 218 100% 15%;
+    /* Soft Blue-Gray - Background Sections */
+    --secondary: 216 33% 97%; /* #F1F5F9 */
+    --secondary-foreground: 222 84% 10%; /* Dark text for contrast */
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 215 16% 47%;
+    /* Muted Colors - Subtle Elements */
+    --muted: 216 33% 97%; /* Same as secondary for consistency */
+    --muted-foreground: 215 25% 35%; /* Medium gray for secondary text */
 
-    --accent: 218 50% 85%;
-    --accent-foreground: 218 100% 15%;
+    /* Accent Colors - Interactive Elements */
+    --accent: 216 50% 92%; /* Subtle blue accent */
+    --accent-foreground: 222 84% 10%; /* Dark text for contrast */
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
@@ -40,22 +44,22 @@
     --radius: 0.75rem;
 
     /* Custom Design Tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(218, 70%, 32%) 0%, hsl(218, 80%, 25%) 100%);
-    --service-hover: 218 70% 40%;
-    --trust-bg: 218 50% 98%;
-    --shadow-soft: 0 4px 6px -1px hsl(218 70% 32% / 0.1);
-    --shadow-medium: 0 10px 15px -3px hsl(218 70% 32% / 0.1);
+    --hero-gradient: linear-gradient(135deg, hsl(222, 84%, 40%) 0%, hsl(222, 90%, 32%) 100%);
+    --service-hover: 222 74% 50%; /* Lighter blue for hover */
+    --trust-bg: 216 33% 98%; /* Very light blue-gray */
+    --shadow-soft: 0 4px 6px -1px hsl(222 84% 40% / 0.1);
+    --shadow-medium: 0 10px 15px -3px hsl(222 84% 40% / 0.15);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     
-    /* WhatsApp Green */
-    --whatsapp: 142 84% 28%;
-    --whatsapp-hover: 142 84% 24%;
+    /* WhatsApp Green - Reserved for WhatsApp only */
+    --whatsapp: 142 84% 50%; /* #25D366 */
+    --whatsapp-hover: 142 84% 44%; /* Slightly darker for hover */
     
     /* CTA Variants */
-    --cta-primary: 218 70% 32%;
-    --cta-primary-hover: 218 80% 25%;
-    --cta-whatsapp: 142 84% 28%;
-    --cta-whatsapp-hover: 142 84% 24%;
+    --cta-primary: 222 84% 40%; /* Professional blue */
+    --cta-primary-hover: 222 90% 32%; /* Darker blue for hover */
+    --cta-whatsapp: 142 84% 50%; /* WhatsApp green */
+    --cta-whatsapp-hover: 142 84% 44%; /* Darker green for hover */
 
     --sidebar-background: 0 0% 98%;
 
