@@ -9,6 +9,7 @@ import Fensterreinigung from "@/components/Fensterreinigung";
 import FensterreinigungSeiltechnik from "@/components/FensterreinigungSeiltechnik";
 import TrustTiles from "@/components/TrustTiles";
 import Trust from "@/components/Trust";
+import Testimonial from "@/components/Testimonial";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -36,9 +37,10 @@ const Index = () => {
       <Fensterreinigung />
       <FensterreinigungSeiltechnik />
       <TrustTiles />
+      <Testimonial />
+      <FinalCTA />
       <Trust />
       <FAQ />
-      <FinalCTA />
       <Footer />
     </main>
   );

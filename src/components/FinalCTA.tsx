@@ -14,26 +14,26 @@ const FinalCTA = () => {
     <section id="contact" className="py-16 md:py-20 bg-primary text-primary-foreground">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-h2 mb-6">
             Warum du mir vertrauen kannst
           </h2>
           <div className="mb-8">
-            <p className="text-xl mb-4 opacity-90">
+            <p className="text-body-large mb-4 opacity-90">
               Ich bin Nikola. Chef, Ansprechpartner, Fixpreis, versichert, ehrlich.
             </p>
-            <p className="text-xl mb-4 opacity-90">
+            <p className="text-body-large mb-4 opacity-90">
               Seit Jahren vertrauen mir Hausverwaltungen, Kanzleien, Baufirmen und Haushalte in Wien.
             </p>
-            <p className="text-xl mb-6 opacity-90">
+            <p className="text-body-large mb-6 opacity-90">
               👉 Kunden sagen: "Endlich einer, der hält, was er verspricht."
             </p>
           </div>
           
           <div className="mb-8">
-            <p className="text-xl mb-4 font-medium">
+            <p className="text-body-large mb-4 font-medium">
               Hol dir jetzt dein kostenloses Fixpreis-Angebot.
             </p>
-            <p className="text-lg opacity-90">
+            <p className="text-body opacity-90">
               Ich nehm nur so viele Kunden an, wie ich selbst im Griff hab - also warte nicht.
             </p>
           </div>
@@ -44,7 +44,7 @@ const FinalCTA = () => {
               variant="secondary"
               size="lg"
               onClick={handleCall}
-              className="w-full sm:w-auto text-lg px-8 py-4"
+              className="w-full sm:w-auto text-button-large px-8 py-4"
             >
               <Phone className="w-5 h-5 mr-2" />
               📞 Ruf mich jetzt direkt an
@@ -53,7 +53,7 @@ const FinalCTA = () => {
               variant="whatsapp"
               size="lg"
               onClick={handleWhatsApp}
-              className="w-full sm:w-auto text-lg px-8 py-4"
+              className="w-full sm:w-auto text-button-large px-8 py-4"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
               💬 Schreib mir kurz auf WhatsApp - schnell und einfach
