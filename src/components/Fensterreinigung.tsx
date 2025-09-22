@@ -46,24 +46,17 @@ const Fensterreinigung = () => {
           {/* Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Fensterreinigung
+              Fensterreinigung - glasklar, ohne Schlieren
             </h2>
-            <p className="text-xl text-muted-foreground mb-6">
-              Glasklar, streifenfrei, vom Büro bis zur Glasfront.
-            </p>
-            <blockquote className="text-xl font-medium italic text-primary mb-8">
-              👉 „Seit ihr die Fenster macht, sieht's hier endlich so aus, wie es aussehen soll."
-            </blockquote>
-
-            {/* Benefits */}
-            <div className="space-y-4 mb-10">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
-                  <span className="text-foreground font-medium text-lg">{benefit}</span>
-                </div>
-              ))}
+            
+            <div className="mb-6">
+              <p className="text-lg text-muted-foreground mb-4">❌ Schlieren, Streifen, peinlich vor Mandanten oder bei Abnahme</p>
+              <p className="text-lg text-foreground mb-4">👉 Wir machen's glasklar: vom Bürofenster bis zur Glasfront im Hochhaus</p>
             </div>
+            
+            <blockquote className="text-xl font-medium italic text-primary mb-8">
+              "Seit ihr die Fenster macht, sieht's hier endlich so aus, wie es aussehen soll."
+            </blockquote>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">

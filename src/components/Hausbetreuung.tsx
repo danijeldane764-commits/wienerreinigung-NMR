@@ -36,24 +36,17 @@ const Hausbetreuung = () => {
           {/* Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Hausbetreuung
+              Hausbetreuung in Wien
             </h2>
-            <p className="text-xl text-muted-foreground mb-6">
-              Stiegenhaus, Außenflächen, Winterdienst - pünktlich und sauber.
-            </p>
-            <blockquote className="text-xl font-medium italic text-primary mb-8">
-              👉 „Seit du die Betreuung machst, hab ich endlich Ruhe."
-            </blockquote>
-
-            {/* Benefits */}
-            <div className="space-y-4 mb-10">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
-                  <span className="text-foreground font-medium text-lg">{benefit}</span>
-                </div>
-              ))}
+            
+            <div className="mb-6">
+              <p className="text-lg text-muted-foreground mb-4">❌ Stiegenhaus stinkt, Müll bleibt liegen, Winterdienst zu spät</p>
+              <p className="text-lg text-foreground mb-4">👉 Wir übernehmen alles: Stiegenhaus, Außenflächen, Winterdienst</p>
             </div>
+            
+            <blockquote className="text-xl font-medium italic text-primary mb-8">
+              "Seit du die Betreuung machst, hab ich endlich Ruhe."
+            </blockquote>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">

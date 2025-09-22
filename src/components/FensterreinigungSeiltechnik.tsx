@@ -36,32 +36,17 @@ const FensterreinigungSeiltechnik = () => {
           {/* Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Industriekletterer
+              Industriekletterer - sicher, schnell, effizient
             </h2>
-            <p className="text-xl text-muted-foreground mb-6">
-              Sauber bis ins 10. Stockwerk. Seiltechnik statt teurem Gerüst.
-            </p>
+            
+            <div className="mb-6">
+              <p className="text-lg text-muted-foreground mb-4">❌ Teure Gerüste, Verzögerungen, Chaos bei schwer erreichbaren Flächen</p>
+              <p className="text-lg text-foreground mb-4">👉 Wir hängen uns raus: Seiltechnik, schnell, sicher, günstiger</p>
+            </div>
+            
             <blockquote className="text-xl font-medium italic text-primary mb-8">
-              👉 „Ohne euch hätten wir die Abnahme nie geschafft."
+              "Ohne euch hätten wir die Abnahme nie geschafft."
             </blockquote>
-
-            {/* Benefits */}
-            <div className="space-y-4 mb-8">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
-                  <span className="text-foreground font-medium text-lg">{benefit}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* Important Notice */}
-            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-10 flex items-center space-x-3">
-              <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0" />
-              <span className="text-yellow-800 font-medium">
-                Nur Fenster. Keine Fassadenreinigung.
-              </span>
-            </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">

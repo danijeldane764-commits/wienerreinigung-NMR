@@ -15,23 +15,31 @@ const FinalCTA = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Chef-Besichtigung anfragen
+            Warum du mir vertrauen kannst
           </h2>
-          <p className="text-xl mb-10 opacity-90">
-            Direkter Kontakt mit dem Chef. Besichtigung meist innerhalb von 24 Stunden.
-          </p>
+          <div className="mb-8">
+            <p className="text-xl mb-4 opacity-90">
+              Ich bin Nikola. Chef, Ansprechpartner, Fixpreis, versichert, ehrlich.
+            </p>
+            <p className="text-xl mb-4 opacity-90">
+              Seit Jahren vertrauen mir Hausverwaltungen, Kanzleien, Baufirmen und Haushalte in Wien.
+            </p>
+            <p className="text-xl mb-6 opacity-90">
+              👉 Kunden sagen: "Endlich einer, der hält, was er verspricht."
+            </p>
+          </div>
+          
+          <div className="mb-8">
+            <p className="text-xl mb-4 font-medium">
+              Hol dir jetzt dein kostenloses Fixpreis-Angebot.
+            </p>
+            <p className="text-lg opacity-90">
+              Ich nehm nur so viele Kunden an, wie ich selbst im Griff hab - also warte nicht.
+            </p>
+          </div>
           
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              variant="whatsapp"
-              size="lg"
-              onClick={handleWhatsApp}
-              className="w-full sm:w-auto text-lg px-8 py-4"
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              Per WhatsApp schreiben
-            </Button>
             <Button 
               variant="secondary"
               size="lg"
@@ -39,7 +47,16 @@ const FinalCTA = () => {
               className="w-full sm:w-auto text-lg px-8 py-4"
             >
               <Phone className="w-5 h-5 mr-2" />
-              Jetzt anrufen
+              📞 Ruf mich jetzt direkt an
+            </Button>
+            <Button 
+              variant="whatsapp"
+              size="lg"
+              onClick={handleWhatsApp}
+              className="w-full sm:w-auto text-lg px-8 py-4"
+            >
+              <MessageCircle className="w-5 h-5 mr-2" />
+              💬 Schreib mir kurz auf WhatsApp - schnell und einfach
             </Button>
           </div>
         </div>
