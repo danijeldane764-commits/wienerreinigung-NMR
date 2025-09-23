@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle, ChevronDown } from "lucide-react";
+import CTAWhatsApp from "@/components/CTAWhatsApp";
+import CTACall from "@/components/CTACall";
 import {
   Accordion,
   AccordionContent,
@@ -57,25 +57,15 @@ const FAQ = () => {
           </Accordion>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              variant="whatsapp"
-              size="lg"
+          <div className="flex flex-col md:flex-row gap-3 md:gap-[14px] justify-center items-center">
+            <CTAWhatsApp 
+              text="WhatsApp - dein Angebot in 1 Minute"
               onClick={handleWhatsApp}
-              className="w-full sm:w-auto text-lg px-8 py-4"
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              💬 WhatsApp - dein Angebot in 1 Minute
-            </Button>
-            <Button 
-              variant="default"
-              size="lg"
+            />
+            <CTACall 
+              text="Jetzt Termin sichern"
               onClick={handleCall}
-              className="w-full sm:w-auto text-lg px-8 py-4"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              📞 Jetzt Termin sichern
-            </Button>
+            />
           </div>
         </div>
       </div>

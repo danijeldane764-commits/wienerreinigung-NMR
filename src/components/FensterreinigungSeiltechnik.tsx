@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { CheckCircle, Phone, MessageCircle, AlertTriangle } from "lucide-react";
+import { CheckCircle, AlertTriangle } from "lucide-react";
+import CTAWhatsApp from "@/components/CTAWhatsApp";
 import seiltechnikImage from "@/assets/s-seiltechnik-new.jpg";
 
 const FensterreinigungSeiltechnik = () => {
@@ -48,17 +48,11 @@ const FensterreinigungSeiltechnik = () => {
               "Ohne Nikola hätten wir die Bauabnahme nie geschafft."
             </blockquote>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                variant="whatsapp"
-                size="lg"
+            <div className="flex justify-center lg:justify-start">
+              <CTAWhatsApp 
+                text="Industriekletterer anfragen"
                 onClick={handleWhatsApp}
-                className="w-full sm:w-auto text-button-large px-8 py-4"
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                📞 Industriekletterer anfragen
-              </Button>
+              />
             </div>
           </div>
 

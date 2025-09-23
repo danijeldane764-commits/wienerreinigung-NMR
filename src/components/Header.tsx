@@ -1,5 +1,5 @@
-import { Phone, MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import CTAWhatsApp from "@/components/CTAWhatsApp";
+import CTACall from "@/components/CTACall";
 
 const Header = () => {
   const handleCall = () => {
@@ -41,26 +41,16 @@ const Header = () => {
 
           {/* CTAs */}
           <div className="flex items-center space-x-3">
-            <Button 
-              variant="whatsapp"
-              size="sm"
+            <CTAWhatsApp 
+              text="Per WhatsApp schreiben"
               onClick={handleWhatsApp}
-              className="text-sm px-4 py-2"
-            >
-              <MessageCircle className="w-4 h-4 mr-2" />
-              <span className="hidden sm:inline">Per WhatsApp schreiben</span>
-              <span className="sm:hidden">WhatsApp</span>
-            </Button>
-            <Button 
-              variant="default"
-              size="sm"
+              className="text-sm px-4 py-2 h-8"
+            />
+            <CTACall 
+              text="Anrufen"
               onClick={handleCall}
-              className="text-sm px-4 py-2"
-            >
-              <Phone className="w-4 h-4 mr-2" />
-              <span className="hidden sm:inline">Jetzt anrufen</span>
-              <span className="sm:hidden">Anrufen</span>
-            </Button>
+              className="text-sm px-4 py-2 h-8"
+            />
           </div>
         </div>
         

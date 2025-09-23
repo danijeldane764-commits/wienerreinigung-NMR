@@ -1,5 +1,7 @@
 import { Phone, MessageCircle, Mail, MapPin, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import CTAWhatsApp from "@/components/CTAWhatsApp";
+import CTACall from "@/components/CTACall";
 
 const Contact = () => {
   const handleCall = () => {
@@ -31,27 +33,15 @@ const Contact = () => {
             Am schnellsten geht es per Anruf oder WhatsApp. Kein Formular - direkter Kontakt mit dem Chef.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <a 
-              href="tel:+436677680897"
-              className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground text-lg font-medium rounded-md transition-colors"
-              aria-label="Anruf mit Nikola Miloradovic starten"
+          <div className="flex flex-col md:flex-row gap-3 md:gap-[14px] justify-center items-center mb-8">
+            <CTACall 
+              text="Jetzt anrufen"
               onClick={handleCall}
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              Jetzt anrufen
-            </a>
-            <a 
-              href="https://wa.me/436677680897?text=Hallo%20Nikola,%20ich%20brauche%20Unterst%C3%BCtzung%20bei%20einer%20Reinigung%20in%20Wien"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-green-600 hover:bg-green-700 text-white text-lg font-medium rounded-md transition-colors"
-              aria-label="WhatsApp Chat mit Nikola Miloradovic starten"
+            />
+            <CTAWhatsApp 
+              text="Per WhatsApp schreiben"
               onClick={handleWhatsApp}
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              Per WhatsApp schreiben
-            </a>
+            />
           </div>
 
           <div className="text-center space-y-2 text-muted-foreground">
@@ -113,27 +103,15 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                <a 
-                  href="tel:+436677680897"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-primary hover:bg-primary/90 text-primary-foreground text-lg font-medium rounded-md transition-colors"
-                  aria-label="Anruf mit Nikola Miloradovic starten"
+              <div className="flex flex-col md:flex-row gap-3 md:gap-[14px] mt-6">
+                <CTACall 
+                  text="Anrufen"
                   onClick={handleCall}
-                >
-                  <Phone className="w-5 h-5 mr-2" />
-                  Anrufen
-                </a>
-                <a 
-                  href="https://wa.me/436677680897?text=Hallo%20Nikola,%20ich%20brauche%20Unterst%C3%BCtzung%20bei%20einer%20Reinigung%20in%20Wien"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white text-lg font-medium rounded-md transition-colors"
-                  aria-label="WhatsApp Chat mit Nikola Miloradovic starten"
+                />
+                <CTAWhatsApp 
+                  text="Per WhatsApp schreiben"
                   onClick={handleWhatsApp}
-                >
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Per WhatsApp schreiben
-                </a>
+                />
               </div>
             </CardContent>
           </Card>
@@ -149,6 +127,13 @@ const Contact = () => {
                 <p className="text-muted-foreground mt-2">
                   Termine nach Vereinbarung auch außerhalb der Öffnungszeiten möglich
                 </p>
+              </div>
+              
+              <div className="text-center mt-4">
+                <CTAWhatsApp 
+                  text="Per WhatsApp schreiben"
+                  onClick={handleWhatsApp}
+                />
               </div>
             </CardContent>
           </Card>

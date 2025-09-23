@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle, X, Check } from "lucide-react";
+import CTAWhatsApp from "@/components/CTAWhatsApp";
+import CTACall from "@/components/CTACall";
 import heroImage from "@/assets/hero-office-cleaning.jpg";
 
 const Hero = () => {
@@ -46,20 +46,14 @@ const Hero = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col md:flex-row gap-3 md:gap-[14px] justify-center items-center mt-[20px]">
-            <Button 
+            <CTAWhatsApp 
+              text="WhatsApp - Anfrage"
               onClick={handleWhatsApp}
-              className="w-full md:w-auto min-h-[48px] bg-[#25D366] hover:bg-[#1DA851] active:bg-[#169B49] text-white font-poppins font-medium text-lg border-none rounded-[10px] px-7 py-[14px] shadow-[0_4px_6px_rgba(0,0,0,0.15)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2 cursor-pointer transition-all duration-200"
-            >
-              <MessageCircle className="w-5 h-5 mr-[10px] text-white" />
-              WhatsApp - Anfrage
-            </Button>
-            <Button 
+            />
+            <CTACall 
+              text="Anrufen"
               onClick={handleCall}
-              className="w-full md:w-auto min-h-[48px] bg-[#0052CC] hover:bg-[#003F99] active:bg-[#002F73] text-white font-poppins font-medium text-lg border-none rounded-[10px] px-7 py-[14px] shadow-[0_4px_6px_rgba(0,0,0,0.15)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2 cursor-pointer transition-all duration-200"
-            >
-              <Phone className="w-5 h-5 mr-[10px] text-white" />
-              Anrufen
-            </Button>
+            />
           </div>
         </div>
       </div>
