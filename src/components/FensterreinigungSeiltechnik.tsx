@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Phone, MessageCircle, AlertTriangle } from "lucide-react";
-import seiltechnikImage from "@/assets/s-seiltechnik-fensterreinigung-wien.webp";
+import seiltechnikImage from "@/assets/s-seiltechnik-new.jpg";
 
 const FensterreinigungSeiltechnik = () => {
   const benefits = [
