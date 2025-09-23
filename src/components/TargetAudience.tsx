@@ -1,26 +1,38 @@
-import { Building2, Scale, HardHat, Home } from "lucide-react";
+import { Building2, Scale, Monitor, HardHat, Home } from "lucide-react";
+import officeCleaningImage from "@/assets/s-bueroreinigung-wien.webp";
 
 const TargetAudience = () => {
   const targetGroups = [
     {
       icon: Building2,
       headline: "Hausverwaltungen",
-      subline: "Ruhe mit den Mietern – kein Ärger mehr wegen Reinigung"
+      subline: "Ruhe mit den Mietern – kein Ärger mehr wegen Reinigung",
+      hasImage: false
     },
     {
       icon: Scale,
       headline: "Kanzleien", 
-      subline: "Saubere Büros für einen professionellen Eindruck"
+      subline: "Saubere Büros für einen professionellen Eindruck",
+      hasImage: false
+    },
+    {
+      icon: Monitor,
+      headline: "Büroreinigung",
+      subline: "Saubere Arbeitsplätze für ein gesundes und produktives Team",
+      hasImage: true,
+      backgroundImage: officeCleaningImage
     },
     {
       icon: HardHat,
       headline: "Baufirmen",
-      subline: "Saubere Abnahme ohne Stress und Nacharbeit"
+      subline: "Saubere Abnahme ohne Stress und Nacharbeit",
+      hasImage: false
     },
     {
       icon: Home,
       headline: "Haushalte",
-      subline: "Pünktlich, ehrlich, Fixpreis – ohne Überraschungen"
+      subline: "Pünktlich, ehrlich, Fixpreis – ohne Überraschungen",
+      hasImage: false
     }
   ];
 
@@ -32,13 +44,18 @@ const TargetAudience = () => {
             Für wen wir arbeiten in Wien und Umgebung
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {targetGroups.map((group, index) => {
               const IconComponent = group.icon;
               return (
                 <div
                   key={index}
-                  className="bg-[hsl(var(--light-blue-bg))] p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:bg-[hsl(var(--light-blue-bg))] hover:-translate-y-1 cursor-pointer"
+                  className={`relative overflow-hidden bg-[hsl(var(--light-blue-bg))] p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:bg-[hsl(var(--light-blue-bg))] hover:-translate-y-1 cursor-pointer ${
+                    group.hasImage ? 'bg-cover bg-center' : ''
+                  }`}
+                  style={group.hasImage ? {
+                    backgroundImage: `linear-gradient(rgba(245, 248, 255, 0.95), rgba(245, 248, 255, 0.95)), url(${group.backgroundImage})`
+                  } : {}}
                 >
                   <div className="text-center">
                     <div className="flex justify-center mb-4">
