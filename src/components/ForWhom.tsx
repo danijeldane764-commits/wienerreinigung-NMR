@@ -57,7 +57,7 @@ const ForWhom = () => {
               Per WhatsApp schreiben
             </Button>
             <Button 
-              variant="outline"
+              variant="default"
               size="lg"
               onClick={handleCall}
               className="text-button px-6 py-3"
