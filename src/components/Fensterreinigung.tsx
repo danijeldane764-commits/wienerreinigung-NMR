@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Phone, MessageCircle } from "lucide-react";
-import fensterreinigungImage from "@/assets/s-fensterreinigung-wien.webp";
+import fensterreinigungImage from "@/assets/s-industriekletterer-new.jpg";
 
 const Fensterreinigung = () => {
   const benefits = [
