@@ -45,23 +45,19 @@ const Hero = () => {
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col md:flex-row gap-3 md:gap-[14px] justify-center items-center mt-[20px]">
             <Button 
-              variant="whatsapp-primary" 
-              size="lg" 
               onClick={handleWhatsApp}
-              className="w-full sm:w-auto font-poppins font-medium text-lg px-8 py-4 h-14"
+              className="w-full md:w-auto min-h-[48px] bg-[#25D366] hover:bg-[#1DA851] active:bg-[#169B49] text-white font-poppins font-medium text-lg tracking-[0.2px] border-none rounded-[10px] px-7 py-[14px] shadow-[0_4px_6px_rgba(0,0,0,0.15)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2 cursor-pointer transition-all duration-200 bg-gradient-to-b from-white/[0.06] to-black/[0.06]"
             >
-              <MessageCircle className="w-5 h-5 mr-2" />
+              <MessageCircle className="w-5 h-5 mr-[10px] text-white" />
               WhatsApp - Termin & Angebot fix klären
             </Button>
             <Button 
-              variant="call-primary" 
-              size="lg" 
               onClick={handleCall}
-              className="w-full sm:w-auto font-poppins font-medium text-lg px-8 py-4 h-14"
+              className="w-full md:w-auto min-h-[48px] bg-[#0052CC] hover:bg-[#003D99] active:bg-[#00307A] text-white font-poppins font-medium text-lg tracking-[0.2px] border border-white/[0.18] rounded-[10px] px-7 py-[14px] shadow-[0_4px_6px_rgba(0,0,0,0.15)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2 cursor-pointer transition-all duration-200"
             >
-              <Phone className="w-5 h-5 mr-2" />
+              <Phone className="w-5 h-5 mr-[10px] text-white" />
               Jetzt anrufen
             </Button>
           </div>
