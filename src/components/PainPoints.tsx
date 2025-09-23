@@ -101,7 +101,7 @@ const PainPoints = () => {
               <div className="text-center">
                 <div className="text-[#25D366] text-5xl mb-4">✅</div>
                 <h3 className="font-poppins font-medium text-[#0A2342] text-xl md:text-2xl mb-3">
-                  Fixpreis – keine Überraschungen
+                  Fixpreis - keine Überraschungen
                 </h3>
                 <p className="font-roboto text-[#333333] text-base md:text-lg">
                   Transparente Angebote, keine versteckten Kosten.
