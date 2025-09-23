@@ -74,7 +74,7 @@ const ForWhom = () => {
                   Für maximale Hygiene in Büros, Kanzleien und öffentlichen Räumen
                 </h3>
                 <p className="text-body text-gray-100 leading-relaxed">
-                  Ob gründliche Desinfektion nach Bauarbeiten, spezielle Hygienestandards oder sensible Arbeitsbereiche – wir sorgen für ein keimfreies Umfeld, in dem sich Mitarbeiter und Kunden sicher fühlen.
+                  Ob gründliche Desinfektion nach Bauarbeiten, spezielle Hygienestandards oder sensible Arbeitsbereiche - wir sorgen für ein keimfreies Umfeld, in dem sich Mitarbeiter und Kunden sicher fühlen.
                 </p>
               </div>
             </div>
