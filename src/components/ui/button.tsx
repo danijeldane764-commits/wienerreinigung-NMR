@@ -20,7 +20,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         cta: "bg-primary text-primary-foreground hover:bg-primary-dark shadow-lg transition-all",
         whatsapp: "bg-[hsl(142_84%_28%)] text-white hover:bg-[hsl(142_84%_24%)] transition-colors",
-        "whatsapp-primary": "bg-[#25D366] text-white hover:bg-[#22C55E] transition-colors rounded-lg",
+        "whatsapp-primary": "bg-[#25D366] text-white hover:bg-[#1DA851] transition-colors rounded-[10px] shadow-[0px_4px_6px_rgba(0,0,0,0.15)] font-medium",
         "call-primary": "bg-[#0052CC] text-white hover:bg-[#0047B3] transition-colors rounded-lg",
       },
       size: {
