@@ -37,7 +37,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-[900px] mx-auto">
           <h1 className="font-poppins font-bold text-white text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-            Sauberkeit ohne Ausreden – in Wien & Umgebung
+            Sauberkeit ohne Ausreden in Wien & Umgebung
           </h1>
           <p className="font-roboto text-[#E6E6E6] text-xl md:text-2xl mb-8 leading-relaxed">
             Für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen & Haushalte<br />
