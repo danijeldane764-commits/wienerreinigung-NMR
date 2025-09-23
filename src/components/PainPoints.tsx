@@ -81,7 +81,7 @@ const PainPoints = () => {
             
             {/* Intro Text */}
             <p className="font-roboto text-[#333333] text-lg md:text-xl max-w-[800px] mx-auto mb-12">
-              Wir machen Schluss mit Ausreden. Wir liefern, was wir versprechen – pünktlich, zuverlässig und transparent.
+              Wir machen Schluss mit Ausreden. Wir liefern, was wir versprechen - pünktlich, zuverlässig und transparent.
             </p>
             
             {/* Promises Grid */}
