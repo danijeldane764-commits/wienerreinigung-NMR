@@ -51,7 +51,7 @@ const Testimonial = () => {
                 "Fenster glänzen wieder wie am ersten Tag. Mandanten sind beeindruckt."
               </p>
               <div className="text-small text-muted-foreground">
-                <strong>Thomas K.</strong>, Rechtsanwalt
+                Rechtsanwalt
               </div>
             </div>
             
