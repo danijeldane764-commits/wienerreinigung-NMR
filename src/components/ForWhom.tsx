@@ -18,10 +18,10 @@ const ForWhom = () => {
   };
 
   const chips = [
-    { label: "Hausverwaltungen", target: "hausbetreuung" },
-    { label: "Büros", target: "fensterreinigung" },
-    { label: "Baufirmen", target: "hausbetreuung" },
-    { label: "Kanzleien", target: "fensterreinigung" }
+    { label: "Hausverwaltungen: Ruhe mit den Mietern", target: "hausbetreuung" },
+    { label: "Kanzleien: Glasklare Fenster für den ersten Eindruck", target: "fensterreinigung" },
+    { label: "Baufirmen: Saubere Abnahme ohne Theater", target: "hausbetreuung" },
+    { label: "Haushalte: Fixpreis, pünktlich, kein Stress", target: "fensterreinigung" }
   ];
 
   return (
@@ -29,7 +29,7 @@ const ForWhom = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-h1 text-foreground mb-12">
-            Für wen wir arbeiten
+            Für wen wir arbeiten in Wien und Umgebung
           </h2>
           
           {/* Chips */}

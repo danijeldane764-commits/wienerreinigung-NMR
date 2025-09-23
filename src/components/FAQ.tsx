@@ -19,19 +19,19 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Wie schnell kommt die Besichtigung?",
-      answer: "Meist innerhalb von 24 Stunden."
+      answer: "Meistens innerhalb von 24 Stunden. Ich komme persönlich vorbei in Wien oder Wien Umgebung."
     },
     {
       question: "Gibt es Fixpreis?",
-      answer: "Ja, direkt nach Chef-Besichtigung."
+      answer: "Ja. Nach der Besichtigung bekommst du einen verbindlichen Fixpreis ohne Überraschungen."
     },
     {
       question: "Macht ihr Fassaden?",
-      answer: "Nein. Nur Fensterreinigung."
+      answer: "Nein, wir machen Fenster - keine Fassaden. So sind wir schnell, spezialisiert und zuverlässig."
     },
     {
       question: "Rechnet ihr offiziell ab?",
-      answer: "Ja, Rechnung und Versicherung vorhanden."
+      answer: "Ja, klar. Du bekommst eine offizielle Rechnung mit ausgewiesener Mehrwertsteuer."
     }
   ];
 
@@ -65,7 +65,7 @@ const FAQ = () => {
               className="w-full sm:w-auto text-lg px-8 py-4"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              Per WhatsApp schreiben
+              💬 WhatsApp - dein Angebot in 1 Minute
             </Button>
             <Button 
               variant="default"
@@ -74,7 +74,7 @@ const FAQ = () => {
               className="w-full sm:w-auto text-lg px-8 py-4"
             >
               <Phone className="w-5 h-5 mr-2" />
-              Jetzt anrufen
+              📞 Jetzt Termin sichern
             </Button>
           </div>
         </div>

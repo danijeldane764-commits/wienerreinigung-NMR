@@ -48,6 +48,10 @@ const PainPoints = () => {
             </div>
           </div>
           
+          <blockquote className="text-h3 font-medium italic text-primary mb-10">
+            "Seit du da bist, ruft keiner mehr an zum Schimpfen."
+          </blockquote>
+          
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
@@ -57,7 +61,7 @@ const PainPoints = () => {
               className="w-full sm:w-auto text-button-large px-8 py-4"
             >
               <Phone className="w-5 h-5 mr-2" />
-              📞 Genug geärgert - ruf mich jetzt an
+              📞 Jetzt Klartext - ruf Nikola direkt an
             </Button>
             <Button 
               variant="whatsapp" 
@@ -66,7 +70,7 @@ const PainPoints = () => {
               className="w-full sm:w-auto text-button-large px-8 py-4"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              💬 WhatsApp, dauert keine Minute
+              💬 Schreib mir schnell - dauert 1 Minute
             </Button>
           </div>
         </div>

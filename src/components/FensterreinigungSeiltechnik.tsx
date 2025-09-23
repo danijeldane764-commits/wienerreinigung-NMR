@@ -45,7 +45,7 @@ const FensterreinigungSeiltechnik = () => {
             </div>
             
             <blockquote className="text-h3 font-medium italic text-primary mb-8">
-              "Ohne euch hätten wir die Abnahme nie geschafft."
+              "Ohne Nikola hätten wir die Bauabnahme nie geschafft."
             </blockquote>
 
             {/* CTA Buttons */}

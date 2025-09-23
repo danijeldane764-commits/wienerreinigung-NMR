@@ -36,7 +36,7 @@ const Hausbetreuung = () => {
           {/* Content */}
           <div>
             <h2 className="text-h1 text-foreground mb-8">
-              Hausbetreuung in Wien
+              Hausbetreuung in Wien und Wien Umgebung
             </h2>
             
             <div className="mb-8">
@@ -45,7 +45,7 @@ const Hausbetreuung = () => {
             </div>
             
             <blockquote className="text-h3 font-medium italic text-primary mb-8">
-              "Seit du die Betreuung machst, hab ich endlich Ruhe."
+              "Seit Nikola die Hausbetreuung macht, hab ich als Hausverwalter endlich Ruhe."
             </blockquote>
 
             {/* CTA Buttons */}

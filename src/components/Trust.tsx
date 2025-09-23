@@ -19,16 +19,12 @@ const Trust = () => {
           </h2>
           
           <p className="text-body-large text-muted-foreground mb-6">
-            Ich bin Nikola. Chef. Ansprechpartner. Fixpreis. Versichert. Ehrlich.
+            Hol dir dein Fixpreis-Angebot direkt vom Chef.
           </p>
           
           <p className="text-body-large text-muted-foreground mb-8">
-            Hausverwaltungen, Kanzleien, Baufirmen und Haushalte in Wien vertrauen mir seit Jahren.
+            Ich nehme nur so viele Kunden an, wie ich selbst im Griff habe - also warte nicht.
           </p>
-
-          <blockquote className="text-h3 font-medium italic text-primary mb-10">
-            👉 „Endlich einer, der hält, was er verspricht."
-          </blockquote>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
@@ -38,7 +34,7 @@ const Trust = () => {
               className="w-full sm:w-auto text-button-large px-8 py-4"
             >
               <Phone className="w-5 h-5 mr-2" />
-              📞 Jetzt direkt anrufen
+              📞 Anrufen - Angebot sichern
             </Button>
             <Button 
               variant="whatsapp"
@@ -47,7 +43,7 @@ const Trust = () => {
               className="w-full sm:w-auto text-button-large px-8 py-4"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              💬 WhatsApp - Angebot in 1 Minute
+              💬 WhatsApp - dauert 1 Minute
             </Button>
           </div>
         </div>

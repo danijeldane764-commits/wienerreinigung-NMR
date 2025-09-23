@@ -14,17 +14,17 @@ const HowItWorks = () => {
     {
       icon: Eye,
       title: "Chef-Besichtigung",
-      description: "kurz vor Ort"
+      description: "Ich komme persönlich vorbei in Wien oder Wien Umgebung und schau mir dein Objekt an"
     },
     {
       icon: Euro,
       title: "Fixpreis",
-      description: "transparent und verbindlich"
+      description: "Du bekommst einen Fixpreis - ehrlich, ohne Überraschungen"
     },
     {
       icon: CalendarCheck,
       title: "Termin & Durchführung",
-      description: "pünktlich, leise, sauber"
+      description: "Termin so, wie's für dich passt - früh, spät, Wochenende"
     }
   ];
 
@@ -63,7 +63,7 @@ const HowItWorks = () => {
               className="w-full sm:w-auto text-button-large px-8 py-4"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              Per WhatsApp schreiben
+              💬 WhatsApp - Angebot in 1 Minute
             </Button>
             <Button 
               variant="default"
@@ -72,7 +72,7 @@ const HowItWorks = () => {
               className="w-full sm:w-auto text-button-large px-8 py-4"
             >
               <Phone className="w-5 h-5 mr-2" />
-              Jetzt anrufen
+              📞 Besichtigung sichern
             </Button>
           </div>
         </div>

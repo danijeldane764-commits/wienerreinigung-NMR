@@ -37,7 +37,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-[800px] mx-auto">
           <h1 className="text-hero mb-6">
-            Sauberkeit ohne Ausreden : für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen und Haushalte in Wien
+            Sauberkeit ohne Ausreden : für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen und Haushalte in Wien und Wien Umgebung
           </h1>
           <p className="text-body-large mb-6 opacity-95">
             Direkt beim Chef anrufen. Kein Callcenter. Fixpreis. Versichert.
@@ -57,7 +57,7 @@ const Hero = () => {
               className="w-full sm:w-auto text-button-large px-8 py-4"
             >
               <Phone className="w-5 h-5 mr-2" />
-              📞 Jetzt direkt mit dem Chef reden
+              📞 Genug geärgert - ruf Nikola direkt an
             </Button>
             <Button 
               variant="whatsapp" 
@@ -66,7 +66,7 @@ const Hero = () => {
               className="w-full sm:w-auto text-button-large px-8 py-4"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              💬 WhatsApp, dauert keine Minute
+              💬 WhatsApp - dein Angebot in 1 Minute
             </Button>
           </div>
         </div>

@@ -51,11 +51,11 @@ const Fensterreinigung = () => {
             
             <div className="mb-8">
               <p className="text-body-large text-muted-foreground mb-4">❌ Schlieren, Streifen, peinlich vor Mandanten oder bei Abnahme</p>
-              <p className="text-body-large text-foreground mb-4">👉 Wir machen's glasklar: vom Bürofenster bis zur Glasfront im Hochhaus</p>
+              <p className="text-body-large text-foreground mb-4">👉 Wir machen's glasklar: vom Bürofenster bis zur Glasfront im Hochhaus in Wien und Wien Umgebung</p>
             </div>
             
             <blockquote className="text-h3 font-medium italic text-primary mb-8">
-              "Seit ihr die Fenster macht, sieht's hier endlich so aus, wie es aussehen soll."
+              "Unsere Kanzlei sieht jetzt immer top aus - kein peinlicher erster Eindruck mehr."
             </blockquote>
 
             {/* CTA Buttons */}
