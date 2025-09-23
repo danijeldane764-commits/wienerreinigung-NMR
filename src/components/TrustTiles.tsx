@@ -1,4 +1,4 @@
-import trustTeamImage from "@/assets/trust-team-wien.webp";
+import trustTeamImage from "@/assets/s-hausbetreuung-new.jpg";
 import trustBesichtigungImage from "@/assets/trust-besichtigung-wien.webp";
 
 const TrustTiles = () => {
