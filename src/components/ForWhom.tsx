@@ -1,6 +1,7 @@
 import hausverwaltungImage from "@/assets/hausverwaltung-lobby.jpg";
 import kanzleiImage from "@/assets/kanzlei-conference.jpg";
 import bueroImage from "@/assets/bueroreinigung-workplace.jpg";
+import spezialreinigungImage from "@/assets/spezialreinigung-desinfektion.jpg";
 
 const ForWhom = () => {
   return (
@@ -54,6 +55,28 @@ const ForWhom = () => {
               <p className="text-h3 text-gray-200 leading-relaxed">
                 Saubere Arbeitsplätze für ein gesundes und produktives Team
               </p>
+            </div>
+          </div>
+
+          {/* Spezialreinigung & Desinfektion Section */}
+          <div 
+            className="relative h-[600px] rounded-2xl overflow-hidden bg-cover bg-center mt-8"
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(${spezialreinigungImage})`
+            }}
+          >
+            <div className="absolute top-0 left-0 h-2/3 flex items-center px-8 md:px-16">
+              <div className="text-left max-w-2xl">
+                <h2 className="text-h1 font-bold text-white mb-4">
+                  Spezialreinigung & Desinfektion
+                </h2>
+                <h3 className="text-h3 text-gray-200 mb-4 leading-relaxed">
+                  Für maximale Hygiene in Büros, Kanzleien und öffentlichen Räumen
+                </h3>
+                <p className="text-body text-gray-100 leading-relaxed">
+                  Ob gründliche Desinfektion nach Bauarbeiten, spezielle Hygienestandards oder sensible Arbeitsbereiche – wir sorgen für ein keimfreies Umfeld, in dem sich Mitarbeiter und Kunden sicher fühlen.
+                </p>
+              </div>
             </div>
           </div>
         </div>
