@@ -24,49 +24,45 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-[80vh] flex items-center justify-center">
+    <section className="relative h-[85vh] flex items-center justify-center">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.3)' }}></div>
+        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.45)' }}></div>
       </div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
-        <div className="max-w-[800px] mx-auto">
-          <h1 className="text-hero mb-6">
-            Sauberkeit ohne Ausreden : für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen und Haushalte in Wien und Wien Umgebung
+        <div className="max-w-[900px] mx-auto">
+          <h1 className="font-poppins font-bold text-white text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
+            Sauberkeit ohne Ausreden – in Wien & Umgebung
           </h1>
-          <p className="text-body-large mb-6 opacity-95">
-            Direkt beim Chef anrufen. Kein Callcenter. Fixpreis. Versichert.
+          <p className="font-roboto text-[#E6E6E6] text-xl md:text-2xl mb-8 leading-relaxed">
+            Für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen & Haushalte<br />
+            Direkt vom Chef. Fixpreis. Versichert.
           </p>
-          
-          {/* Micro Proof */}
-          <div className="text-small opacity-90 mb-8">
-            Aus Wien • Familienunternehmen • Besichtigung meist innerhalb von 24 Stunden
-          </div>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
-              variant="default" 
-              size="lg" 
-              onClick={handleCall}
-              className="w-full sm:w-auto text-button-large px-8 py-4"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              📞 Genug geärgert - ruf Nikola direkt an
-            </Button>
-            <Button 
-              variant="whatsapp" 
+              variant="whatsapp-primary" 
               size="lg" 
               onClick={handleWhatsApp}
-              className="w-full sm:w-auto text-button-large px-8 py-4"
+              className="w-full sm:w-auto font-poppins font-medium text-lg px-8 py-4 h-14"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              💬 WhatsApp - dein Angebot in 1 Minute
+              WhatsApp – Angebot in 1 Minute
+            </Button>
+            <Button 
+              variant="call-primary" 
+              size="lg" 
+              onClick={handleCall}
+              className="w-full sm:w-auto font-poppins font-medium text-lg px-8 py-4 h-14"
+            >
+              <Phone className="w-5 h-5 mr-2" />
+              Jetzt anrufen
             </Button>
           </div>
         </div>
