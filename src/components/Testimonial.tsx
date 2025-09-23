@@ -35,7 +35,7 @@ const Testimonial = () => {
                 </blockquote>
                 
                 <div className="text-body text-muted-foreground">
-                  <strong>Petra S.</strong>, Hausverwalterin
+                  Hausverwalterin
                 </div>
               </div>
             </div>
