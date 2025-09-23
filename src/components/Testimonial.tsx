@@ -63,7 +63,7 @@ const Testimonial = () => {
                 "Baustellenreinigung perfekt. Kein Staub, keine Schlieren. Übergabe problemlos."
               </p>
               <div className="text-small text-muted-foreground">
-                <strong>Maria L.</strong>, Bauleiterin
+                Bauleiterin
               </div>
             </div>
           </div>
