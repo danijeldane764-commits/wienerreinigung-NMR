@@ -26,7 +26,7 @@ const CallbackInfoBox = () => {
               </div>
               
               <p className="text-body-large opacity-95">
-                Ich ruf dich selbst zurück – und nicht irgendwann, sondern spätestens morgen.
+                Ich ruf dich selbst zurück - und nicht irgendwann, sondern spätestens morgen.
               </p>
             </div>
           </div>
