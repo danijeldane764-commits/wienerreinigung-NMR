@@ -33,14 +33,14 @@ const PainPoints = () => {
               <div className="flex items-start text-left">
                 <span className="text-[#D7263D] text-xl mr-3 mt-1">❌</span>
                 <p className="font-roboto text-[#333333] text-lg flex-1">
-                  Die kommen zu spät – oder gar nicht.
+                  Die kommen zu spät - oder gar nicht.
                 </p>
               </div>
               
               <div className="flex items-start text-left">
                 <span className="text-[#D7263D] text-xl mr-3 mt-1">❌</span>
                 <p className="font-roboto text-[#333333] text-lg flex-1">
-                  Die Arbeit ist schlampig – Ecken bleiben dreckig.
+                  Die Arbeit ist schlampig - Ecken bleiben dreckig.
                 </p>
               </div>
               
@@ -54,7 +54,7 @@ const PainPoints = () => {
               <div className="flex items-start text-left">
                 <span className="text-[#D7263D] text-xl mr-3 mt-1">❌</span>
                 <p className="font-roboto text-[#333333] text-lg flex-1">
-                  Kein Rückruf, kein Ansprechpartner – nur Frust.
+                  Kein Rückruf, kein Ansprechpartner - nur Frust.
                 </p>
               </div>
             </div>
