@@ -5,31 +5,6 @@ const PainPoints = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-h2 mb-12 text-foreground">
-              Kennst du das?
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <div className="bg-muted/50 rounded-lg p-8 border border-border">
-                <p className="text-body text-foreground">❌ <strong>Hausverwaltung:</strong> Mieter beschweren sich, Stiegenhaus stinkt trotz Reinigung</p>
-              </div>
-              
-              <div className="bg-muted/50 rounded-lg p-8 border border-border">
-                <p className="text-body text-foreground">❌ <strong>Kanzlei:</strong> Mandanten sehen Schlieren am Glas - peinlich</p>
-              </div>
-              
-              <div className="bg-muted/50 rounded-lg p-8 border border-border">
-                <p className="text-body text-foreground">❌ <strong>Baufirma:</strong> Endreinigung "fertig", aber Staub und Zementschlieren überall</p>
-              </div>
-              
-              <div className="bg-muted/50 rounded-lg p-8 border border-border">
-                <p className="text-body text-foreground">❌ <strong>Haushalt:</strong> Putzfirma unpünktlich, schlampig, plötzlich Sonderkosten</p>
-              </div>
-            </div>
-            
-            <blockquote className="text-h3 font-medium italic text-primary mb-10">
-              "Seit du da bist, ruft keiner mehr an zum Schimpfen."
-            </blockquote>
           </div>
         </div>
       </section>
