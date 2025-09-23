@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Phone, MessageCircle } from "lucide-react";
-import hausbetreungImage from "@/assets/s-hausbetreuung-wien.webp";
+import hausbetreungImage from "@/assets/s-hausbetreuung-glanz.jpg";
 
 const Hausbetreuung = () => {
   const benefits = [
