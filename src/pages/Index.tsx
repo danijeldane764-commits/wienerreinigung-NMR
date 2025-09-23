@@ -4,6 +4,7 @@ import PainPoints from "@/components/PainPoints";
 import Hero from "@/components/Hero";
 import CallbackInfoBox from "@/components/CallbackInfoBox";
 import NoCostsInfoBox from "@/components/NoCostsInfoBox";
+import TargetAudience from "@/components/TargetAudience";
 import ForWhom from "@/components/ForWhom";
 import HowItWorks from "@/components/HowItWorks";
 import Hausbetreuung from "@/components/Hausbetreuung";
@@ -35,6 +36,7 @@ const Index = () => {
       <CallbackInfoBox />
       <PainPoints />
       <NoCostsInfoBox />
+      <TargetAudience />
       <ForWhom />
       <HowItWorks />
       <Hausbetreuung />

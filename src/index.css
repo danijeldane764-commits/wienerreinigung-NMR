@@ -120,6 +120,12 @@
     
     /* Dark Blue */
     --dark-blue: 210 100% 15%;
+    
+    /* Light Blue Background */
+    --light-blue-bg: 222 100% 98%;
+    
+    /* Neutral Gray */
+    --neutral-gray: 0 0% 33%;
   }
 
   .dark {
