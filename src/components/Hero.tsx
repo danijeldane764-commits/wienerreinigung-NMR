@@ -24,7 +24,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[88vh] sm:min-h-[90vh] md:min-h-[95vh] lg:min-h-[90vh] flex items-start justify-center pt-12 sm:pt-16 md:pt-20 pb-8 sm:pb-12">
+    <section className="relative min-h-[75vh] sm:min-h-[80vh] md:min-h-[82vh] lg:min-h-[85vh] flex items-center justify-center py-4 sm:py-6 md:py-8">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-[center_top] sm:bg-center bg-no-repeat"
@@ -35,11 +35,11 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center text-white">
-        <div className="max-w-[680px] sm:max-w-[760px] lg:max-w-[900px] mx-auto">
-          <h1 className="font-poppins font-bold text-white text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl mb-3 sm:mb-4 md:mb-5 leading-[1.15]">
+        <div className="max-w-[600px] sm:max-w-[650px] md:max-w-[700px] lg:max-w-[800px] mx-auto">
+          <h1 className="font-poppins font-bold text-white text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl mb-2 sm:mb-3 md:mb-4 leading-tight">
             Sauberkeit ohne Ausreden in Wien & Umgebung
           </h1>
-          <p className="font-roboto text-[#E6E6E6] text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl mb-5 sm:mb-6 md:mb-7 leading-relaxed">
+          <p className="font-roboto text-[#E6E6E6] text-sm sm:text-base md:text-base lg:text-lg xl:text-xl mb-4 sm:mb-5 md:mb-6 leading-normal">
             Für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen & Haushalte<br className="hidden sm:block" />
             <span className="sm:hidden"> </span>Direkt vom Chef. Fixpreis. Versichert.
           </p>
