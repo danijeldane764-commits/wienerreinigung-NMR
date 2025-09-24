@@ -1,4 +1,4 @@
-import { Building2, Scale, Monitor, HardHat, Home } from "lucide-react";
+import { Building2, Scale, Monitor, HardHat, Home, Store } from "lucide-react";
 import officeCleaningImage from "@/assets/s-bueroreinigung-wien.webp";
 
 const TargetAudience = () => {
@@ -33,6 +33,12 @@ const TargetAudience = () => {
       headline: "Haushalte",
       subline: "Pünktlich, ehrlich, Fixpreis – ohne Überraschungen",
       hasImage: false
+    },
+    {
+      icon: Store,
+      headline: "Unternehmen & Geschäfte",
+      subline: "Saubere Verkaufsflächen und Geschäftsräume – für zufriedene Kunden & Mitarbeiter.",
+      hasImage: false
     }
   ];
 
@@ -44,7 +50,7 @@ const TargetAudience = () => {
             Für wen wir arbeiten in Wien und Umgebung
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {targetGroups.map((group, index) => {
               const IconComponent = group.icon;
               return (
