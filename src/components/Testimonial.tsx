@@ -43,17 +43,6 @@ const Testimonial = () => {
           
           {/* Additional Mini Testimonials */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <div 
-              className="bg-slate-50 rounded-lg p-6"
-              style={{ backgroundColor: '#F0F4F8' }}
-            >
-              <p className="text-body text-foreground mb-3 italic">
-                "Fenster glänzen wieder wie am ersten Tag. Mandanten sind beeindruckt."
-              </p>
-              <div className="text-small text-muted-foreground">
-                Rechtsanwalt
-              </div>
-            </div>
             
             <div 
               className="bg-slate-50 rounded-lg p-6"
