@@ -18,7 +18,7 @@ const CallbackInfoBox = () => {
                   <Phone className="w-[18px] h-[18px] text-white" />
                 </div>
                 <h3 className="font-poppins font-bold text-white text-2xl leading-tight">
-                  Immer erreichbar - notfalls Rückruf bis morgen
+                  Immer erreichbar - notfalls Rückruf so schnell wie möglich
                 </h3>
               </div>
               
