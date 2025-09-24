@@ -31,10 +31,10 @@ const Header = () => {
             <img 
               src="/lovable-uploads/136a23ba-c861-4ddc-bfa0-27d99a618697.png" 
               alt="Nikola Miloradovic Reinigung Logo"
-              className="h-10 w-auto object-contain"
+              className="h-12 w-auto object-contain"
               loading="eager"
             />
-            <span className="text-lg font-bold text-primary hidden sm:block">
+            <span className="text-xl font-bold text-primary hidden sm:block">
               Nikola Miloradovic Reinigung
             </span>
           </div>
