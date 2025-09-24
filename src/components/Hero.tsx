@@ -1,6 +1,6 @@
 import CTAWhatsApp from "@/components/CTAWhatsApp";
 import CTACall from "@/components/CTACall";
-import heroImage from "@/assets/hero-office-cleaning.jpg";
+import heroImage from "@/assets/hero-hausbetreuung-staircase.jpg";
 
 const Hero = () => {
   const handleCall = () => {
@@ -30,7 +30,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.45)' }}></div>
+        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.55)' }}></div>
       </div>
       
       {/* Content */}
