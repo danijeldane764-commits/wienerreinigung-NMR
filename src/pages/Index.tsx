@@ -11,6 +11,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Hausbetreuung from "@/components/Hausbetreuung";
 import Fensterreinigung from "@/components/Fensterreinigung";
 import FensterreinigungSeiltechnik from "@/components/FensterreinigungSeiltechnik";
+import Winterdienst from "@/components/Winterdienst";
 import TrustTiles from "@/components/TrustTiles";
 import Trust from "@/components/Trust";
 import Testimonial from "@/components/Testimonial";
@@ -44,6 +45,7 @@ const Index = () => {
       <Hausbetreuung />
       <Fensterreinigung />
       <FensterreinigungSeiltechnik />
+      <Winterdienst />
       <TrustTiles />
       <Testimonial />
       <FinalCTA />

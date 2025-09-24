@@ -1,4 +1,4 @@
-import { Building2, Scale, Monitor, HardHat, Home, Store } from "lucide-react";
+import { Building2, Scale, Monitor, HardHat, Home, Store, Snowflake } from "lucide-react";
 import officeCleaningImage from "@/assets/s-bueroreinigung-wien.webp";
 
 const TargetAudience = () => {
@@ -38,6 +38,12 @@ const TargetAudience = () => {
       icon: Store,
       headline: "Unternehmen & Geschäfte",
       subline: "Saubere Verkaufsflächen und Geschäftsräume – für zufriedene Kunden & Mitarbeiter.",
+      hasImage: false
+    },
+    {
+      icon: Snowflake,
+      headline: "Winterdienst & Schneeräumung",
+      subline: "Sichere Gehwege & Zufahrten – pünktlich und zuverlässig.",
       hasImage: false
     }
   ];
