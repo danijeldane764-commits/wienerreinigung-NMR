@@ -37,9 +37,9 @@ const HowItWorks = () => {
           </h2>
           
           {/* Steps */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mb-10">
             {steps.map((step, index) => (
-              <div key={index} className="flex flex-col items-center space-y-4">
+              <div key={index} className="relative flex flex-col items-center space-y-4">
                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
                   <step.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
@@ -47,9 +47,6 @@ const HowItWorks = () => {
                   <h3 className="text-h3 text-foreground mb-3">{step.title}</h3>
                   <p className="text-body text-muted-foreground">{step.description}</p>
                 </div>
-                {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-8 right-0 w-8 h-0.5 bg-primary/30 transform translate-x-full"></div>
-                )}
               </div>
             ))}
           </div>
