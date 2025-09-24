@@ -24,7 +24,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-[70vh] sm:h-[75vh] lg:h-[85vh] flex items-center justify-center">
+    <section className="relative min-h-[80vh] sm:min-h-[85vh] lg:h-[85vh] flex items-center justify-center py-8 sm:py-12">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-[center_top] sm:bg-center bg-no-repeat"
@@ -35,17 +35,17 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center text-white">
-        <div className="max-w-[800px] lg:max-w-[900px] mx-auto">
-          <h1 className="font-poppins font-bold text-white text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 leading-tight">
+        <div className="max-w-[700px] sm:max-w-[800px] lg:max-w-[900px] mx-auto">
+          <h1 className="font-poppins font-bold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 leading-tight">
             Sauberkeit ohne Ausreden in Wien & Umgebung
           </h1>
-          <p className="font-roboto text-[#E6E6E6] text-lg sm:text-xl md:text-xl lg:text-2xl mb-6 sm:mb-8 leading-relaxed">
+          <p className="font-roboto text-[#E6E6E6] text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 leading-relaxed">
             Für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen & Haushalte<br className="hidden sm:block" />
             <span className="sm:hidden"> </span>Direkt vom Chef. Fixpreis. Versichert.
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mt-4 sm:mt-[20px]">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mt-4 sm:mt-6">
             <CTAWhatsApp 
               text="WhatsApp - Anfrage"
               onClick={handleWhatsApp}
