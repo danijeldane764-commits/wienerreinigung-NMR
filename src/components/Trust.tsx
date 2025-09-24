@@ -23,28 +23,28 @@ const Trust = () => {
   };
 
   return (
-    <section className="py-16 md:py-20 bg-muted/30">
+    <section className="pt-20 md:pt-24 pb-16 md:pb-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-h2 text-foreground mb-8">
-            Abschluss - Vertrauen
+          <h2 className="text-h2 font-bold mb-8" style={{ color: '#002060' }}>
+            Bereit für ein sauberes Ergebnis?
           </h2>
           
-          <p className="text-body-large text-muted-foreground mb-6">
-            Hol dir dein Fixpreis-Angebot direkt vom Chef.
+          <p className="text-body-large mb-6" style={{ color: '#333333' }}>
+            Genug geärgert mit unzuverlässigen Reinigungsfirmen?
           </p>
           
-          <p className="text-body-large text-muted-foreground mb-8">
-            Ich nehme nur so viele Kunden an, wie ich selbst im Griff habe - also warte nicht.
+          <p className="text-body-large mb-8" style={{ color: '#333333' }}>
+            Ruf mich direkt an oder schreib mir auf WhatsApp, ich kümmere mich persönlich um deinen Fixpreis-Angebot nach der Besichtigung.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <CTACall 
-              text="Anrufen - Angebot sichern"
+              text="Anrufen"
               onClick={handleCall}
             />
             <CTAWhatsApp 
-              text="WhatsApp - dauert 1 Minute"
+              text="WhatsApp - Anfrage"
               onClick={handleWhatsApp}
             />
           </div>
