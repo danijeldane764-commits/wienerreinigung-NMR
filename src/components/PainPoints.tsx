@@ -22,7 +22,7 @@ const PainPoints = () => {
             
             {/* Intro Text */}
             <p className="font-roboto text-[#333333] text-lg md:text-xl mb-8">
-              Wenn du schon mal eine Reinigungsfirma in Wien beauftragt hast, kennst du das Spiel:
+              Wenn du schon mal eine Reinigungsfirma in Wien oder Umgebung beauftragt hast, kennst du das Spiel:
             </p>
             
             {/* Pain Points List */}
