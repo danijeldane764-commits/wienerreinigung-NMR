@@ -1,12 +1,24 @@
-import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle } from "lucide-react";
+import CTAWhatsApp from "@/components/CTAWhatsApp";
+import CTACall from "@/components/CTACall";
 
 const Trust = () => {
   const handleCall = () => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'call_click_trust', {
+        event_category: 'engagement',
+        event_label: 'trust_section'
+      });
+    }
     window.location.href = "tel:+436677680897";
   };
 
   const handleWhatsApp = () => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'whatsapp_click_trust', {
+        event_category: 'engagement',
+        event_label: 'trust_section'
+      });
+    }
     window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20kurze%20Chef-Besichtigung%20in%20Wien.%20Wunschtermin:%20[Datum/Uhrzeit].", "_blank");
   };
 
@@ -26,25 +38,15 @@ const Trust = () => {
             Ich nehme nur so viele Kunden an, wie ich selbst im Griff habe - also warte nicht.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              variant="default"
-              size="lg"
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+            <CTACall 
+              text="Anrufen - Angebot sichern"
               onClick={handleCall}
-              className="w-full sm:w-auto text-button-large px-8 py-4"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              📞 Anrufen - Angebot sichern
-            </Button>
-            <Button 
-              variant="whatsapp"
-              size="lg"
+            />
+            <CTAWhatsApp 
+              text="WhatsApp - dauert 1 Minute"
               onClick={handleWhatsApp}
-              className="w-full sm:w-auto text-button-large px-8 py-4"
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              💬 WhatsApp - dauert 1 Minute
-            </Button>
+            />
           </div>
         </div>
       </div>
