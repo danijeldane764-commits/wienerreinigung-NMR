@@ -43,7 +43,7 @@ const TrustTiles = () => {
               className="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
               onClick={handleCallTile}
               role="button"
-              aria-label="Rückruf in 24 Stunden per Telefon starten"
+              aria-label="Direkter Draht zum Chef - Telefon starten"
             >
               <div className="aspect-video">
                 <img 
@@ -54,8 +54,8 @@ const TrustTiles = () => {
                 />
                 <div className="absolute inset-0 bg-primary/70 group-hover:bg-primary/80 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-6">
-                  <h3 className="text-h2 mb-3">Rückruf in 24 Stunden</h3>
-                  <p className="text-body-large opacity-90">Direkter Kontakt mit dem Chef</p>
+                  <h3 className="text-h2 mb-3">Direkter Draht zum Chef</h3>
+                  <p className="text-body-large opacity-90">Keine Hotline – du sprichst direkt mit mir.</p>
                 </div>
               </div>
             </div>
