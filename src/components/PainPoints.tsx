@@ -1,13 +1,10 @@
+import SocialProof from "@/components/SocialProof";
+
 const PainPoints = () => {
   return (
     <>
-      {/* Original "Kennst du das?" Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto text-center">
-          </div>
-        </div>
-      </section>
+      {/* Social Proof Testimonial */}
+      <SocialProof />
 
       {/* New Pain Block Section */}
       <section className="py-16 bg-white">
