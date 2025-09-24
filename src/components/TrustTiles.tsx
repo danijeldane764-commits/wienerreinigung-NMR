@@ -55,7 +55,7 @@ const TrustTiles = () => {
                 <div className="absolute inset-0 bg-primary/70 group-hover:bg-primary/80 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-6">
                   <h3 className="text-h2 mb-3">Direkter Draht zum Chef</h3>
-                  <p className="text-body-large opacity-90">Keine Hotline – du sprichst direkt mit mir.</p>
+                  <p className="text-body-large opacity-90">Keine Hotline - du sprichst direkt mit mir.</p>
                 </div>
               </div>
             </div>
