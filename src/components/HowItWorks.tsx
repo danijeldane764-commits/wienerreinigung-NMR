@@ -1,12 +1,25 @@
-import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle, Eye, Euro, CalendarCheck } from "lucide-react";
+import CTAWhatsApp from "@/components/CTAWhatsApp";
+import CTACall from "@/components/CTACall";
+import { Eye, Euro, CalendarCheck } from "lucide-react";
 
 const HowItWorks = () => {
   const handleCall = () => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'call_click_howitworks', {
+        event_category: 'engagement',
+        event_label: 'howitworks_section'
+      });
+    }
     window.location.href = "tel:+436677680897";
   };
 
   const handleWhatsApp = () => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'whatsapp_click_howitworks', {
+        event_category: 'engagement',
+        event_label: 'howitworks_section'
+      });
+    }
     window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20kurze%20Chef-Besichtigung%20in%20Wien.%20Wunschtermin:%20[Datum/Uhrzeit].", "_blank");
   };
 
@@ -52,25 +65,15 @@ const HowItWorks = () => {
           </div>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              variant="whatsapp"
-              size="lg"
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+            <CTAWhatsApp 
+              text="WhatsApp - Angebot in 1 Minute"
               onClick={handleWhatsApp}
-              className="w-full sm:w-auto text-button-large px-8 py-4"
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              💬 WhatsApp - Angebot in 1 Minute
-            </Button>
-            <Button 
-              variant="default"
-              size="lg"
+            />
+            <CTACall 
+              text="Besichtigung sichern"
               onClick={handleCall}
-              className="w-full sm:w-auto text-button-large px-8 py-4"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              📞 Besichtigung sichern
-            </Button>
+            />
           </div>
         </div>
       </div>
