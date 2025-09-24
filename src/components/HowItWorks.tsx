@@ -37,14 +37,14 @@ const HowItWorks = () => {
           </h2>
           
           {/* Steps */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-8 lg:gap-10 mb-10">
             {steps.map((step, index) => (
               <div key={index} className="relative flex flex-col items-center space-y-4">
                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
                   <step.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <div className="text-center">
-                  <h3 className="text-h3 text-foreground mb-3">{step.title}</h3>
+                  <h3 className="text-2xl md:text-2xl lg:text-3xl text-foreground mb-3">{step.title}</h3>
                   <p className="text-body text-muted-foreground">{step.description}</p>
                 </div>
               </div>

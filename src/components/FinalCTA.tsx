@@ -11,7 +11,7 @@ const FinalCTA = () => {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-20 bg-primary text-primary-foreground">
+    <section id="contact" className="scroll-mt-24 md:scroll-mt-32 py-16 md:py-20 bg-primary text-primary-foreground">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-h2 mb-6">

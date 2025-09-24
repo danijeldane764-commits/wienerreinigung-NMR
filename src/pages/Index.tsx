@@ -30,7 +30,7 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="min-h-screen pt-24 md:pt-28">
+    <main className="min-h-screen pt-24 md:pt-32">
       <Header />
       <Hero />
       <CallbackInfoBox />
