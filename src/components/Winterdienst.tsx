@@ -38,9 +38,9 @@ const Winterdienst = () => {
               <p className="text-body-large text-foreground mb-4">👉 Wir sorgen im Winter für Sicherheit und Verlässlichkeit. Ob Gehwege, Einfahrten, Parkflächen oder Betriebsflächen – wir räumen Schnee und streuen pünktlich. Für Hausverwaltungen, Unternehmen und Haushalte in Wien und Umgebung. Fixpreis, zuverlässig, ohne Ausreden.</p>
             </div>
             
-            <blockquote className="text-h3 font-medium italic text-primary mb-8">
-              "Endlich kein Stress mehr bei Schnee – Nikola ist immer da bevor die ersten Mieter kommen."
-            </blockquote>
+          <blockquote className="text-h3 font-medium italic text-primary mb-8">
+            "Nikola ist immer da bevor die ersten Mieter kommen."
+          </blockquote>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <CTAWhatsApp 
