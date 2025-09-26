@@ -22,10 +22,15 @@ const ServiceCards = () => {
       title: 'Spezial- & Zusatzleistungen',
       description: 'Abfluss- und Hydrantenreinigung, kleine Reparaturen und Sonderreinigungen. Wir kümmern uns, melden Auffälligkeiten und packen dort an, wo es gebraucht wird.',
     },
+    {
+      id: 'winterdienst',
+      title: 'Winterdienst & Schneeräumung',
+      description: 'Verlässliche Schneeräumung und Streudienste für sichere Wege, Zufahrten und Eingänge – schnell, gründlich und einsatzbereit bei jedem Wetter.',
+    },
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
       {services.map((service) => (
         <div
           key={service.id}

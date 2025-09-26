@@ -12,7 +12,7 @@ const Services = () => {
           
           {/* Teaser Text */}
           <p className="font-roboto text-[#333333] text-lg md:text-xl max-w-[800px] mx-auto mb-12">
-            Von Stiegenhaus bis Seiltechnik – wir bieten alle Reinigungsleistungen aus einer Hand.
+            Von Stiegenhaus bis Winterdienst – wir bieten alle Reinigungsleistungen aus einer Hand.
           </p>
           
           {/* Services Grid - Modern Card Layout */}
