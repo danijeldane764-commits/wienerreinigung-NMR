@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import SocialProof from "@/components/SocialProof";
+import TrustSection from "@/components/TrustSection";
 import PainPoints from "@/components/PainPoints";
 import Services from "@/components/Services";
 import Hero from "@/components/Hero";
@@ -35,6 +36,7 @@ const Index = () => {
     <main className="min-h-screen pt-24 md:pt-32">
       <Header />
       <Hero />
+      <TrustSection />
       <PainPoints />
       <Services />
       <SocialProof />
