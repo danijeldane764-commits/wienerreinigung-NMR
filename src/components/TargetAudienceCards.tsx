@@ -10,7 +10,7 @@ const TargetAudienceCards = () => {
     {
       id: 'kanzleien',
       title: 'Kanzleien',
-      description: 'Ein gepflegtes Büro schafft Vertrauen. Wir sorgen für saubere Arbeitsplätze, Konferenzräume und Empfangsbereiche – für den besten Eindruck bei Ihren Mandanten.',
+      description: 'Ein gepflegtes Büro schafft Vertrauen. Wir sorgen für saubere Arbeitsplätze, Konferenzräume und Empfangsbereiche - für den besten Eindruck bei Ihren Mandanten.',
     },
     {
       id: 'baufirmen',
@@ -20,7 +20,7 @@ const TargetAudienceCards = () => {
     {
       id: 'haushalte',
       title: 'Haushalte',
-      description: 'Egal ob Wohnung oder Haus – wir übernehmen Grundreinigung, regelmäßige Betreuung oder spezielle Einsätze. Damit Sie es daheim jederzeit sauber haben.',
+      description: 'Egal ob Wohnung oder Haus - wir übernehmen Grundreinigung, regelmäßige Betreuung oder spezielle Einsätze. Damit Sie es daheim jederzeit sauber haben.',
     },
     {
       id: 'unternehmen',
