@@ -21,35 +21,35 @@ const Hero = () => {
     },
     {
       image: heroImage2,
-      title: "Professionelle Fensterreinigung in Wien",
+      title: "Professionelle Fensterreinigung in Wien & Umgebung",
       subtitle: "Kristallklare Ergebnisse mit modernster Seiltechnik",
       service: "Fensterreinigung mit Seiltechnik",
       backgroundPosition: "center 15%"
     },
     {
       image: heroImage3,
-      title: "Industriekletterer für alle Höhen",
-      subtitle: "Sichere Arbeiten an Fassaden und schwer zugänglichen Stellen",
-      service: "Industrieklettern & Fassadenarbeiten",
+      title: "Industriekletterer für alle Höhen in Wien & Umgebung",
+      subtitle: "Sichere Arbeiten an Gebäuden und schwer zugänglichen Stellen",
+      service: "Industrieklettern & Höhenarbeiten",
       backgroundPosition: "center 25%"
     },
     {
       image: heroImage4,
-      title: "Dachfensterreinigung mit Seiltechnik",
+      title: "Dachfensterreinigung mit Seiltechnik in Wien & Umgebung",
       subtitle: "Schwer erreichbare Dachfenster professionell gereinigt",
       service: "Dachfensterreinigung & Industrieklettern",
       backgroundPosition: "center 30%"
     },
     {
       image: heroImage5,
-      title: "Hausbetreuung mit Glanzgarantie",
+      title: "Hausbetreuung mit Glanzgarantie in Wien & Umgebung",
       subtitle: "Treppenhäuser und Eingangsbereiche in perfektem Zustand",
       service: "Hausbetreuung & Stiegenhausreinigung",
       backgroundPosition: "center center"
     },
     {
       image: heroImage6,
-      title: "Zuverlässige Hausbetreuung Wien",
+      title: "Zuverlässige Hausbetreuung in Wien & Umgebung",
       subtitle: "Ihr Objekt in besten Händen - regelmäßig und gründlich",
       service: "Hausbetreuung & Facility Management",
       backgroundPosition: "center center"
