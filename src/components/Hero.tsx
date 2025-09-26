@@ -32,9 +32,9 @@ const Hero = () => {
     },
     {
       image: heroImage4,
-      title: "Büroreinigung vom Profi in Wien",
-      subtitle: "Hygienische Arbeitsplätze für produktive Teams",
-      service: "Büroreinigung & Objektbetreuung"
+      title: "Dachfensterreinigung mit Seiltechnik",
+      subtitle: "Schwer erreichbare Dachfenster professionell gereinigt",
+      service: "Dachfensterreinigung & Industrieklettern"
     },
     {
       image: heroImage5,
