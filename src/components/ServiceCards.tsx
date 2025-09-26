@@ -1,4 +1,5 @@
 import React from 'react';
+import hausbetreungImage from '@/assets/hausbetreuung-staircase.jpg';
 
 const ServiceCards = () => {
   const services = [
@@ -41,13 +42,21 @@ const ServiceCards = () => {
           key={service.id}
           className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer border border-border/50"
         >
-          {/* Image Placeholder */}
+          {/* Image */}
           <div className="w-full h-48 rounded-t-xl overflow-hidden">
-            <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center">
-              <span className="text-muted-foreground text-sm text-center px-4">
-                Bild wird ersetzt –<br />{service.title}
-              </span>
-            </div>
+            {service.id === 'hausbetreuung' ? (
+              <img 
+                src={hausbetreungImage} 
+                alt="Hausbetreuung - Sauberes Stiegenhaus" 
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center">
+                <span className="text-muted-foreground text-sm text-center px-4">
+                  Bild wird ersetzt –<br />{service.title}
+                </span>
+              </div>
+            )}
           </div>
           
           {/* Content */}
