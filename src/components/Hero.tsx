@@ -38,7 +38,7 @@ const Hero = () => {
       title: "Dachfensterreinigung mit Seiltechnik in Wien & Umgebung",
       subtitle: "Schwer erreichbare Dachfenster professionell gereinigt",
       service: "Dachfensterreinigung & Industrieklettern",
-      backgroundPosition: "center 30%"
+      backgroundPosition: "center 45%"
     },
     {
       image: heroImage5,
