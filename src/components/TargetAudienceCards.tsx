@@ -1,4 +1,5 @@
 import React from 'react';
+import hausbetreuungImage from '@/assets/hausbetreuung-clean-floor.jpg';
 
 const TargetAudienceCards = () => {
   const cards = [
@@ -36,11 +37,21 @@ const TargetAudienceCards = () => {
           key={card.id}
           className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer border border-border/50"
         >
-          {/* Placeholder Image */}
-          <div className="w-full h-48 bg-gradient-to-br from-primary/10 to-primary/20 rounded-t-xl flex items-center justify-center">
-            <span className="text-muted-foreground text-sm text-center px-4">
-              Bild wird ersetzt<br />({card.title})
-            </span>
+          {/* Image */}
+          <div className="w-full h-48 rounded-t-xl overflow-hidden">
+            {card.id === 'hausbetreuung' ? (
+              <img 
+                src={hausbetreuungImage} 
+                alt="Sauberer Fliesenboden nach professioneller Hausbetreuung"
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center">
+                <span className="text-muted-foreground text-sm text-center px-4">
+                  Bild wird ersetzt<br />({card.title})
+                </span>
+              </div>
+            )}
           </div>
           
           {/* Content */}
