@@ -1,116 +1,74 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import housekeepingImage from "@/assets/s-hausbetreuung-wien.webp";
-import windowImage from "@/assets/s-fensterreinigung-wien.webp";
-import ropeTechImage from "@/assets/s-seiltechnik-fensterreinigung-wien.webp";
-
-const handleContactScroll = () => {
-  const contactSection = document.getElementById('contact');
-  if (contactSection) {
-    contactSection.scrollIntoView({ behavior: 'smooth' });
-  }
-};
 
 const Services = () => {
-  const featuredServices = [
-    {
-      title: "Hausbetreuung Wien",
-      description: "Rundum Service für Wohnanlagen und Objekte",
-      image: housekeepingImage,
-      alt: "Hausbetreuung in Wien",
-      link: "#hausbetreuung"
-    },
-    {
-      title: "Fensterreinigung Wien",
-      description: "Streifenfrei innen und außen",
-      image: windowImage,
-      alt: "Fensterreinigung in Wien", 
-      link: "#fensterreinigung"
-    },
-    {
-      title: "Fensterreinigung mit Seiltechnik",
-      description: "Sicher für schwer zugängliche Fenster in oberen Etagen",
-      image: ropeTechImage,
-      alt: "Seiltechnik für schwer zugängliche Fenster in Wien",
-      link: "#fensterreinigung-seiltechnik"
-    }
-  ];
-
-  const additionalServices = [
-    "Büroreinigung",
-    "Bauendreinigung",
-    "Winterdienst", 
-    "Entrümpelung",
-    "Gartenpflege"
-  ];
-
   return (
-    <section className="py-20 bg-background">
+    <section className="py-[6vh] bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-h1 text-foreground mb-6">
-            Unsere Schwerpunkte in Wien
+        <div className="max-w-[1200px] mx-auto text-center">
+          {/* Headline */}
+          <h2 className="font-poppins font-bold text-[#0A2342] text-4xl md:text-5xl lg:text-6xl mb-6">
+            Unsere Leistungen - Sauberkeit mit Fixpreis & Handschlagqualität
           </h2>
-          <p className="text-body-large text-muted-foreground max-w-2xl mx-auto">
-            Saubere Ergebnisse, klare Abläufe, transparente Kommunikation
+          
+          {/* Teaser Text */}
+          <p className="font-roboto text-[#333333] text-lg md:text-xl max-w-[800px] mx-auto mb-12">
+            Ob Stiegenhaus, Garten oder Fenster in Höhe - wir kümmern uns zuverlässig um alles, was Ihr Gebäude braucht.
           </p>
-        </div>
-
-        {/* Featured Services Grid - 3 Services */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {featuredServices.map((service, index) => (
-            <a 
-              key={index} 
-              href={service.link}
-              className="group relative overflow-hidden rounded-2xl shadow-lg bg-card hover:shadow-xl transition-all duration-300"
-            >
-              <div className="aspect-video overflow-hidden">
-                <img 
-                  src={service.image} 
-                  alt={service.alt}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                  decoding="async"
-                  srcSet={`${service.image} 480w, ${service.image} 768w, ${service.image} 1280w`}
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
+          
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Hausbetreuung Card */}
+            <div className="relative group h-[48vh] md:h-[48vh] sm:h-[40vh] rounded-lg overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_6px_12px_rgba(0,0,0,0.15)]">
+              {/* Background Image Placeholder */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700">
+                {/* This will be replaced with actual image in editor */}
+                <div className="w-full h-full flex items-center justify-center text-white text-sm opacity-50">
+                  Hausbetreuung Bild (wird ersetzt)
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-h3 text-foreground mb-3">
-                  {service.title}
+              
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-35 group-hover:bg-opacity-45 transition-all duration-300"></div>
+              
+              {/* Content */}
+              <div className="absolute inset-0 p-[8%] flex flex-col justify-end text-left">
+                {/* Headline */}
+                <h3 className="font-poppins font-bold text-white text-[180%] mb-4">
+                  Hausbetreuung
                 </h3>
-                <p className="text-body text-muted-foreground">
-                  {service.description}
+                
+                {/* Subtext */}
+                <p className="font-roboto text-[#E6E6E6] text-[110%] leading-[140%] mb-6">
+                  Regelmäßige Betreuung aller Allgemeinflächen - sauber, geordnet, verlässlich.
                 </p>
+                
+                {/* Bullet Points */}
+                <ul className="text-white text-sm space-y-2 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-white mr-2 mt-1">•</span>
+                    <span>Stiegenhaus, Eingangsbereiche, Gänge</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-white mr-2 mt-1">•</span>
+                    <span>Kontrolle Licht, Türen, Müllräume</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-white mr-2 mt-1">•</span>
+                    <span>Kleine Reparaturen und Schadensmeldung</span>
+                  </li>
+                </ul>
+                
+                {/* Button */}
+                <Button 
+                  variant="outline" 
+                  className="w-fit border-white text-white bg-transparent hover:bg-white hover:text-[#0A2342] rounded-[10px] px-[18px] py-[10px] transition-all duration-300"
+                  aria-label="Mehr erfahren über Hausbetreuung"
+                >
+                  Mehr erfahren
+                </Button>
               </div>
-            </a>
-          ))}
-        </div>
-
-        {/* Additional Services */}
-        <div className="text-center mb-12">
-          <h3 className="text-h3 text-foreground mb-6">
-            Weitere Leistungen
-          </h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {additionalServices.map((service, index) => (
-              <Badge key={index} variant="secondary" className="text-body px-4 py-2">
-                {service}
-              </Badge>
-            ))}
+            </div>
           </div>
-        </div>
-
-        {/* CTA Button */}
-        <div className="text-center">
-          <Button 
-            variant="default"
-            size="lg"
-            onClick={handleContactScroll}
-            className="text-button-large px-8 py-4"
-          >
-            Angebot in 24 Stunden
-          </Button>
         </div>
       </div>
     </section>

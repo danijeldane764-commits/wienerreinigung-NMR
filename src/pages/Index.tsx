@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Header from "@/components/Header";
 import SocialProof from "@/components/SocialProof";
 import PainPoints from "@/components/PainPoints";
+import Services from "@/components/Services";
 import Hero from "@/components/Hero";
 import NoCostsInfoBox from "@/components/NoCostsInfoBox";
 import TargetAudience from "@/components/TargetAudience";
@@ -35,6 +36,7 @@ const Index = () => {
       <Header />
       <Hero />
       <PainPoints />
+      <Services />
       <SocialProof />
       <NoCostsInfoBox />
       <TargetAudience />
