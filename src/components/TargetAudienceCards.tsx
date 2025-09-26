@@ -9,11 +9,6 @@ const TargetAudienceCards = () => {
       description: 'Regelmäßige Betreuung aller Allgemeinflächen - sauber, geordnet, verlässlich. Wir kümmern uns um Stiegenhäuser, Eingangsbereiche und kleine Reparaturen.',
     },
     {
-      id: 'kanzleien',
-      title: 'Kanzleien',
-      description: 'Ein gepflegtes Büro schafft Vertrauen. Wir sorgen für saubere Arbeitsplätze, Konferenzräume und Empfangsbereiche - für den besten Eindruck bei Ihren Mandanten.',
-    },
-    {
       id: 'baufirmen',
       title: 'Baufirmen',
       description: 'Nach Bauprojekten übernehmen wir die Grob- und Feinreinigung. So können Ihre Objekte pünktlich und sauber an Kunden übergeben werden.',
@@ -31,7 +26,7 @@ const TargetAudienceCards = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {cards.map((card) => (
         <div
           key={card.id}
