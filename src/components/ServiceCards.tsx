@@ -2,6 +2,7 @@ import React from 'react';
 import hausbetreungImage from '@/assets/hausbetreuung-staircase.jpg';
 import bueroreinigungImage from '@/assets/bueroreinigung-hallway.jpg';
 import fensterreinigungImage from '@/assets/fensterreinigung-seiltechnik.jpg';
+import gartenpflegeImage from '@/assets/gartenpflege-terrasse.jpg';
 
 const ServiceCards = () => {
   const services = [
@@ -62,6 +63,12 @@ const ServiceCards = () => {
               <img 
                 src={fensterreinigungImage} 
                 alt="Fensterreinigung & Seiltechnik - Industriekletterer" 
+                className="w-full h-full object-cover"
+              />
+            ) : service.id === 'gartenpflege' ? (
+              <img 
+                src={gartenpflegeImage} 
+                alt="Gartenpflege & Außenflächen - Terrasse vor Pflege" 
                 className="w-full h-full object-cover"
               />
             ) : (
