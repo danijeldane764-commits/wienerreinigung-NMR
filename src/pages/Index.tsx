@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import SocialProof from "@/components/SocialProof";
 import PainPoints from "@/components/PainPoints";
 import Hero from "@/components/Hero";
-import CallbackInfoBox from "@/components/CallbackInfoBox";
 import NoCostsInfoBox from "@/components/NoCostsInfoBox";
 import TargetAudience from "@/components/TargetAudience";
 import ForWhom from "@/components/ForWhom";
@@ -35,7 +34,6 @@ const Index = () => {
     <main className="min-h-screen pt-24 md:pt-32">
       <Header />
       <Hero />
-      <CallbackInfoBox />
       <PainPoints />
       <SocialProof />
       <NoCostsInfoBox />
