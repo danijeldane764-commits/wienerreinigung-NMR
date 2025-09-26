@@ -16,37 +16,43 @@ const Hero = () => {
       image: heroImage1,
       title: "Sauberkeit ohne Ausreden in Wien & Umgebung",
       subtitle: "Für Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen & Haushalte",
-      service: "Industriekletterer & Fensterreinigung"
+      service: "Industriekletterer & Fensterreinigung",
+      backgroundPosition: "center 20%"
     },
     {
       image: heroImage2,
       title: "Professionelle Fensterreinigung in Wien",
       subtitle: "Kristallklare Ergebnisse mit modernster Seiltechnik",
-      service: "Fensterreinigung mit Seiltechnik"
+      service: "Fensterreinigung mit Seiltechnik",
+      backgroundPosition: "center 15%"
     },
     {
       image: heroImage3,
       title: "Industriekletterer für alle Höhen",
       subtitle: "Sichere Arbeiten an Fassaden und schwer zugänglichen Stellen",
-      service: "Industrieklettern & Fassadenarbeiten"
+      service: "Industrieklettern & Fassadenarbeiten",
+      backgroundPosition: "center 25%"
     },
     {
       image: heroImage4,
       title: "Dachfensterreinigung mit Seiltechnik",
       subtitle: "Schwer erreichbare Dachfenster professionell gereinigt",
-      service: "Dachfensterreinigung & Industrieklettern"
+      service: "Dachfensterreinigung & Industrieklettern",
+      backgroundPosition: "center 30%"
     },
     {
       image: heroImage5,
       title: "Hausbetreuung mit Glanzgarantie",
       subtitle: "Treppenhäuser und Eingangsbereiche in perfektem Zustand",
-      service: "Hausbetreuung & Stiegenhausreinigung"
+      service: "Hausbetreuung & Stiegenhausreinigung",
+      backgroundPosition: "center center"
     },
     {
       image: heroImage6,
       title: "Zuverlässige Hausbetreuung Wien",
       subtitle: "Ihr Objekt in besten Händen - regelmäßig und gründlich",
-      service: "Hausbetreuung & Facility Management"
+      service: "Hausbetreuung & Facility Management",
+      backgroundPosition: "center center"
     }
   ];
 
@@ -85,10 +91,13 @@ const Hero = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-cover bg-[center_top] sm:bg-center bg-no-repeat transition-opacity duration-1000 ${
+          className={`absolute inset-0 bg-cover bg-no-repeat transition-opacity duration-1000 ${
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
-          style={{ backgroundImage: `url(${slide.image})` }}
+          style={{ 
+            backgroundImage: `url(${slide.image})`,
+            backgroundPosition: slide.backgroundPosition
+          }}
         >
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.55)' }}></div>
         </div>
