@@ -11,7 +11,7 @@ const ServiceCards = () => {
     {
       id: 'hausbetreuung',
       title: 'Hausbetreuung',
-      description: 'Regelmäßige Reinigung von Stiegenhäusern, Eingangsbereichen und Allgemeinflächen. Sauber, ordentlich und verlässlich – inklusive kleiner Reparaturen.',
+      description: 'Regelmäßige Reinigung von Stiegenhäusern, Eingangsbereichen und Allgemeinflächen. Sauber, ordentlich und verlässlich - inklusive kleiner Reparaturen.',
     },
     {
       id: 'bueroreinigung',
@@ -21,12 +21,12 @@ const ServiceCards = () => {
     {
       id: 'fensterreinigung',
       title: 'Fensterreinigung & Seiltechnik',
-      description: 'Streifenfreie Fenster – ob normal erreichbar oder mit Seiltechnik in luftiger Höhe. Wir sorgen für klare Sicht, wo andere nicht hinkommen.',
+      description: 'Streifenfreie Fenster - ob normal erreichbar oder mit Seiltechnik in luftiger Höhe. Wir sorgen für klare Sicht, wo andere nicht hinkommen.',
     },
     {
       id: 'gartenpflege',
       title: 'Gartenpflege & Außenflächen',
-      description: 'Pflege von Grünflächen, Terrassen und Höfen. Wir halten alles in Form – von der Unkrautentfernung bis zur regelmäßigen Grundpflege.',
+      description: 'Pflege von Grünflächen, Terrassen und Höfen. Wir halten alles in Form - von der Unkrautentfernung bis zur regelmäßigen Grundpflege.',
     },
     {
       id: 'spezialleistungen',
@@ -36,7 +36,7 @@ const ServiceCards = () => {
     {
       id: 'winterdienst',
       title: 'Winterdienst & Schneeräumung',
-      description: 'Verlässliche Schneeräumung und Streudienste für sichere Wege, Zufahrten und Eingänge – schnell, gründlich und einsatzbereit bei jedem Wetter.',
+      description: 'Verlässliche Schneeräumung und Streudienste für sichere Wege, Zufahrten und Eingänge - schnell, gründlich und einsatzbereit bei jedem Wetter.',
     },
   ];
 
@@ -88,7 +88,7 @@ const ServiceCards = () => {
             ) : (
               <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center">
                 <span className="text-muted-foreground text-sm text-center px-4">
-                  Bild wird ersetzt –<br />{service.title}
+                  Bild wird ersetzt -<br />{service.title}
                 </span>
               </div>
             )}

@@ -35,7 +35,7 @@ const Winterdienst = () => {
             
             <div className="mb-8">
               <p className="text-body-large text-muted-foreground mb-4">❌ Unsichere Gehwege, Unfallgefahr, rechtliche Probleme bei Winterdienst</p>
-              <p className="text-body-large text-foreground mb-4">👉 Wir sorgen im Winter für Sicherheit und Verlässlichkeit. Ob Gehwege, Einfahrten, Parkflächen oder Betriebsflächen – wir räumen Schnee und streuen pünktlich. Für Hausverwaltungen, Unternehmen und Haushalte in Wien und Umgebung. Fixpreis, zuverlässig, ohne Ausreden.</p>
+              <p className="text-body-large text-foreground mb-4">👉 Wir sorgen im Winter für Sicherheit und Verlässlichkeit. Ob Gehwege, Einfahrten, Parkflächen oder Betriebsflächen - wir räumen Schnee und streuen pünktlich. Für Hausverwaltungen, Unternehmen und Haushalte in Wien und Umgebung. Fixpreis, zuverlässig, ohne Ausreden.</p>
             </div>
             
           <blockquote className="text-h3 font-medium italic text-primary mb-8">
@@ -44,7 +44,7 @@ const Winterdienst = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <CTAWhatsApp 
-                text="WhatsApp – Winterdienst anfragen"
+                text="WhatsApp - Winterdienst anfragen"
                 onClick={handleWhatsApp}
               />
               <CTACall 

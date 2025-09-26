@@ -6,7 +6,7 @@ const TargetAudience = () => {
     {
       icon: Building2,
       headline: "Hausverwaltungen",
-      subline: "Ruhe mit den Mietern – kein Ärger mehr wegen Reinigung",
+      subline: "Ruhe mit den Mietern - kein Ärger mehr wegen Reinigung",
       hasImage: false
     },
     {
@@ -31,19 +31,19 @@ const TargetAudience = () => {
     {
       icon: Home,
       headline: "Haushalte",
-      subline: "Pünktlich, ehrlich, Fixpreis – ohne Überraschungen",
+      subline: "Pünktlich, ehrlich, Fixpreis - ohne Überraschungen",
       hasImage: false
     },
     {
       icon: Store,
       headline: "Unternehmen & Geschäfte",
-      subline: "Saubere Verkaufsflächen und Geschäftsräume – für zufriedene Kunden & Mitarbeiter.",
+      subline: "Saubere Verkaufsflächen und Geschäftsräume - für zufriedene Kunden & Mitarbeiter.",
       hasImage: false
     },
     {
       icon: Snowflake,
       headline: "Winterdienst & Schneeräumung",
-      subline: "Sichere Gehwege & Zufahrten – pünktlich und zuverlässig.",
+      subline: "Sichere Gehwege & Zufahrten - pünktlich und zuverlässig.",
       hasImage: false
     }
   ];

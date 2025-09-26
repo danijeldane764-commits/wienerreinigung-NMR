@@ -55,7 +55,7 @@ const SocialProof = () => {
                 
                 {/* Author Info */}
                 <div className="text-sm text-[#666666]">
-                  <div className="font-medium">Harald Umreich – Inhaber Umreich's Anglerfachmarkt</div>
+                  <div className="font-medium">Harald Umreich - Inhaber Umreich's Anglerfachmarkt</div>
                   <div className="text-xs mt-1">Google Rezension (5 Sterne, vor 1 Woche)</div>
                 </div>
               </div>

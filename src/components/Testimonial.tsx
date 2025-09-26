@@ -59,7 +59,7 @@ const Testimonial = () => {
                 </blockquote>
                 
                 <div className="text-body text-muted-foreground">
-                  <div className="font-medium">Harald Umreich – Inhaber Umreich's Anglerfachmarkt</div>
+                  <div className="font-medium">Harald Umreich - Inhaber Umreich's Anglerfachmarkt</div>
                   <div className="text-sm mt-1">Google Rezension (5 Sterne)</div>
                 </div>
               </div>
