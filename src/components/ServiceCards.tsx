@@ -8,6 +8,11 @@ const ServiceCards = () => {
       description: 'Regelmäßige Reinigung von Stiegenhäusern, Eingangsbereichen und Allgemeinflächen. Sauber, ordentlich und verlässlich – inklusive kleiner Reparaturen.',
     },
     {
+      id: 'bueroreinigung',
+      title: 'Büroreinigung',
+      description: 'Gründliche Reinigung von Büros, Kanzleien und Arbeitsräumen. Für ein hygienisches und professionelles Arbeitsumfeld, in dem sich alle wohlfühlen.',
+    },
+    {
       id: 'fensterreinigung',
       title: 'Fensterreinigung & Seiltechnik',
       description: 'Streifenfreie Fenster – ob normal erreichbar oder mit Seiltechnik in luftiger Höhe. Wir sorgen für klare Sicht, wo andere nicht hinkommen.',
@@ -30,7 +35,7 @@ const ServiceCards = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
       {services.map((service) => (
         <div
           key={service.id}
