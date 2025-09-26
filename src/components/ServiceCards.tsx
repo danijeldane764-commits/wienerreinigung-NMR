@@ -3,6 +3,7 @@ import hausbetreungImage from '@/assets/hausbetreuung-staircase.jpg';
 import bueroreinigungImage from '@/assets/bueroreinigung-hallway.jpg';
 import fensterreinigungImage from '@/assets/fensterreinigung-seiltechnik.jpg';
 import gartenpflegeImage from '@/assets/gartenpflege-terrasse.jpg';
+import spezialreinigungImage from '@/assets/spezialreinigung-hydrant.jpg';
 
 const ServiceCards = () => {
   const services = [
@@ -69,6 +70,12 @@ const ServiceCards = () => {
               <img 
                 src={gartenpflegeImage} 
                 alt="Gartenpflege & Außenflächen - Terrasse vor Pflege" 
+                className="w-full h-full object-cover"
+              />
+            ) : service.id === 'spezialleistungen' ? (
+              <img 
+                src={spezialreinigungImage} 
+                alt="Spezial- & Zusatzleistungen - Hydrantenreinigung" 
                 className="w-full h-full object-cover"
               />
             ) : (
