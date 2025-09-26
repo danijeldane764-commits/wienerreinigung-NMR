@@ -1,6 +1,7 @@
 import React from 'react';
 import hausbetreungImage from '@/assets/hausbetreuung-staircase.jpg';
 import bueroreinigungImage from '@/assets/bueroreinigung-hallway.jpg';
+import fensterreinigungImage from '@/assets/fensterreinigung-seiltechnik.jpg';
 
 const ServiceCards = () => {
   const services = [
@@ -55,6 +56,12 @@ const ServiceCards = () => {
               <img 
                 src={bueroreinigungImage} 
                 alt="Büroreinigung - Sauberer Bürogang" 
+                className="w-full h-full object-cover"
+              />
+            ) : service.id === 'fensterreinigung' ? (
+              <img 
+                src={fensterreinigungImage} 
+                alt="Fensterreinigung & Seiltechnik - Industriekletterer" 
                 className="w-full h-full object-cover"
               />
             ) : (
