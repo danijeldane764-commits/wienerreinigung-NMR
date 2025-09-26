@@ -4,6 +4,7 @@ import bueroreinigungImage from '@/assets/bueroreinigung-hallway.jpg';
 import fensterreinigungImage from '@/assets/fensterreinigung-seiltechnik.jpg';
 import gartenpflegeImage from '@/assets/gartenpflege-terrasse.jpg';
 import spezialreinigungImage from '@/assets/spezialreinigung-hydrant.jpg';
+import winterdienstImage from '@/assets/winterdienst-wien.jpg';
 
 const ServiceCards = () => {
   const services = [
@@ -76,6 +77,12 @@ const ServiceCards = () => {
               <img 
                 src={spezialreinigungImage} 
                 alt="Spezial- & Zusatzleistungen - Hydrantenreinigung" 
+                className="w-full h-full object-cover"
+              />
+            ) : service.id === 'winterdienst' ? (
+              <img 
+                src={winterdienstImage} 
+                alt="Winterdienst & Schneeräumung - Verschneite Straße Wien" 
                 className="w-full h-full object-cover"
               />
             ) : (
