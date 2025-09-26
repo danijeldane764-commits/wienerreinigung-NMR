@@ -1,6 +1,7 @@
 import React from 'react';
 import hausbetreuungImage from '@/assets/hausbetreuung-clean-floor.jpg';
 import baufirmenImage from '@/assets/baufirmen-staircase.jpg';
+import haushalteImage from '@/assets/haushalte-tiled-floor.jpg';
 
 const TargetAudienceCards = () => {
   const cards = [
@@ -45,6 +46,12 @@ const TargetAudienceCards = () => {
               <img 
                 src={baufirmenImage} 
                 alt="Saubere Treppe und Fliesen nach Baureinigung"
+                className="w-full h-full object-cover"
+              />
+            ) : card.id === 'haushalte' ? (
+              <img 
+                src={haushalteImage} 
+                alt="Saubere Fliesenfläche in Haushalten nach Reinigung"
                 className="w-full h-full object-cover"
               />
             ) : (
