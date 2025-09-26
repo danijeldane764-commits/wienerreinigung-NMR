@@ -12,7 +12,7 @@ const ForWhom = () => {
     {
       image: hausverwaltungImage,
       title: "Hausverwaltung",
-      subtitle: "Ruhe mit den Mietern – kein Ärger mehr wegen Reinigung",
+      subtitle: "Ruhe mit den Mietern - kein Ärger mehr wegen Reinigung",
       gradient: "rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)",
       height: "h-[500px]",
       layout: "center"
