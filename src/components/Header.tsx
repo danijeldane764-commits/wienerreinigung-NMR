@@ -24,14 +24,14 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border shadow-sm">
-      <div className="container mx-auto px-6 py-3">
+      <div className="container mx-auto px-6 py-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/136a23ba-c861-4ddc-bfa0-27d99a618697.png" 
               alt="Nikola Miloradovic Reinigung Logo"
-              className="h-16 w-auto object-contain"
+              className="h-18 w-auto object-contain"
               loading="eager"
             />
             <span className="text-2xl font-bold text-primary hidden sm:block">
