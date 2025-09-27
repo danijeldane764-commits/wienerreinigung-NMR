@@ -55,7 +55,7 @@ const Header = () => {
         </div>
         
         {/* Small text positioned absolutely */}
-        <div className="hidden sm:block absolute right-0 bottom-1 text-xs text-muted-foreground">
+        <div className="hidden sm:block absolute right-0 bottom-0 text-xs text-muted-foreground">
           Besichtigung meist innerhalb von 24 Stunden
         </div>
       </div>
