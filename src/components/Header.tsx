@@ -24,10 +24,10 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border shadow-sm">
-      <div className="container mx-auto px-6 py-0 relative">
+      <div className="container mx-auto px-0 py-0 relative">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-3 pl-2">
             <img 
               src="/lovable-uploads/136a23ba-c861-4ddc-bfa0-27d99a618697.png" 
               alt="Nikola Miloradovic Reinigung Logo"
@@ -40,7 +40,7 @@ const Header = () => {
           </div>
 
           {/* CTAs */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-3 pr-2">
             <CTAWhatsApp 
               text="Per WhatsApp schreiben"
               onClick={handleWhatsApp}
@@ -55,7 +55,7 @@ const Header = () => {
         </div>
         
         {/* Small text positioned absolutely */}
-        <div className="hidden sm:block absolute right-6 bottom-1 text-xs text-muted-foreground">
+        <div className="hidden sm:block absolute right-2 bottom-1 text-xs text-muted-foreground">
           Besichtigung meist innerhalb von 24 Stunden
         </div>
       </div>
