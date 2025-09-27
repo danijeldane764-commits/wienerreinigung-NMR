@@ -23,8 +23,8 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border shadow-sm">
-      <div className="w-full px-0 py-0 relative">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border shadow-sm relative">
+      <div className="w-full px-0 py-0">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3 pl-0">
@@ -55,7 +55,7 @@ const Header = () => {
         </div>
         
         {/* Small text positioned absolutely */}
-        <div className="hidden sm:block absolute right-0 bottom-0 text-xs text-muted-foreground">
+        <div className="hidden sm:block absolute right-0 bottom-[-1px] text-xs leading-none text-muted-foreground">
           Besichtigung meist innerhalb von 24 Stunden
         </div>
       </div>
