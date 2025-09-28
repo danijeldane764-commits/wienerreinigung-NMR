@@ -1,5 +1,3 @@
-import CTAWhatsApp from "@/components/CTAWhatsApp";
-import CTACall from "@/components/CTACall";
 import {
   Accordion,
   AccordionContent,
@@ -8,13 +6,6 @@ import {
 } from "@/components/ui/accordion";
 
 const FAQ = () => {
-  const handleCall = () => {
-    window.location.href = "tel:+436677680897";
-  };
-
-  const handleWhatsApp = () => {
-    window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20kurze%20Chef-Besichtigung%20in%20Wien.%20Wunschtermin:%20[Datum/Uhrzeit].", "_blank");
-  };
 
   const faqs = [
     {
@@ -43,7 +34,7 @@ const FAQ = () => {
             Häufige Fragen
           </h2>
           
-          <Accordion type="single" collapsible className="mb-10">
+          <Accordion type="single" collapsible>
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-left">
@@ -55,18 +46,6 @@ const FAQ = () => {
               </AccordionItem>
             ))}
           </Accordion>
-
-          {/* CTAs */}
-          <div className="flex flex-col md:flex-row gap-3 md:gap-[14px] justify-center items-center">
-            <CTAWhatsApp 
-              text="WhatsApp - dein Angebot in 1 Minute"
-              onClick={handleWhatsApp}
-            />
-            <CTACall 
-              text="Jetzt Termin sichern"
-              onClick={handleCall}
-            />
-          </div>
         </div>
       </div>
     </section>
