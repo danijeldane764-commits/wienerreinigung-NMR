@@ -7,7 +7,6 @@ import Services from "@/components/Services";
 import Hero from "@/components/Hero";
 import NoCostsInfoBox from "@/components/NoCostsInfoBox";
 import TargetAudience from "@/components/TargetAudience";
-import ForWhom from "@/components/ForWhom";
 import HowItWorks from "@/components/HowItWorks";
 import Hausbetreuung from "@/components/Hausbetreuung";
 import Fensterreinigung from "@/components/Fensterreinigung";
@@ -42,7 +41,6 @@ const Index = () => {
       <SocialProof />
       <NoCostsInfoBox />
       <TargetAudience />
-      <ForWhom />
       <HowItWorks />
       <Hausbetreuung />
       <Fensterreinigung />
