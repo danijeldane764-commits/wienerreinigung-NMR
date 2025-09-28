@@ -1,5 +1,10 @@
 import { Building2, Scale, Monitor, HardHat, Home, Store } from "lucide-react";
 import officeCleaningImage from "@/assets/s-bueroreinigung-wien.webp";
+import hausverwaltungImage from "@/assets/hausverwaltung-lobby.jpg";
+import kanzleiImage from "@/assets/kanzlei-conference.jpg";
+import baufirmenImage from "@/assets/baufirmen-staircase.jpg";
+import haushalteImage from "@/assets/haushalte-tiled-floor.jpg";
+import unternehmenImage from "@/assets/trust-office-clean-wien.webp";
 
 const TargetAudience = () => {
   const targetGroups = [
@@ -7,13 +12,15 @@ const TargetAudience = () => {
       icon: Building2,
       headline: "Hausverwaltungen",
       subline: "Ruhe mit den Mietern - kein Ärger mehr wegen Reinigung",
-      hasImage: false
+      hasImage: true,
+      backgroundImage: hausverwaltungImage
     },
     {
       icon: Scale,
       headline: "Kanzleien", 
       subline: "Saubere Büros für einen professionellen Eindruck",
-      hasImage: false
+      hasImage: true,
+      backgroundImage: kanzleiImage
     },
     {
       icon: Monitor,
@@ -26,19 +33,22 @@ const TargetAudience = () => {
       icon: HardHat,
       headline: "Baufirmen",
       subline: "Saubere Abnahme ohne Stress und Nacharbeit",
-      hasImage: false
+      hasImage: true,
+      backgroundImage: baufirmenImage
     },
     {
       icon: Home,
       headline: "Haushalte",
       subline: "Pünktlich, ehrlich, Fixpreis - ohne Überraschungen",
-      hasImage: false
+      hasImage: true,
+      backgroundImage: haushalteImage
     },
     {
       icon: Store,
       headline: "Unternehmen & Geschäfte",
       subline: "Saubere Verkaufsflächen und Geschäftsräume - für zufriedene Kunden & Mitarbeiter.",
-      hasImage: false
+      hasImage: true,
+      backgroundImage: unternehmenImage
     }
   ];
 
