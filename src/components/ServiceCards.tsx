@@ -1,6 +1,6 @@
 import React from 'react';
 import hausbetreungImage from '@/assets/hausbetreuung-staircase.jpg';
-import bueroreinigungImage from '@/assets/bueroreinigung-hallway.jpg';
+import bueroreinigungImage from '@/assets/bueroreinigung-workplace.jpg';
 import fensterreinigungImage from '@/assets/fensterreinigung-seiltechnik.jpg';
 import gartenpflegeImage from '@/assets/gartenpflege-terrasse.jpg';
 import spezialreinigungImage from '@/assets/spezialreinigung-hydrant.jpg';
@@ -58,7 +58,7 @@ const ServiceCards = () => {
             ) : service.id === 'bueroreinigung' ? (
               <img 
                 src={bueroreinigungImage} 
-                alt="Büroreinigung - Sauberer Bürogang" 
+                alt="Büroreinigung - Professionelle Arbeitsplatzreinigung" 
                 className="w-full h-full object-cover"
               />
             ) : service.id === 'fensterreinigung' ? (
