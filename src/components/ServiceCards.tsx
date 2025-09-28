@@ -41,11 +41,11 @@ const ServiceCards = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {services.map((service) => (
         <div
           key={service.id}
-          className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer border border-border/50"
+          className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer border border-border/50 flex flex-col h-full"
         >
           {/* Image */}
           <div className="w-full h-48 rounded-t-xl overflow-hidden">
@@ -95,11 +95,11 @@ const ServiceCards = () => {
           </div>
           
           {/* Content */}
-          <div className="p-6">
-            <h3 className="font-poppins font-bold text-foreground text-xl mb-3">
+          <div className="p-6 flex flex-col flex-grow">
+            <h3 className="font-poppins font-bold text-foreground text-xl mb-3 text-left">
               {service.title}
             </h3>
-            <p className="font-roboto text-muted-foreground text-sm leading-relaxed">
+            <p className="font-roboto text-muted-foreground text-sm leading-relaxed text-left flex-grow">
               {service.description}
             </p>
           </div>
