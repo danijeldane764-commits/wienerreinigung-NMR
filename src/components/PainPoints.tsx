@@ -11,19 +11,9 @@ const PainPoints = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-[1200px] mx-auto text-center">
             {/* Main Headline */}
-            <h2 className="font-poppins font-bold text-[#0A2342] text-4xl md:text-5xl lg:text-6xl mb-6">
-              Sauberkeit. Ohne Ausreden.
-            </h2>
-            
-            {/* Subheadline */}
-            <p className="font-roboto font-medium text-[#0A2342] text-2xl md:text-3xl mb-8">
-              Pünktlich. Zuverlässig. Fixpreis.
-            </p>
-            
-            {/* Intro Text */}
-            <p className="font-roboto text-[#333333] text-lg md:text-xl mb-8">
+            <h2 className="font-poppins font-bold text-[#0A2342] text-3xl md:text-4xl lg:text-5xl mb-8">
               Wenn du schon mal eine Reinigungsfirma in Wien oder Umgebung beauftragt hast, kennst du das Spiel:
-            </p>
+            </h2>
             
             {/* Comparison Table */}
             <div className="max-w-4xl mx-auto">
