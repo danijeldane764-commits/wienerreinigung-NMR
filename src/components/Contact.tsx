@@ -80,7 +80,7 @@ const Contact = () => {
                 <div className="flex items-center space-x-3">
                   <i className="fab fa-whatsapp text-primary text-xl"></i>
                   <a 
-                    href="https://wa.me/436677680897?text=Hallo%20Nikola,%20ich%20brauche%20Unterst%C3%BCtzung%20bei%20einer%20Reinigung%20in%20Wien"
+                    href="https://wa.me/436677680897?text=Hallo%20Nikola,%20ich%20brauche%20Unterst%C3%BCtzung%20bei%20einer%20Reinigung%20in%20[Ort]"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-foreground hover:text-primary transition-colors"
