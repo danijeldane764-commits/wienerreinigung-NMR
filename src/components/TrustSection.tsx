@@ -60,7 +60,7 @@ const TrustSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="rounded-lg p-8 md:p-12" style={{ backgroundColor: '#C2D7F2' }}>
+        <div className="rounded-lg p-8 md:p-12" style={{ backgroundColor: '#0052CC' }}>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {stats.map((stat, index) => (
               <div
