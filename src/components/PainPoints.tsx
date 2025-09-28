@@ -1,12 +1,7 @@
-import SocialProof from "@/components/SocialProof";
-
 const PainPoints = () => {
   return (
     <>
-      {/* Social Proof Testimonial */}
-      <SocialProof />
-
-      {/* New Pain Block Section */}
+      {/* Pain Block Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-[1200px] mx-auto text-center">
