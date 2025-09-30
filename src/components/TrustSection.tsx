@@ -60,20 +60,20 @@ const TrustSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="rounded-lg p-8 md:p-12" style={{ backgroundColor: '#0052CC' }}>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="rounded-lg p-6 md:p-12" style={{ backgroundColor: '#0052CC' }}>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className={`text-center p-4 rounded-lg transition-colors ${
+                className={`text-center p-3 md:p-4 rounded-lg transition-colors ${
                   stat.highlighted ? 'bg-white/20' : ''
                 }`}
               >
-                <div className="text-3xl mb-2">{stat.icon}</div>
-                <div className="text-2xl md:text-3xl font-bold text-white mb-1">
+                <div className="text-2xl md:text-3xl mb-2">{stat.icon}</div>
+                <div className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">
                   {stat.number}
                 </div>
-                <div className="text-sm md:text-base text-white/90 leading-tight">
+                <div className="text-xs md:text-sm lg:text-base text-white/90 leading-tight break-words hyphens-auto px-1">
                   {stat.label}
                 </div>
               </div>
