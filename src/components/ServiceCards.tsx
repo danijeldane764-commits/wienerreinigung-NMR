@@ -31,7 +31,7 @@ const ServiceCards = () => {
     {
       id: 'spezialleistungen',
       title: 'Spezial- & Zusatzleistungen',
-      description: 'Abfluss- und Hydrantenreinigung, kleine Reparaturen und Sonderreinigungen. Wir kümmern uns, melden Auffälligkeiten und packen dort an, wo es gebraucht wird.',
+      description: 'Entrümpelung, Abfluss- und Hydrantenreinigung, kleine Reparaturen und Sonderreinigungen. Wir kümmern uns, melden Auffälligkeiten und packen dort an, wo es gebraucht wird.',
     },
     {
       id: 'winterdienst',
