@@ -50,6 +50,14 @@ const FinalCTA = () => {
             {/* Image Section - Slideshow */}
             <div className="flex justify-center md:justify-end">
               <div className="relative w-full max-w-md">
+                {/* Base image - provides container height */}
+                <img 
+                  src={slides[0].image} 
+                  alt={slides[0].alt}
+                  className="rounded-lg shadow-2xl w-full h-auto object-cover"
+                />
+                
+                {/* Slideshow images as overlays */}
                 {slides.map((slide, index) => (
                   <div
                     key={index}
@@ -60,15 +68,16 @@ const FinalCTA = () => {
                     <img 
                       src={slide.image} 
                       alt={slide.alt}
-                      className="rounded-lg shadow-2xl w-full h-auto object-cover"
+                      className="rounded-lg shadow-2xl w-full h-full object-cover"
                     />
                     <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
                       <p className="text-sm font-semibold text-primary">{slide.badge}</p>
                     </div>
                   </div>
                 ))}
+                
                 {/* Slide Indicators */}
-                <div className="absolute bottom-4 right-4 flex gap-2">
+                <div className="absolute bottom-4 right-4 flex gap-2 z-10">
                   {slides.map((_, index) => (
                     <button
                       key={index}
