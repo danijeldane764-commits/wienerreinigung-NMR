@@ -25,8 +25,7 @@ const Impressum = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Unternehmensform</h2>
             <p>
-              Einzelunternehmen<br />
-              UID-Nummer: [falls vorhanden eintragen]
+              Einzelunternehmen
             </p>
           </section>
 
