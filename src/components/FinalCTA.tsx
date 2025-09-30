@@ -1,6 +1,6 @@
 import CTAWhatsApp from "@/components/CTAWhatsApp";
 import CTACall from "@/components/CTACall";
-import heroImage from "@/assets/hero-industriekletterer-new.jpg";
+import heroImage from "@/assets/nikola-chef.jpg";
 
 const FinalCTA = () => {
   const handleCall = () => {
@@ -21,11 +21,11 @@ const FinalCTA = () => {
               <div className="relative w-full max-w-md">
                 <img 
                   src={heroImage} 
-                  alt="Nikola - Chef und Inhaber bei der Arbeit mit Seiltechnik" 
+                  alt="Nikola - Chef und Inhaber persönlich bei der Seiltechnik-Arbeit in Wien" 
                   className="rounded-lg shadow-2xl w-full h-auto object-cover"
                 />
                 <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
-                  <p className="text-sm font-semibold text-primary">Nikola - Chef & Inhaber</p>
+                  <p className="text-sm font-semibold text-primary">Nikola - Chef & Inhaber bei der Arbeit</p>
                 </div>
               </div>
             </div>
