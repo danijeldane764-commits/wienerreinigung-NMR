@@ -16,7 +16,7 @@ const Fensterreinigung = () => {
         event_label: 'cashcow_section'
       });
     }
-    window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20Chef-Besichtigung%20f%C3%BCr%20Fensterreinigung%20in%20[Ort].%20Wunschtermin:%20[Datum/Uhrzeit].", "_blank");
+    window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20Chef-Besichtigung%20f%C3%BCr%20Fensterreinigung%20in%20[Ort,%20PLZ].", "_blank");
   };
 
   const handleCall = () => {
