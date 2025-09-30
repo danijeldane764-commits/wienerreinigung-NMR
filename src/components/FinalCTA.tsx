@@ -104,7 +104,7 @@ const FinalCTA = () => {
                   Ich bin Nikola. Chef, Ansprechpartner, Fixpreis, versichert, ehrlich.
                 </p>
                 <p className="text-body-large mb-4 opacity-90">
-                  Seit Jahren vertrauen mir Hausverwaltungen, Kanzleien, Baufirmen und Haushalte in Wien.
+                  Seit Jahren vertrauen mir Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen, Geschäfte und Haushalte in Wien.
                 </p>
                 <p className="text-body-large mb-6 opacity-90">
                   👉 Kunden sagen: "Endlich einer, der hält, was er verspricht."
