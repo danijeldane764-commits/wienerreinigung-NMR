@@ -1,8 +1,39 @@
+import { useState, useEffect } from "react";
 import CTAWhatsApp from "@/components/CTAWhatsApp";
 import CTACall from "@/components/CTACall";
-import heroImage from "@/assets/nikola-chef.jpg";
+import nikolaChef from "@/assets/nikola-chef.jpg";
+import nikolaSeiltechnik1 from "@/assets/nikola-seiltechnik-1.jpg";
+import nikolaSeiltechnik2 from "@/assets/nikola-seiltechnik-2.jpg";
 
 const FinalCTA = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    {
+      image: nikolaChef,
+      alt: "Nikola - Chef und Inhaber persönlich bei der Seiltechnik-Arbeit in Wien",
+      badge: "Nikola - Chef & Inhaber bei der Arbeit"
+    },
+    {
+      image: nikolaSeiltechnik1,
+      alt: "Nikola bei professioneller Seiltechnik-Arbeit und Industrieklettern in Wien",
+      badge: "Professionelle Seiltechnik-Arbeit"
+    },
+    {
+      image: nikolaSeiltechnik2,
+      alt: "Nikola beim Industrieklettern und Fensterreinigung mit Seiltechnik in Wien",
+      badge: "Nikola beim Industrieklettern"
+    }
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [slides.length]);
+
   const handleCall = () => {
     window.location.href = "tel:+436677680897";
   };
@@ -16,16 +47,40 @@ const FinalCTA = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            {/* Image Section */}
+            {/* Image Section - Slideshow */}
             <div className="flex justify-center md:justify-end">
               <div className="relative w-full max-w-md">
-                <img 
-                  src={heroImage} 
-                  alt="Nikola - Chef und Inhaber persönlich bei der Seiltechnik-Arbeit in Wien" 
-                  className="rounded-lg shadow-2xl w-full h-auto object-cover"
-                />
-                <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
-                  <p className="text-sm font-semibold text-primary">Nikola - Chef & Inhaber bei der Arbeit</p>
+                {slides.map((slide, index) => (
+                  <div
+                    key={index}
+                    className={`absolute inset-0 transition-opacity duration-1000 ${
+                      index === currentSlide ? "opacity-100" : "opacity-0"
+                    }`}
+                  >
+                    <img 
+                      src={slide.image} 
+                      alt={slide.alt}
+                      className="rounded-lg shadow-2xl w-full h-auto object-cover"
+                    />
+                    <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
+                      <p className="text-sm font-semibold text-primary">{slide.badge}</p>
+                    </div>
+                  </div>
+                ))}
+                {/* Slide Indicators */}
+                <div className="absolute bottom-4 right-4 flex gap-2">
+                  {slides.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentSlide(index)}
+                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                        index === currentSlide 
+                          ? "bg-white w-6" 
+                          : "bg-white/50 hover:bg-white/75"
+                      }`}
+                      aria-label={`Bild ${index + 1} anzeigen`}
+                    />
+                  ))}
                 </div>
               </div>
             </div>
