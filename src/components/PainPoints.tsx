@@ -7,7 +7,7 @@ const PainPoints = () => {
           <div className="max-w-[1200px] mx-auto text-center">
             {/* Main Headline */}
             <h2 className="font-poppins font-bold text-[#0A2342] text-3xl md:text-4xl lg:text-5xl mb-8">
-              Wenn du schon mal eine Reinigungsfirma in Wien oder Umgebung beauftragt hast, kennst du das Spiel:
+              Wenn du schon mal eine Reinigungsfirma beauftragt hast, kennst du das Spiel:
             </h2>
             
             {/* Comparison Table */}
