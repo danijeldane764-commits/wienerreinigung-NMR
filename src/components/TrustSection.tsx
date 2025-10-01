@@ -33,7 +33,7 @@ const TrustSection = () => {
           {/* Left Content */}
           <div className="order-2 lg:order-1">
             <h2 className="text-h1 font-bold mb-6" style={{ color: '#002060' }}>
-              Ehrliche Reinigung. Direkt vom Chef.
+              Ehrliche Reinigung. Direkt vom Inhaber.
             </h2>
             <p className="text-body-large" style={{ color: '#333333' }}>
               Seit 3 Jahren in Wien & Umgebung – mit Fixpreis, Handschlagqualität und persönlichem Einsatz.

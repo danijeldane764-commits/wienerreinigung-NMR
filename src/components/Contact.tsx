@@ -30,7 +30,7 @@ const Contact = () => {
             Angebot in 24 Stunden
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Am schnellsten geht es per Anruf oder WhatsApp. Kein Formular - direkter Kontakt mit dem Chef.
+            Am schnellsten geht es per Anruf oder WhatsApp. Kein Formular - direkter Kontakt mit dem Inhaber.
           </p>
           
           <div className="flex flex-col md:flex-row gap-3 md:gap-[14px] justify-center items-center mb-8">

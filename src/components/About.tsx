@@ -8,8 +8,8 @@ const About = () => {
           </h2>
           <div className="text-lg text-muted-foreground leading-relaxed space-y-6">
             <p>
-              Wir sind ein Familienunternehmen aus Wien. Bei uns sprechen Sie direkt mit dem Chef. 
-              Die Besichtigung erfolgt persönlich durch den Chef, danach erhalten Sie einen Fixpreis. Wir arbeiten pünktlich, 
+              Wir sind ein Familienunternehmen aus Wien. Bei uns sprechen Sie direkt mit dem Inhaber. 
+              Die Besichtigung erfolgt persönlich durch den Inhaber, danach erhalten Sie einen Fixpreis. Wir arbeiten pünktlich, 
               sauber und zuverlässig.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">

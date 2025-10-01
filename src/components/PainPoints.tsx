@@ -73,7 +73,7 @@ const PainPoints = () => {
                     <div className="flex items-start">
                       <span className="text-[#25D366] text-2xl mr-4 mt-1">✅</span>
                       <p className="font-roboto text-[#333333] text-lg flex-1">
-                        Direkt vom Chef - immer erreichbar.
+                        Direkt vom Inhaber - immer erreichbar.
                       </p>
                     </div>
                   </div>

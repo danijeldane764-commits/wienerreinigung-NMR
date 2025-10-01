@@ -21,12 +21,12 @@ import Footer from "@/components/Footer";
 const Index = () => {
   useEffect(() => {
     // Update page title and meta description for SEO
-    document.title = "Reinigungsfirma Wien – Chef-Besichtigung, Fixpreis, Besichtigung meist innerhalb von 24 Stunden";
+    document.title = "Reinigungsfirma Wien – Inhaber-Besichtigung, Fixpreis, Besichtigung meist innerhalb von 24 Stunden";
     
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Hausbetreuung, Fensterreinigung und Fensterreinigung mit Seiltechnik in Wien. Chef-Besichtigung vor Ort, Fixpreis danach. Direkter Kontakt mit dem Chef.');
+      metaDescription.setAttribute('content', 'Hausbetreuung, Fensterreinigung und Fensterreinigung mit Seiltechnik in Wien. Inhaber-Besichtigung vor Ort, Fixpreis danach. Direkter Kontakt mit dem Inhaber.');
     }
   }, []);
 

@@ -43,7 +43,7 @@ const TrustTiles = () => {
               className="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
               onClick={handleCallTile}
               role="button"
-              aria-label="Direkter Draht zum Chef - Telefon starten"
+              aria-label="Direkter Draht zum Inhaber - Telefon starten"
             >
               <div className="aspect-video">
                 <img 
@@ -54,7 +54,7 @@ const TrustTiles = () => {
                 />
                 <div className="absolute inset-0 bg-primary/70 group-hover:bg-primary/80 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-6">
-                  <h3 className="text-h2 mb-3">Direkter Draht zum Chef</h3>
+                  <h3 className="text-h2 mb-3">Direkter Draht zum Inhaber</h3>
                   <p className="text-body-large opacity-90">Keine Hotline - du sprichst direkt mit mir.</p>
                 </div>
               </div>
@@ -70,14 +70,14 @@ const TrustTiles = () => {
               <div className="aspect-video">
                 <img 
                   src={trustBesichtigungImage}
-                  alt="Objektbesichtigung in Wien durch den Chef für Fixpreis"
+                  alt="Objektbesichtigung in Wien durch den Inhaber für Fixpreis"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-primary/70 group-hover:bg-primary/80 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-6">
                   <h3 className="text-h2 mb-3">Fixpreis nach Besichtigung</h3>
-                  <p className="text-body-large opacity-90">Persönlich durch den Chef</p>
+                  <p className="text-body-large opacity-90">Persönlich durch den Inhaber</p>
                 </div>
               </div>
             </div>

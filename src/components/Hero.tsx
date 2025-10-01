@@ -82,7 +82,7 @@ const Hero = () => {
         event_label: 'hero_section'
       });
     }
-    window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20kurze%20Chef-Besichtigung%20in%20[Ort,%20PLZ].", "_blank");
+    window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20kurze%20Inhaber-Besichtigung%20in%20[Ort,%20PLZ].", "_blank");
   };
 
   return (
@@ -111,7 +111,7 @@ const Hero = () => {
           </h1>
           <p className="font-roboto text-[#E6E6E6] text-sm sm:text-base md:text-base lg:text-lg xl:text-xl mb-4 sm:mb-5 md:mb-6 leading-normal transition-all duration-500">
             {currentSlideData.subtitle}<br className="hidden sm:block" />
-            <span className="sm:hidden"> </span>Direkt vom Chef. Fixpreis. Versichert.
+            <span className="sm:hidden"> </span>Direkt vom Inhaber. Fixpreis. Versichert.
           </p>
           
           {/* CTA Buttons */}

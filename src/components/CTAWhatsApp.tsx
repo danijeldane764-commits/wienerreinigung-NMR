@@ -13,7 +13,7 @@ const CTAWhatsApp = ({
   text = "WhatsApp - Anfrage",
   className = "",
   onClick,
-  href = "https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20kurze%20Chef-Besichtigung%20in%20[Ort,%20PLZ].",
+  href = "https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20kurze%20Inhaber-Besichtigung%20in%20[Ort,%20PLZ].",
   ariaLabel = "WhatsApp - Nachricht senden"
 }: CTAWhatsAppProps) => {
   const handleClick = () => {

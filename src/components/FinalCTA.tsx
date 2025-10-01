@@ -11,8 +11,8 @@ const FinalCTA = () => {
   const slides = [
     {
       image: nikolaChef,
-      alt: "Nikola - Chef und Inhaber persönlich bei der Seiltechnik-Arbeit in Wien",
-      badge: "Nikola - Chef & Inhaber bei der Arbeit"
+      alt: "Nikola - Inhaber persönlich bei der Seiltechnik-Arbeit in Wien",
+      badge: "Nikola - Inhaber bei der Arbeit"
     },
     {
       image: nikolaSeiltechnik1,
@@ -39,7 +39,7 @@ const FinalCTA = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20kurze%20Chef-Besichtigung%20in%20[Ort,%20PLZ].", "_blank");
+    window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20kurze%20Inhaber-Besichtigung%20in%20[Ort,%20PLZ].", "_blank");
   };
 
   return (
@@ -101,7 +101,7 @@ const FinalCTA = () => {
               </h2>
               <div className="mb-8">
                 <p className="text-body-large mb-4 opacity-90">
-                  Ich bin Nikola. Chef, Ansprechpartner, Fixpreis, versichert, ehrlich.
+                  Ich bin Nikola. Inhaber, Ansprechpartner, Fixpreis, versichert, ehrlich.
                 </p>
                 <p className="text-body-large mb-4 opacity-90">
                   Seit Jahren vertrauen mir Hausverwaltungen, Kanzleien, Baufirmen, Unternehmen, Geschäfte und Haushalte in Wien.
