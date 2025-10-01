@@ -16,7 +16,7 @@ const Hausbetreuung = () => {
         event_label: 'cashcow_section'
       });
     }
-    window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20Chef-Besichtigung%20f%C3%BCr%20Hausbetreuung%20in%20[Ort,%20PLZ].", "_blank");
+    window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20Inhaber-Besichtigung%20f%C3%BCr%20Hausbetreuung%20in%20[Ort,%20PLZ].", "_blank");
   };
 
   const handleCall = () => {
