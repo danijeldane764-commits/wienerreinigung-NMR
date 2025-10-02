@@ -5,14 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redirecting...</title>
   <script>
-    // GitHub Pages SPA redirect handler
-    // This script takes the current url and converts the path into a query string parameter
-    // for the index.html page to handle client-side routing
-    sessionStorage.redirect = location.href;
+    (function () {
+      var l = window.location;
+      if (l.hash) return;
+      var path = l.pathname.replace(/^\//, '');
+      var segs = path.split('/').filter(Boolean);
+      var isProject = l.hostname.endsWith('.github.io') && segs.length > 1;
+      var base = isProject ? '/' + segs[0] + '/' : '/';
+      var rest = isProject ? segs.slice(1).join('/') : path;
+      var target = base + '#/' + rest + l.search + l.hash;
+      if (l.href !== target) l.replace(target);
+    })();
   </script>
-  <meta http-equiv="refresh" content="0;URL='/'">
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=./#/" />
+  </noscript>
 </head>
-<body>
-  <!-- GitHub Pages SPA redirect handler -->
-</body>
+<body></body>
 </html>
