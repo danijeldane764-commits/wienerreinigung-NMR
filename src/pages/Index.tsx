@@ -17,6 +17,7 @@ import Testimonial from "@/components/Testimonial";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import ChatBubble from "@/components/ChatBubble";
 
 const Index = () => {
   useEffect(() => {
@@ -50,6 +51,7 @@ const Index = () => {
       <Trust />
       <FAQ />
       <Footer />
+      <ChatBubble />
     </main>
   );
 };
