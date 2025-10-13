@@ -14,6 +14,7 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
   const [queuedMessages, setQueuedMessages] = useState<string[]>([]);
   const { messages, isLoading, error, sendMessage } = useChatBot();
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
