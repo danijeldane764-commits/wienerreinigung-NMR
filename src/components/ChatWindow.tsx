@@ -54,7 +54,7 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 w-[400px] h-[600px] bg-white rounded-2xl shadow-2xl flex flex-col z-[1001] md:block hidden animate-in slide-in-from-bottom-4 duration-300">
+    <div className="fixed bottom-6 right-6 w-[400px] h-[600px] min-h-0 bg-white rounded-2xl shadow-2xl flex flex-col z-[1001] md:block hidden animate-in slide-in-from-bottom-4 duration-300 overscroll-contain">
       {/* Header */}
       <div className="bg-[#1E40AF] text-white p-4 rounded-t-2xl flex items-center justify-between">
         <div className="flex items-center gap-3">
@@ -77,7 +77,7 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
       </div>
 
       {/* Messages Area */}
-      <ScrollArea className="flex-1 bg-gray-50">
+      <ScrollArea className="flex-1 min-h-0 bg-gray-50">
         <div className="p-4 space-y-4">
           {messages.length === 0 && (
             <div className="text-center text-gray-500 mt-8">
