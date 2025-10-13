@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { X, Send, Phone } from 'lucide-react';
+import { X, Send, Phone, ArrowDown } from 'lucide-react';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import { ScrollArea } from './ui/scroll-area';
@@ -12,17 +12,44 @@ interface ChatWindowProps {
 const ChatWindow = ({ onClose }: ChatWindowProps) => {
   const [inputMessage, setInputMessage] = useState('');
   const [queuedMessages, setQueuedMessages] = useState<string[]>([]);
+  const [isAtBottom, setIsAtBottom] = useState(true);
   const { messages, isLoading, error, sendMessage } = useChatBot();
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    inputRef.current?.focus();
   };
 
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
+  useEffect(() => {
+    if (!isLoading && messages.length > 0) {
+      inputRef.current?.focus();
+      messagesEndRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, [isLoading, messages]);
+
+  useEffect(() => {
+    const viewport = containerRef.current?.querySelector('[data-radix-scroll-area-viewport]') as HTMLElement | null;
+    if (!viewport) return;
+
+    const handleScroll = () => {
+      const { scrollTop, scrollHeight, clientHeight } = viewport;
+      setIsAtBottom(scrollTop + clientHeight >= scrollHeight - 8);
+    };
+
+    viewport.addEventListener('scroll', handleScroll);
+    return () => viewport.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleSend = () => {
     if (!inputMessage.trim()) return;
@@ -34,6 +61,7 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
       sendMessage(inputMessage);
       setInputMessage('');
     }
+    inputRef.current?.focus();
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -104,7 +132,7 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
 
       {/* Messages Area */}
       <ScrollArea className="flex-1 min-h-0 bg-gray-50">
-        <div className="p-4 space-y-4">
+        <div className="p-4 pb-24 space-y-4">
           {messages.length === 0 && (
             <div className="text-center text-gray-500 mt-8">
               <p className="text-lg mb-2">👋 Hallo!</p>
@@ -152,6 +180,18 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
         </div>
       </ScrollArea>
 
+      {/* Scroll to Bottom Button */}
+      {!isAtBottom && (
+        <Button
+          onClick={scrollToBottom}
+          size="icon"
+          variant="secondary"
+          className="absolute bottom-[110px] right-4 shadow-lg rounded-full w-10 h-10 z-10"
+        >
+          <ArrowDown className="w-4 h-4" />
+        </Button>
+      )}
+
       {/* Quick Actions */}
       <div className="px-4 py-2 border-t border-gray-200 bg-white flex gap-2">
         <Button
@@ -183,6 +223,7 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
         )}
         <div className="flex gap-2">
           <Textarea
+            ref={inputRef}
             value={inputMessage}
             onChange={(e) => setInputMessage(e.target.value)}
             onKeyDown={handleKeyDown}
