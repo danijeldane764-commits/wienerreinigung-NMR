@@ -11,6 +11,7 @@ interface ChatWindowProps {
 
 const ChatWindow = ({ onClose }: ChatWindowProps) => {
   const [inputMessage, setInputMessage] = useState('');
+  const [queuedMessages, setQueuedMessages] = useState<string[]>([]);
   const { messages, isLoading, error, sendMessage } = useChatBot();
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -23,18 +24,31 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
   }, [messages]);
 
   const handleSend = () => {
-    if (inputMessage.trim() && !isLoading) {
+    if (!inputMessage.trim()) return;
+    
+    if (isLoading) {
+      setQueuedMessages(prev => [...prev, inputMessage]);
+      setInputMessage('');
+    } else {
       sendMessage(inputMessage);
       setInputMessage('');
     }
   };
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       handleSend();
     }
   };
+
+  useEffect(() => {
+    if (!isLoading && queuedMessages.length > 0) {
+      const nextMessage = queuedMessages[0];
+      setQueuedMessages(prev => prev.slice(1));
+      sendMessage(nextMessage);
+    }
+  }, [isLoading, queuedMessages, sendMessage]);
 
   const handleWhatsAppClick = () => {
     if (typeof (window as any).gtag !== 'undefined') {
@@ -150,18 +164,22 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
 
       {/* Input Area */}
       <div className="p-4 border-t border-gray-200 bg-white rounded-b-2xl">
+        {queuedMessages.length > 0 && (
+          <div className="text-xs text-gray-500 mb-2">
+            {queuedMessages.length} {queuedMessages.length === 1 ? 'Nachricht' : 'Nachrichten'} werden im Anschluss gesendet
+          </div>
+        )}
         <div className="flex gap-2">
           <Textarea
             value={inputMessage}
             onChange={(e) => setInputMessage(e.target.value)}
-            onKeyPress={handleKeyPress}
+            onKeyDown={handleKeyDown}
             placeholder="Nachricht eingeben..."
             className="flex-1 min-h-[44px] max-h-[100px] resize-none"
-            disabled={isLoading}
           />
           <Button
             onClick={handleSend}
-            disabled={!inputMessage.trim() || isLoading}
+            disabled={!inputMessage.trim()}
             className="bg-[#1E40AF] hover:bg-[#1E3A8A] text-white h-[44px] w-[44px] p-0"
           >
             <Send className="w-5 h-5" />
