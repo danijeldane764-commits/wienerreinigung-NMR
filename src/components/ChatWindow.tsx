@@ -51,6 +51,13 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
     }
   }, [isLoading, queuedMessages, sendMessage]);
 
+  const handleContainerWheel: React.WheelEventHandler<HTMLDivElement> = (e) => {
+    const viewport = containerRef.current?.querySelector('[data-radix-scroll-area-viewport]') as HTMLElement | null;
+    if (!viewport) return;
+    e.preventDefault();
+    viewport.scrollTop += e.deltaY;
+  };
+
   const handleWhatsAppClick = () => {
     if (typeof (window as any).gtag !== 'undefined') {
       (window as any).gtag('event', 'chatbot_whatsapp_clicked');
@@ -69,7 +76,11 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 w-[400px] h-[600px] min-h-0 bg-white rounded-2xl shadow-2xl flex flex-col z-[1001] md:block hidden animate-in slide-in-from-bottom-4 duration-300 overscroll-contain">
+    <div
+      ref={containerRef}
+      onWheel={handleContainerWheel}
+      className="fixed bottom-6 right-6 w-[400px] h-[600px] min-h-0 bg-white rounded-2xl shadow-2xl flex flex-col z-[1001] md:block hidden animate-in slide-in-from-bottom-4 duration-300 overscroll-contain"
+    >
       {/* Header */}
       <div className="bg-[#1E40AF] text-white p-4 rounded-t-2xl flex items-center justify-between">
         <div className="flex items-center gap-3">
