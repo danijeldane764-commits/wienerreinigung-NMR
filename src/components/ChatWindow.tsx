@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { X, Send, Phone } from 'lucide-react';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
+import { ScrollArea } from './ui/scroll-area';
 import { useChatBot } from '@/hooks/useChatBot';
 
 interface ChatWindowProps {
@@ -76,52 +77,54 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
       </div>
 
       {/* Messages Area */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50">
-        {messages.length === 0 && (
-          <div className="text-center text-gray-500 mt-8">
-            <p className="text-lg mb-2">👋 Hallo!</p>
-            <p className="text-sm">Ich bin der virtuelle Assistent von Nikola Miloradovic Reinigung.</p>
-            <p className="text-sm mt-2">Wie kann ich dir heute helfen?</p>
-          </div>
-        )}
-        
-        {messages.map((msg, idx) => (
-          <div
-            key={idx}
-            className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
-          >
-            <div
-              className={`max-w-[80%] rounded-lg px-4 py-2 ${
-                msg.role === 'user'
-                  ? 'bg-[#1E40AF] text-white'
-                  : 'bg-white text-[#002060] border border-gray-200'
-              }`}
-            >
-              <p className="text-sm whitespace-pre-wrap">{msg.content}</p>
+      <ScrollArea className="flex-1 bg-gray-50">
+        <div className="p-4 space-y-4">
+          {messages.length === 0 && (
+            <div className="text-center text-gray-500 mt-8">
+              <p className="text-lg mb-2">👋 Hallo!</p>
+              <p className="text-sm">Ich bin der virtuelle Assistent von Nikola Miloradovic Reinigung.</p>
+              <p className="text-sm mt-2">Wie kann ich dir heute helfen?</p>
             </div>
-          </div>
-        ))}
-
-        {isLoading && (
-          <div className="flex justify-start">
-            <div className="bg-white text-[#002060] border border-gray-200 rounded-lg px-4 py-2">
-              <div className="flex gap-1">
-                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
-                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
-                <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+          )}
+          
+          {messages.map((msg, idx) => (
+            <div
+              key={idx}
+              className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+            >
+              <div
+                className={`max-w-[80%] rounded-lg px-4 py-2 ${
+                  msg.role === 'user'
+                    ? 'bg-[#1E40AF] text-white'
+                    : 'bg-white text-[#002060] border border-gray-200'
+                }`}
+              >
+                <p className="text-sm whitespace-pre-wrap">{msg.content}</p>
               </div>
             </div>
-          </div>
-        )}
+          ))}
 
-        {error && (
-          <div className="text-center text-red-500 text-sm bg-red-50 p-3 rounded-lg">
-            {error}
-          </div>
-        )}
+          {isLoading && (
+            <div className="flex justify-start">
+              <div className="bg-white text-[#002060] border border-gray-200 rounded-lg px-4 py-2">
+                <div className="flex gap-1">
+                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
+                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+                </div>
+              </div>
+            </div>
+          )}
 
-        <div ref={messagesEndRef} />
-      </div>
+          {error && (
+            <div className="text-center text-red-500 text-sm bg-red-50 p-3 rounded-lg">
+              {error}
+            </div>
+          )}
+
+          <div ref={messagesEndRef} />
+        </div>
+      </ScrollArea>
 
       {/* Quick Actions */}
       <div className="px-4 py-2 border-t border-gray-200 bg-white flex gap-2">
