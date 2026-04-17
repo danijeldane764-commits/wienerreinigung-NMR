@@ -2,15 +2,16 @@ import { useState, useEffect } from 'react';
 import { MessageCircle } from 'lucide-react';
 import { Button } from './ui/button';
 import ChatWindow from './ChatWindow';
+import { trackEvent } from '@/utils/analytics';
 
 const ChatBubble = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
-    
-    if (!isOpen && typeof (window as any).gtag !== 'undefined') {
-      (window as any).gtag('event', 'chatbot_opened');
+
+    if (!isOpen) {
+      trackEvent('chatbot_opened');
     }
   };
 

@@ -2,24 +2,21 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import CTAWhatsApp from "@/components/CTAWhatsApp";
 import CTACall from "@/components/CTACall";
+import { trackEvent } from "@/utils/analytics";
 
 const Contact = () => {
   const handleCall = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'anrufen_click', {
-        event_category: 'engagement',
-        event_label: 'contact'
-      });
-    }
+    trackEvent('anrufen_click', {
+      event_category: 'engagement',
+      event_label: 'contact'
+    });
   };
 
   const handleWhatsApp = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'whatsapp_click', {
-        event_category: 'engagement', 
-        event_label: 'contact'
-      });
-    }
+    trackEvent('whatsapp_click', {
+      event_category: 'engagement',
+      event_label: 'contact'
+    });
   };
 
   return (

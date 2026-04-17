@@ -4,6 +4,7 @@ import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import { ScrollArea } from './ui/scroll-area';
 import { useChatBot } from '@/hooks/useChatBot';
+import { trackEvent } from '@/utils/analytics';
 
 interface ChatWindowProps {
   onClose: () => void;
@@ -87,9 +88,7 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
   };
 
   const handleWhatsAppClick = () => {
-    if (typeof (window as any).gtag !== 'undefined') {
-      (window as any).gtag('event', 'chatbot_whatsapp_clicked');
-    }
+    trackEvent('chatbot_whatsapp_clicked');
     window.open(
       'https://wa.me/436677680897?text=Hallo%20Nikola,%20ich%20komme%20vom%20Chatbot%20und%20habe%20Interesse%20an%20einer%20Besichtigung.',
       '_blank'
@@ -97,9 +96,7 @@ const ChatWindow = ({ onClose }: ChatWindowProps) => {
   };
 
   const handleCallClick = () => {
-    if (typeof (window as any).gtag !== 'undefined') {
-      (window as any).gtag('event', 'chatbot_call_clicked');
-    }
+    trackEvent('chatbot_call_clicked');
     window.location.href = 'tel:+436677680897';
   };
 

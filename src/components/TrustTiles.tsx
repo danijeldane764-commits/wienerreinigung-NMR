@@ -1,32 +1,29 @@
 import trustTeamImage from "@/assets/s-hausbetreuung-new.jpg";
 import trustBesichtigungImage from "@/assets/trust-besichtigung-wien.webp";
+import { trackEvent } from "@/utils/analytics";
 
 const TrustTiles = () => {
   const handleCallTile = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'tile_click_rueckruf', {
-        event_category: 'engagement',
-        event_label: 'trust_tile',
-        utm_source: 'lp',
-        utm_medium: 'tile',
-        utm_campaign: 'trust',
-        utm_content: 'rueckruf'
-      });
-    }
+    trackEvent('tile_click_rueckruf', {
+      event_category: 'engagement',
+      event_label: 'trust_tile',
+      utm_source: 'lp',
+      utm_medium: 'tile',
+      utm_campaign: 'trust',
+      utm_content: 'rueckruf'
+    });
     window.location.href = "tel:+436677680897";
   };
 
   const handleContactTile = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'tile_click_fixpreis', {
-        event_category: 'engagement',
-        event_label: 'trust_tile',
-        utm_source: 'lp',
-        utm_medium: 'tile',
-        utm_campaign: 'trust',
-        utm_content: 'fixpreis'
-      });
-    }
+    trackEvent('tile_click_fixpreis', {
+      event_category: 'engagement',
+      event_label: 'trust_tile',
+      utm_source: 'lp',
+      utm_medium: 'tile',
+      utm_campaign: 'trust',
+      utm_content: 'fixpreis'
+    });
     const element = document.getElementById('contact');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
