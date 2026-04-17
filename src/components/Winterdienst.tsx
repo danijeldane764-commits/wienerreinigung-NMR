@@ -1,25 +1,22 @@
 import CTAWhatsApp from "@/components/CTAWhatsApp";
 import CTACall from "@/components/CTACall";
+import { trackEvent } from "@/utils/analytics";
 import winterdienstImage from "@/assets/winterdienst-wien.jpg";
 
 const Winterdienst = () => {
   const handleWhatsApp = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'whatsapp_click_winterdienst', {
-        event_category: 'engagement',
-        event_label: 'winterdienst_section'
-      });
-    }
+    trackEvent('whatsapp_click_winterdienst', {
+      event_category: 'engagement',
+      event_label: 'winterdienst_section'
+    });
     window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20Inhaber-Besichtigung%20f%C3%BCr%20Winterdienst%20in%20[Ort,%20PLZ].", "_blank");
   };
 
   const handleCall = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'call_click_winterdienst', {
-        event_category: 'engagement',
-        event_label: 'winterdienst_section'
-      });
-    }
+    trackEvent('call_click_winterdienst', {
+      event_category: 'engagement',
+      event_label: 'winterdienst_section'
+    });
     window.location.href = "tel:+436677680897";
   };
 

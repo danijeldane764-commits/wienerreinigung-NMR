@@ -1,24 +1,21 @@
 import CTAWhatsApp from "@/components/CTAWhatsApp";
 import CTACall from "@/components/CTACall";
+import { trackEvent } from "@/utils/analytics";
 
 const Header = () => {
   const handleCall = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'call_click_header', {
-        event_category: 'engagement',
-        event_label: 'header_cta'
-      });
-    }
+    trackEvent('call_click_header', {
+      event_category: 'engagement',
+      event_label: 'header_cta'
+    });
     window.location.href = "tel:+436677680897";
   };
 
   const handleWhatsApp = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'whatsapp_click_header', {
-        event_category: 'engagement',
-        event_label: 'header_cta'
-      });
-    }
+    trackEvent('whatsapp_click_header', {
+      event_category: 'engagement',
+      event_label: 'header_cta'
+    });
     window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20kurze%20Inhaber-Besichtigung%20in%20[Ort,%20PLZ].", "_blank");
   };
 

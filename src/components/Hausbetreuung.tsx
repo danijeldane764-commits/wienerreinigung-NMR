@@ -1,31 +1,28 @@
 import { CheckCircle } from "lucide-react";
 import CTAWhatsApp from "@/components/CTAWhatsApp";
+import { trackEvent } from "@/utils/analytics";
 import hausbetreungImage from "@/assets/s-hausbetreuung-glanz.jpg";
 
 const Hausbetreuung = () => {
   const benefits = [
     "Regelmäßige Intervalle nach Plan",
-    "Pünktliche Teams, leise im Betrieb", 
+    "Pünktliche Teams, leise im Betrieb",
     "Fixpreis ohne versteckte Kosten"
   ];
 
   const handleWhatsApp = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'whatsapp_click_hausbetreuung', {
-        event_category: 'engagement',
-        event_label: 'cashcow_section'
-      });
-    }
+    trackEvent('whatsapp_click_hausbetreuung', {
+      event_category: 'engagement',
+      event_label: 'cashcow_section'
+    });
     window.open("https://wa.me/436677680897?text=Hallo%20Nikola,%20bitte%20um%20Inhaber-Besichtigung%20f%C3%BCr%20Hausbetreuung%20in%20[Ort,%20PLZ].", "_blank");
   };
 
   const handleCall = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'call_click_hausbetreuung', {
-        event_category: 'engagement',
-        event_label: 'cashcow_section'
-      });
-    }
+    trackEvent('call_click_hausbetreuung', {
+      event_category: 'engagement',
+      event_label: 'cashcow_section'
+    });
     window.location.href = "tel:+436677680897";
   };
 
